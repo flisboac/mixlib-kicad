@@ -1,0 +1,23 @@
+{
+    "$schema": "https://go.kicad.org/pcm/schemas/v1",
+    "name": "mixlib-kicad",
+    "description": "Assorted symbols and footprints for the ones not afraid to use fancy stuff",
+    "identifier": "com.github.flisboac.mix-library",
+    "type": "library",
+    "author": {
+        "name": "Flávio Lisbôa",
+        "contact": {
+            "web": "https://github.com/flisboac/"
+        }
+    },
+    "maintainer": {
+        "name": "Flávio Lisbôa",
+        "contact": {
+            "web": "https://github.com/flisboac/"
+        }
+    },
+    "license": "CC0-1.0",
+    "resources": {
+        "homepage": "https://github.com/flisboac/mixlib-kicad"
+    }
+}
