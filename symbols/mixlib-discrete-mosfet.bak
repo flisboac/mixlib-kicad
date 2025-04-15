@@ -404,7 +404,7 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "mixlib-discrete-mosfet:SOIC127P600X175-8N"
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
 			(at 21.59 -94.92 0)
 			(effects
 				(font
