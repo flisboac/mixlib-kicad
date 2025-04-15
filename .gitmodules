@@ -1,0 +1,3 @@
+[submodule "ext/kicad/mixlib-kicad"]
+	path = ext/kicad/mixlib-kicad
+	url = https://github.com/flisboac/mixlib-kicad

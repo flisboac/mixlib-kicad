@@ -6,6 +6,7 @@ production
 build
 *-backups
 *.backups
+*.bak
 todo
 temp
 local
