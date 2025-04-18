@@ -23,7 +23,7 @@
 			)
 		)
 		(property "Footprint" "mixlib-connector-jumper:solder-jumper-4pin-unbridged"
-			(at 0 0 0)
+			(at 1.524 -9.906 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -51,8 +51,8 @@
 		)
 		(symbol "solder-jumper-4pin-unbridged_1_1"
 			(rectangle
-				(start -2.54 3.81)
-				(end 0 2.54)
+				(start -2.54 0.9514)
+				(end -0.2458 -0.0001)
 				(stroke
 					(width 0)
 					(type solid)
@@ -62,8 +62,19 @@
 				)
 			)
 			(rectangle
-				(start -2.54 1.27)
-				(end 0 -1.27)
+				(start -2.54 0)
+				(end -0.2458 -0.8802)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(rectangle
+				(start -2.54 -1.5894)
+				(end -0.2458 -2.54)
 				(stroke
 					(width 0)
 					(type solid)
@@ -74,7 +85,7 @@
 			)
 			(rectangle
 				(start -2.54 -2.54)
-				(end 0 -5.08)
+				(end -0.2458 -3.4036)
 				(stroke
 					(width 0)
 					(type solid)
@@ -84,8 +95,8 @@
 				)
 			)
 			(rectangle
-				(start -2.54 -6.35)
-				(end 0 -7.62)
+				(start -2.54 -4.0776)
+				(end -0.2499 -5.08)
 				(stroke
 					(width 0)
 					(type solid)
@@ -95,8 +106,19 @@
 				)
 			)
 			(rectangle
-				(start -1.27 5.08)
-				(end 0 3.81)
+				(start -2.5307 2.938)
+				(end -0.2241 1.668)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(rectangle
+				(start -1.5481 -5.08)
+				(end -0.25 -6.1633)
 				(stroke
 					(width 0)
 					(type solid)
@@ -106,7 +128,73 @@
 				)
 			)
 			(circle
-				(center -1.27 3.81)
+				(center -1.5065 2.938)
+				(radius 1.0247)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(rectangle
+				(start -1.5025 3.9622)
+				(end -0.2325 2.6746)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(circle
+				(center -1.5004 -5.1323)
+				(radius 1.0247)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(rectangle
+				(start 0.2197 2.7903)
+				(end 2.7557 -4.9683)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(rectangle
+				(start 0.2197 -4.8855)
+				(end 1.5061 -6.1555)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(rectangle
+				(start 0.2198 3.9414)
+				(end 1.4868 2.6714)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(circle
+				(center 1.4868 2.6625)
 				(radius 1.27)
 				(stroke
 					(width 0)
@@ -117,73 +205,7 @@
 				)
 			)
 			(circle
-				(center -1.27 -7.62)
-				(radius 1.27)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type outline)
-				)
-			)
-			(rectangle
-				(start -1.27 -7.62)
-				(end 0 -8.89)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type outline)
-				)
-			)
-			(rectangle
-				(start 1.27 5.08)
-				(end 2.54 3.81)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type outline)
-				)
-			)
-			(rectangle
-				(start 1.27 3.81)
-				(end 3.81 -7.62)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type outline)
-				)
-			)
-			(rectangle
-				(start 1.27 -7.62)
-				(end 2.54 -8.89)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type outline)
-				)
-			)
-			(circle
-				(center 2.54 3.81)
-				(radius 1.27)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type outline)
-				)
-			)
-			(circle
-				(center 2.54 -7.62)
+				(center 1.5071 -4.8508)
 				(radius 1.27)
 				(stroke
 					(width 0)
@@ -194,7 +216,7 @@
 				)
 			)
 			(pin passive line
-				(at -5.08 3.81 0)
+				(at -5.08 2.54 0)
 				(length 2.54)
 				(name ""
 					(effects
@@ -230,7 +252,7 @@
 				)
 			)
 			(pin passive line
-				(at -5.08 -3.81 0)
+				(at -5.08 -2.54 0)
 				(length 2.54)
 				(name ""
 					(effects
@@ -248,7 +270,7 @@
 				)
 			)
 			(pin passive line
-				(at -5.08 -7.62 0)
+				(at -5.08 -5.08 0)
 				(length 2.54)
 				(name ""
 					(effects
@@ -266,7 +288,7 @@
 				)
 			)
 			(pin passive line
-				(at 6.35 -1.27 180)
+				(at 5.08 -1.27 180)
 				(length 2.54)
 				(name ""
 					(effects
