@@ -51,8 +51,8 @@
 		)
 		(symbol "solder-jumper-4pin-unbridged_1_1"
 			(rectangle
-				(start -2.54 0.9514)
-				(end -0.2458 -0.0001)
+				(start -2.54 0.7175)
+				(end -1.1947 -0.0001)
 				(stroke
 					(width 0)
 					(type solid)
@@ -63,7 +63,7 @@
 			)
 			(rectangle
 				(start -2.54 0)
-				(end -0.2458 -0.8802)
+				(end -1.1946 -0.7059)
 				(stroke
 					(width 0)
 					(type solid)
@@ -73,8 +73,8 @@
 				)
 			)
 			(rectangle
-				(start -2.54 -1.5894)
-				(end -0.2458 -2.54)
+				(start -2.54 -1.8656)
+				(end -1.189 -2.54)
 				(stroke
 					(width 0)
 					(type solid)
@@ -85,7 +85,7 @@
 			)
 			(rectangle
 				(start -2.54 -2.54)
-				(end -0.2458 -3.4036)
+				(end -1.189 -3.2482)
 				(stroke
 					(width 0)
 					(type solid)
@@ -95,8 +95,8 @@
 				)
 			)
 			(rectangle
-				(start -2.54 -4.0776)
-				(end -0.2499 -5.08)
+				(start -2.54 -4.4384)
+				(end -1.1618 -5.08)
 				(stroke
 					(width 0)
 					(type solid)
@@ -107,18 +107,7 @@
 			)
 			(rectangle
 				(start -2.5307 2.938)
-				(end -0.2241 1.668)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type outline)
-				)
-			)
-			(rectangle
-				(start -1.5481 -5.08)
-				(end -0.25 -6.1633)
+				(end -1.19 1.9584)
 				(stroke
 					(width 0)
 					(type solid)
@@ -128,8 +117,8 @@
 				)
 			)
 			(circle
-				(center -1.5065 2.938)
-				(radius 1.0247)
+				(center -2.012 3.0024)
+				(radius 0.522)
 				(stroke
 					(width 0)
 					(type solid)
@@ -139,8 +128,19 @@
 				)
 			)
 			(rectangle
-				(start -1.5025 3.9622)
-				(end -0.2325 2.6746)
+				(start -1.9681 -4.7766)
+				(end -1.1618 -5.8599)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(rectangle
+				(start -1.9613 3.5248)
+				(end -1.1901 2.2372)
 				(stroke
 					(width 0)
 					(type solid)
@@ -150,8 +150,8 @@
 				)
 			)
 			(circle
-				(center -1.5004 -5.1323)
-				(radius 1.0247)
+				(center -1.8986 -5.2108)
+				(radius 0.6396)
 				(stroke
 					(width 0)
 					(type solid)
@@ -161,8 +161,8 @@
 				)
 			)
 			(rectangle
-				(start 0.2197 2.7903)
-				(end 2.7557 -4.9683)
+				(start -0.4316 3.518)
+				(end 0.2419 2.248)
 				(stroke
 					(width 0)
 					(type solid)
@@ -172,8 +172,8 @@
 				)
 			)
 			(rectangle
-				(start 0.2197 -4.8855)
-				(end 1.5061 -6.1555)
+				(start -0.4301 -4.5701)
+				(end 0.1701 -5.8401)
 				(stroke
 					(width 0)
 					(type solid)
@@ -183,8 +183,8 @@
 				)
 			)
 			(rectangle
-				(start 0.2198 3.9414)
-				(end 1.4868 2.6714)
+				(start -0.4298 3.0994)
+				(end 0.6863 -5.3974)
 				(stroke
 					(width 0)
 					(type solid)
@@ -194,8 +194,8 @@
 				)
 			)
 			(circle
-				(center 1.4868 2.6625)
-				(radius 1.27)
+				(center 0.2097 -5.3627)
+				(radius 0.4773)
 				(stroke
 					(width 0)
 					(type solid)
@@ -205,8 +205,8 @@
 				)
 			)
 			(circle
-				(center 1.5071 -4.8508)
-				(radius 1.27)
+				(center 0.2695 3.1046)
+				(radius 0.409)
 				(stroke
 					(width 0)
 					(type solid)
@@ -288,7 +288,7 @@
 				)
 			)
 			(pin passive line
-				(at 5.08 -1.27 180)
+				(at 3.3462 -1.27 180)
 				(length 2.54)
 				(name ""
 					(effects
