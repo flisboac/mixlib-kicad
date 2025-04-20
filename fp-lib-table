@@ -18,4 +18,5 @@
   (lib (name "mixlib-discrete-led")(type "KiCad")(uri "${KIPRJMOD}/footprints/mixlib-discrete-led.pretty")(options "")(descr ""))
   (lib (name "mixlib-connectors-usb")(type "KiCad")(uri "${KIPRJMOD}/footprints/mixlib-connectors-usb.pretty")(options "")(descr ""))
   (lib (name "mixlib-connector-jumper")(type "KiCad")(uri "${KIPRJMOD}/footprints/mixlib-connector-jumper.pretty")(options "")(descr ""))
+  (lib (name "mixlib-generic-sot")(type "KiCad")(uri "${KIPRJMOD}/footprints/mixlib-generic-sot.pretty")(options "")(descr ""))
 )
