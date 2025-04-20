@@ -252,7 +252,7 @@
 			)
 		)
 		(property "Footprint" "mixlib-pmic-vreg:SPECIFIC_TPS7A2601DRVR_NoThermalVias"
-			(at 0 0 0)
+			(at 1.016 -26.162 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -262,7 +262,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps7a26.pdf"
-			(at 0 0 0)
+			(at 3.048 -24.892 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -272,7 +272,7 @@
 			)
 		)
 		(property "Description" "500-mA, 18-V, Ultra-Low IQ, Low-Dropout Linear Voltage Regulator With Power-Good (LDO, Adjustable version)"
-			(at 0 0 0)
+			(at 1.778 -25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -384,7 +384,7 @@
 					(type background)
 				)
 			)
-			(pin unspecified line
+			(pin free line
 				(at -1.27 -12.7 90)
 				(length 5.08)
 				(name "PAD"
