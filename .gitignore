@@ -10,3 +10,4 @@ build
 todo
 temp
 local
+~*.lck
