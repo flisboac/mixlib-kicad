@@ -1545,14 +1545,14 @@
 			(pin passive line
 				(at -15.24 5.08 0)
 				(length 3.81)
-				(name "CELL1"
+				(name "CELLX"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "7"
+				(number "13"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1581,14 +1581,14 @@
 			(pin passive line
 				(at -15.24 -7.62 0)
 				(length 3.81)
-				(name "CELLX"
+				(name "CELL1"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "13"
+				(number "7"
 					(effects
 						(font
 							(size 1.27 1.27)
