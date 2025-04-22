@@ -249,7 +249,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SON:Texas_S-PWSON-N10_ThermalVias"
+		(property "Footprint" "mixlib-pmic-vreg:SPECIFIC_TPS63070_RNM0015A"
 			(at 0 -16.51 0)
 			(effects
 				(font
@@ -285,7 +285,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "Texas*S*PWSON*N10* SPECIFIC_TPS63070_*"
+		(property "ki_fp_filters" "SPECIFIC_TPS63070_*"
 			(at 0 0 0)
 			(effects
 				(font
