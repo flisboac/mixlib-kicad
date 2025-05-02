@@ -11,3 +11,4 @@ todo
 temp
 local
 ~*.lck
+*.kate-swp
