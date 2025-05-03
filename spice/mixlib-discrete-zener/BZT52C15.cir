@@ -15,7 +15,6 @@
 
 
 *SRC=BZT52C15;DI_BZT52C15;Diodes;Zener 10V-50V; 15.0V  0.500W   Diodes Inc.
--
 *SYM=HZEN
 .SUBCKT DI_BZT52C15  1 2
 *        Terminals    A   K
