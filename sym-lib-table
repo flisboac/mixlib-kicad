@@ -11,4 +11,5 @@
   (lib (name "mixlib-discrete-mosfet")(type "KiCad")(uri "${KIPRJMOD}/symbols/mixlib-discrete-mosfet.kicad_sym")(options "")(descr ""))
   (lib (name "mixlib-discrete-led")(type "KiCad")(uri "${KIPRJMOD}/symbols/mixlib-discrete-led.kicad_sym")(options "")(descr ""))
   (lib (name "mixlib-connector-jumper")(type "KiCad")(uri "${KIPRJMOD}/symbols/mixlib-connector-jumper.kicad_sym")(options "")(descr ""))
+  (lib (name "mixlib-analog-opamp")(type "KiCad")(uri "${KIPRJMOD}/symbols/mixlib-analog-opamp.kicad_sym")(options "")(descr ""))
 )
