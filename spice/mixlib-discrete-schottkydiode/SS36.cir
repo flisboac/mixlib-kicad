@@ -1,0 +1,36 @@
+*******************************************************
+* Taiwan Semiconductor
+* SS36
+* 3A, 60V Schottky Barrier Rectifier
+* Date: 2023-12-06
+*******************************************************
+*The model describes the characteristics of typical devices and is subject to change without notice. 		*
+*SPICE model can be used for evaluating device performance, but it cannot reflect the real device 		*
+*performance under any kind of conditions, nor to replace bread boarding for final verification. 		*
+*TSC does not assume any warranty or liability whatever arising from their use. TSC does not assume 		*
+*any warranty or liability for the values and functions of the SPICE model. The simulation results of 		*
+*the SPICE model are to the best of our knowledge correct. However, users are fully responsible to verify	*
+* and validate these results under the operating conditions and its application. TSC will not bear the 		*
+*responsibility arising out of or in connection with any malfunction of the simulation model. In any kind 	*
+*of cases, the current datasheet information is the design guideline and the only actual performance 		*
+*specification. SPICE model provided by TSC is not warranted by TSC as completely and comprehensively 		*
+*representing all the specifications and operating characteristics of the semiconductor product.		*
+*
+****************************************************************************************************************
+.SUBCKT SS36 K A
+D1 A K SS36
+.MODEL SS36 D
++ IS=2.8913E-6
++ N=1.1251
++ RS=34.820E-3
++ IKF=.2974
++ CJO=381.94E-12
++ M=.47285
++ VJ=.49014
++ ISR=151.32E-9
++ NR=4.9950
++ BV=60
++ IBV=5E-4
++ TT=4.9326E-9
+.ENDS SS36
+*******************************************************

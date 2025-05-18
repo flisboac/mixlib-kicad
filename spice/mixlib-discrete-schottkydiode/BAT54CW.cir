@@ -1,0 +1,53 @@
+***********************************************************
+*
+* BAT54CW
+*
+* Nexperia
+*
+* Schottky barrier double diodes
+* IFmax = 200mA
+* VRmax = 30V
+* VFmax = 800mV    @ IF = 100mA
+* IRmax = 2µA      @ VR = 25V
+* 
+*
+*
+* Package pinning does not match Spice model pinning.
+* Package: SOT323
+*
+* Package Pin 1: Anode             D1
+* Package Pin 2: Anode             D2
+* Package Pin 3: Cathode;Cathode   D1;D2
+*
+*
+* Extraction date (week/year): #
+* Simulator: SPICE2
+*
+***********************************************************
+*
+* The resistor R1/R2
+* does not reflect physical devices 
+* but improve only modeling in the 
+* reverse mode of operation.
+*
+.SUBCKT BAT54CW A1 A2 K
+R1 A1 K 3.6E+07 
+D1 A1 K BAT54CW
+R2 A2 K 3.6E+07 
+D2 A2 K BAT54CW
+*
+.MODEL BAT54CW D 
++    IS = 2.117E-07 
++    N = 1.016 
++    BV = 36 
++    IBV = 1.196E-06 
++    RS = 2.637 
++    CJO = 1.114E-11 
++    VJ = 0.2013 
++    M = 0.3868 
++    FC = 0 
++    TT = 7E-9 
++    EG = 0.69 
++    XTI = 2
+.ENDS 
+*
