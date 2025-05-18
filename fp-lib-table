@@ -21,4 +21,6 @@
   (lib (name "mixlib-generic-sot")(type "KiCad")(uri "${KIPRJMOD}/footprints/mixlib-generic-sot.pretty")(options "")(descr ""))
   (lib (name "mixlib-generic-so")(type "KiCad")(uri "${KIPRJMOD}/footprints/mixlib-generic-so.pretty")(options "")(descr ""))
   (lib (name "mixlib-generic-son")(type "KiCad")(uri "${KIPRJMOD}/footprints/mixlib-generic-son.pretty")(options "")(descr ""))
+  (lib (name "mixlib-soc-board")(type "KiCad")(uri "${KIPRJMOD}/footprints/mixlib-soc-board.pretty")(options "")(descr ""))
+  (lib (name "mixlib-vendor-ti")(type "KiCad")(uri "${KIPRJMOD}/footprints/mixlib-vendor-ti.pretty")(options "")(descr ""))
 )

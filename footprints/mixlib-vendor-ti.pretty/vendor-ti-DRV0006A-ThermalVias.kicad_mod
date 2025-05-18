@@ -1,9 +1,10 @@
-(footprint "SPECIFIC_TPS7A2601DRVR_ThermalVias"
+(footprint "vendor-ti-DRV0006A-ThermalVias"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
 	(layer "F.Cu")
-	(tags "TPS7A2601DRVR ")
+	(descr "WSON - 0.8 mm max height")
+	(tags "WSON DRV0006A  TI Texas Instruments")
 	(property "Reference" "REF**"
 		(at 0 0 0)
 		(unlocked yes)
@@ -16,7 +17,7 @@
 			)
 		)
 	)
-	(property "Value" "SPECIFIC_TPS7A2601DRVR_ThermalVias"
+	(property "Value" "DRV0006A-ThermalVias"
 		(at 0 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
@@ -28,7 +29,7 @@
 			)
 		)
 	)
-	(property "Datasheet" ""
+	(property "Datasheet" "https://www.ti.com/lit/ml/qfnd087m/qfnd087m.pdf"
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
@@ -40,7 +41,7 @@
 			)
 		)
 	)
-	(property "Description" ""
+	(property "Description" "WSON - 0.8 mm max height"
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
@@ -253,4 +254,15 @@
 		(uuid "de06c02e-f63e-4a95-9a4c-fa7b778fe960")
 	)
 	(embedded_fonts no)
+	(model "${MIXLIB_KICAD_3DMODELS_DIR}/mixlib-vendor-ti.3dshapes/vendor-ti-DRV0006A.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )

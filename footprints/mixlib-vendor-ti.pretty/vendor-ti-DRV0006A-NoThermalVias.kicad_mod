@@ -1,14 +1,15 @@
-(footprint "SPECIFIC_TPS7A2601DRVR_NoThermalVias"
+(footprint "vendor-ti-DRV0006A-NoThermalVias"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
 	(layer "F.Cu")
-	(tags "TPS7A2601DRVR ")
+	(descr "WSON - 0.8 mm max height")
+	(tags "WSON DRV0006A  TI Texas Instruments")
 	(property "Reference" "REF**"
-		(at 0 0 0)
+		(at 0 1.5 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "35f9a01c-fedd-4c52-a6dc-227915aa3b0b")
+		(uuid "0754a842-c4a1-46db-bfae-91340d5e7589")
 		(effects
 			(font
 				(size 1 1)
@@ -16,11 +17,11 @@
 			)
 		)
 	)
-	(property "Value" "SPECIFIC_TPS7A2601DRVR_NoThermalVias"
+	(property "Value" "DRV0006A-ThermalVias"
 		(at 0 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "c953d458-4af0-4045-9d95-1bf46c4d52d8")
+		(uuid "ab6403de-e0d3-4392-8617-b670c83a5717")
 		(effects
 			(font
 				(size 1 1)
@@ -28,11 +29,11 @@
 			)
 		)
 	)
-	(property "Datasheet" ""
+	(property "Datasheet" "https://www.ti.com/lit/ml/qfnd087m/qfnd087m.pdf"
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "ce047ed8-3657-4c47-ba2c-4ae197859b1f")
+		(uuid "81f2ef81-6c4b-4654-83d2-2083fcd997e6")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40,11 +41,11 @@
 			)
 		)
 	)
-	(property "Description" ""
+	(property "Description" "WSON - 0.8 mm max height"
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "147a772a-8380-4409-bdcf-42c4a51a0924")
+		(uuid "72010211-fb73-4ef0-b788-ca19a19e4385")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -61,7 +62,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "e8121a1d-f19d-4095-bf86-9be7877c7b56")
+		(uuid "465838f3-ab24-4cf3-8b83-0f96c579e5de")
 	)
 	(fp_line
 		(start -1.05 1.2)
@@ -71,7 +72,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "c90f552c-8bb8-4d5d-bcc2-a46e89d5b147")
+		(uuid "a7ac0dee-f0ec-48ca-8d5c-b81393636a25")
 	)
 	(fp_line
 		(start 0.800001 -1.2)
@@ -81,7 +82,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "c590db84-ef70-45dd-878a-ddd9a10143ed")
+		(uuid "3a4eaa75-ec79-490c-9efe-2a2587247edf")
 	)
 	(fp_line
 		(start 0.800001 1.2)
@@ -91,7 +92,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "811a9c96-2824-499e-9f9a-04eaba0004ea")
+		(uuid "833e99f8-40a2-4b8c-9a01-020827273480")
 	)
 	(fp_poly
 		(pts
@@ -110,7 +111,7 @@
 		)
 		(fill yes)
 		(layer "F.Paste")
-		(uuid "fb64110f-3a04-4b66-8543-409fa51c3763")
+		(uuid "7e115c8c-ad62-47ef-b368-6eafa3e5daaf")
 	)
 	(fp_poly
 		(pts
@@ -129,7 +130,7 @@
 		)
 		(fill yes)
 		(layer "F.Paste")
-		(uuid "52d504ef-748c-43d5-a044-0c7e317d8d41")
+		(uuid "eba41064-6e27-4953-966d-3b3f70938dbe")
 	)
 	(fp_line
 		(start -1.05 -1.05)
@@ -139,7 +140,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "231d6712-288d-4b1c-825e-8d7a2d8647ce")
+		(uuid "932e0420-22ed-4b1b-a5df-8ae512aca6ee")
 	)
 	(fp_line
 		(start -1.05 1.05)
@@ -149,7 +150,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "f7182815-1690-4add-a1d3-db648aa9f66b")
+		(uuid "bb22369a-2320-4582-a206-7b1ec9e0fc49")
 	)
 	(fp_line
 		(start -1.05 1.05)
@@ -159,7 +160,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "1b43a777-e147-4b8c-a41b-c39f46dff050")
+		(uuid "3b173e92-d541-49b1-b491-818593162598")
 	)
 	(fp_line
 		(start 1.05 1.05)
@@ -169,7 +170,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "4b47ca06-862f-4931-b5fe-9d279eee22cc")
+		(uuid "05a87a30-a931-4ef2-9f36-11c233c24361")
 	)
 	(fp_circle
 		(center -0.625 -0.599999)
@@ -180,13 +181,13 @@
 		)
 		(fill no)
 		(layer "F.Fab")
-		(uuid "264a849b-6090-4cc2-8462-e39ed40b3fde")
+		(uuid "e0875fd9-0d7a-4833-9d68-f9df17234d34")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "4936ce6d-7ce1-481d-a789-dba2467a82ef")
+		(uuid "6f7d387b-a621-4589-b707-95c028b63d12")
 		(effects
 			(font
 				(size 1 1)
@@ -198,43 +199,54 @@
 		(at -0.974999 -0.650001 90)
 		(size 0.299999 0.449999)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "976260e3-807a-4df2-996c-a264379d69bc")
+		(uuid "2b1b4563-d806-479d-bda7-e9b27e4b5d7b")
 	)
 	(pad "2" smd rect
 		(at -0.974999 0 90)
 		(size 0.299999 0.449999)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "f01a0b3b-9222-4886-af44-a20764c42993")
+		(uuid "2d184c02-3a6b-4b2d-b995-ee696ed73c0e")
 	)
 	(pad "3" smd rect
 		(at -0.974999 0.649999 90)
 		(size 0.299999 0.449999)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "ac657a91-6b97-401f-a810-eeda015b02a7")
+		(uuid "f7b67257-75bc-4f68-a99e-b05857be9b0e")
 	)
 	(pad "4" smd rect
 		(at 0.974999 0.649999 90)
 		(size 0.299999 0.449999)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "5388714b-0e22-4117-ae8c-192174fce71a")
+		(uuid "301defa0-ab40-45f6-ab3f-5065aba17dea")
 	)
 	(pad "5" smd rect
 		(at 0.974999 0 90)
 		(size 0.299999 0.449999)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "2e2dc010-4994-492f-84b1-01527541bec0")
+		(uuid "c9ed9126-5bbb-4b92-9c59-9eb0ef325f80")
 	)
 	(pad "6" smd rect
 		(at 0.974999 -0.650001 90)
 		(size 0.299999 0.449999)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "a41c34a8-b6cf-4ce5-91c9-0a1be360da21")
+		(uuid "208ef268-6622-4e1f-b1b5-bcca2fd00164")
 	)
 	(pad "7" smd rect
 		(at 0 0)
 		(size 1 1.599999)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "6a5907ac-343d-47b5-a92d-986fe946da5f")
+		(uuid "526b1fb5-593a-4271-b871-9886800805ba")
 	)
 	(embedded_fonts no)
+	(model "${MIXLIB_KICAD_3DMODELS_DIR}/mixlib-vendor-ti.3dshapes/vendor-ti-DRV0006A.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )

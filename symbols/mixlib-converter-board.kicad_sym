@@ -1,7 +1,7 @@
 (kicad_symbol_lib
-	(version 20231120)
+	(version 20241209)
 	(generator "kicad_symbol_editor")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(symbol "CJMCU_ADS1118"
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -62,6 +62,42 @@
 				)
 			)
 			(pin power_in line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "VIN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "VIN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
 				(at -7.62 -19.05 0)
 				(length 2.54)
 				(name "GND"
@@ -79,17 +115,17 @@
 					)
 				)
 			)
-			(pin input line
-				(at 7.62 -7.62 180)
+			(pin power_in line
+				(at -7.62 -19.05 0)
 				(length 2.54)
-				(name "CS"
+				(name "GND"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "10"
+				(number "7"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -133,17 +169,35 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -7.62 0 0)
+			(pin input line
+				(at 7.62 -5.08 180)
 				(length 2.54)
-				(name "VIN"
+				(name "SCK"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "2"
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 7.62 -7.62 180)
+				(length 2.54)
+				(name "CS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -223,61 +277,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -7.62 -19.05 0)
-				(length 2.54)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at -7.62 0 0)
-				(length 2.54)
-				(name "VIN"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "8"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at 7.62 -5.08 180)
-				(length 2.54)
-				(name "SCK"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "9"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "HiLetgo_ADS1115"
 		(exclude_from_sim no)
@@ -356,24 +357,6 @@
 					)
 				)
 			)
-			(pin input line
-				(at 8.89 -19.05 180)
-				(length 2.54)
-				(name "A3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "10"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin power_in line
 				(at -8.89 -19.05 0)
 				(length 2.54)
@@ -428,24 +411,6 @@
 					)
 				)
 			)
-			(pin input line
-				(at 8.89 -7.62 180)
-				(length 2.54)
-				(name "ADDR"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin output line
 				(at 8.89 -5.08 180)
 				(length 2.54)
@@ -457,6 +422,24 @@
 					)
 				)
 				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 8.89 -7.62 180)
+				(length 2.54)
+				(name "ADDR"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -518,7 +501,26 @@
 					)
 				)
 			)
+			(pin input line
+				(at 8.89 -19.05 180)
+				(length 2.54)
+				(name "A3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "Sparkfun_MAX17048"
 		(exclude_from_sim no)
@@ -615,24 +617,6 @@
 					)
 				)
 			)
-			(pin output line
-				(at 7.62 -5.08 180)
-				(length 2.54)
-				(name "ALT"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin bidirectional line
 				(at 7.62 0 180)
 				(length 2.54)
@@ -669,6 +653,24 @@
 					)
 				)
 			)
+			(pin output line
+				(at 7.62 -5.08 180)
+				(length 2.54)
+				(name "ALT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin input line
 				(at 7.62 -7.62 180)
 				(length 2.54)
@@ -688,5 +690,6 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 )

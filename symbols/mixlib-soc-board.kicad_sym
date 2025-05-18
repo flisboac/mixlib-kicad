@@ -1,7 +1,7 @@
 (kicad_symbol_lib
-	(version 20231120)
+	(version 20241209)
 	(generator "kicad_symbol_editor")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(symbol "Raspberry_Pi_Pico_W"
 		(pin_names
 			(offset 1.016)
@@ -27,7 +27,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "mixlib-soc-board:RaspberryPi_Pico_W"
+		(property "Footprint" "mixlib-soc-board:raspberrypi-pico-w"
 			(at 0 0 0)
 			(effects
 				(font
@@ -77,6 +77,42 @@
 					(type background)
 				)
 			)
+			(pin input line
+				(at -38.1 27.94 0)
+				(length 5.08)
+				(name "3V3_EN"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "37"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -38.1 25.4 0)
+				(length 5.08)
+				(name "~{RUN}"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "30"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
 			(pin bidirectional line
 				(at -38.1 20.32 0)
 				(length 5.08)
@@ -88,6 +124,114 @@
 					)
 				)
 				(number "1"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -38.1 17.78 0)
+				(length 5.08)
+				(name "UART0_RX/I2C0_SCL/SPI0_CSN/GP1"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -38.1 15.24 0)
+				(length 5.08)
+				(name "I2C1_SDA/SPI0_SCK/GP2"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -38.1 12.7 0)
+				(length 5.08)
+				(name "I2C1_SCL/SPI0_TX/GP3"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -38.1 10.16 0)
+				(length 5.08)
+				(name "UART1_TX/I2C0_SDA/SPI0_RX/GP4"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -38.1 7.62 0)
+				(length 5.08)
+				(name "UART1_RX/I2C0_SCL/SPI0_CSN/GP5"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -38.1 5.08 0)
+				(length 5.08)
+				(name "I2C1_SDA/SPI0_SCK/GP6"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "9"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -149,24 +293,6 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 36.83 -40.64 180)
-				(length 5.08)
-				(name "GND"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "13"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
 			(pin bidirectional line
 				(at -38.1 -5.08 0)
 				(length 5.08)
@@ -221,6 +347,114 @@
 					)
 				)
 			)
+			(pin power_in line
+				(at 36.83 40.64 180)
+				(length 5.08)
+				(name "VBUS"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "40"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 36.83 38.1 180)
+				(length 5.08)
+				(name "VSYS"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "39"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 36.83 35.56 180)
+				(length 5.08)
+				(name "3V3_OUT"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "36"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 36.83 33.02 180)
+				(length 5.08)
+				(name "ADC_VREF"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "35"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin input clock
+				(at 36.83 27.94 180)
+				(length 5.08)
+				(name "SWCLK"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "E"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 36.83 25.4 180)
+				(length 5.08)
+				(name "SWDIO"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "G"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
 			(pin bidirectional line
 				(at 36.83 20.32 180)
 				(length 5.08)
@@ -239,24 +473,6 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 36.83 -40.64 180)
-				(length 5.08)
-				(name "GND"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "18"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
 			(pin bidirectional line
 				(at 36.83 17.78 180)
 				(length 5.08)
@@ -268,24 +484,6 @@
 					)
 				)
 				(number "19"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -38.1 17.78 0)
-				(length 5.08)
-				(name "UART0_RX/I2C0_SCL/SPI0_CSN/GP1"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "2"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -340,24 +538,6 @@
 					)
 				)
 				(number "22"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 36.83 -40.64 180)
-				(length 5.08)
-				(name "GND"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "23"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -437,24 +617,6 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 36.83 -40.64 180)
-				(length 5.08)
-				(name "GND"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "28"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
 			(pin bidirectional line
 				(at 36.83 -2.54 180)
 				(length 5.08)
@@ -466,42 +628,6 @@
 					)
 				)
 				(number "29"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 36.83 -40.64 180)
-				(length 5.08)
-				(name "GND"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -38.1 25.4 0)
-				(length 5.08)
-				(name "~{RUN}"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "30"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -545,24 +671,6 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 36.83 -38.1 180)
-				(length 5.08)
-				(name "AGND"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "33"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
 			(pin bidirectional line
 				(at 36.83 -10.16 180)
 				(length 5.08)
@@ -581,359 +689,17 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 36.83 33.02 180)
-				(length 5.08)
-				(name "ADC_VREF"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "35"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 36.83 35.56 180)
-				(length 5.08)
-				(name "3V3_OUT"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "36"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
 			(pin input line
-				(at -38.1 27.94 0)
+				(at 36.83 -15.24 180)
 				(length 5.08)
-				(name "3V3_EN"
+				(name "TP6_BOOTSEL"
 					(effects
 						(font
 							(size 1.016 1.016)
 						)
 					)
 				)
-				(number "37"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 36.83 -40.64 180)
-				(length 5.08)
-				(name "GND"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "38"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 36.83 38.1 180)
-				(length 5.08)
-				(name "VSYS"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "39"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -38.1 15.24 0)
-				(length 5.08)
-				(name "I2C1_SDA/SPI0_SCK/GP2"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "4"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 36.83 40.64 180)
-				(length 5.08)
-				(name "VBUS"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "40"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -38.1 12.7 0)
-				(length 5.08)
-				(name "I2C1_SCL/SPI0_TX/GP3"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "5"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -38.1 10.16 0)
-				(length 5.08)
-				(name "UART1_TX/I2C0_SDA/SPI0_RX/GP4"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "6"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -38.1 7.62 0)
-				(length 5.08)
-				(name "UART1_RX/I2C0_SCL/SPI0_CSN/GP5"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "7"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 36.83 -40.64 180)
-				(length 5.08)
-				(name "GND"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "8"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -38.1 5.08 0)
-				(length 5.08)
-				(name "I2C1_SDA/SPI0_SCK/GP6"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "9"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 36.83 -33.02 180)
-				(length 5.08)
-				(name "USB_SHIELD"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "A"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 36.83 -33.02 180)
-				(length 5.08)
-				(name "USB_SHIELD"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "B"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 36.83 -33.02 180)
-				(length 5.08)
-				(name "USB_SHIELD"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "C"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 36.83 -33.02 180)
-				(length 5.08)
-				(name "USB_SHIELD"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "D"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
-			(pin input clock
-				(at 36.83 27.94 180)
-				(length 5.08)
-				(name "SWCLK"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "E"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 36.83 -40.64 180)
-				(length 5.08)
-				(name "GND"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "F"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 36.83 25.4 180)
-				(length 5.08)
-				(name "SWDIO"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "G"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 36.83 -27.94 180)
-				(length 5.08)
-				(name "TP1_GND"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "TP1"
+				(number "TP6"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -1013,17 +779,251 @@
 					)
 				)
 			)
-			(pin input line
-				(at 36.83 -15.24 180)
+			(pin power_in line
+				(at 36.83 -27.94 180)
 				(length 5.08)
-				(name "TP6_BOOTSEL"
+				(name "TP1_GND"
 					(effects
 						(font
 							(size 1.016 1.016)
 						)
 					)
 				)
-				(number "TP6"
+				(number "TP1"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 36.83 -33.02 180)
+				(length 5.08)
+				(name "USB_SHIELD"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "A"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 36.83 -33.02 180)
+				(length 5.08)
+				(name "USB_SHIELD"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "B"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 36.83 -33.02 180)
+				(length 5.08)
+				(name "USB_SHIELD"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "C"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 36.83 -33.02 180)
+				(length 5.08)
+				(name "USB_SHIELD"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "D"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 36.83 -38.1 180)
+				(length 5.08)
+				(name "AGND"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "33"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 36.83 -40.64 180)
+				(length 5.08)
+				(name "GND"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 36.83 -40.64 180)
+				(length 5.08)
+				(name "GND"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "18"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 36.83 -40.64 180)
+				(length 5.08)
+				(name "GND"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "23"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 36.83 -40.64 180)
+				(length 5.08)
+				(name "GND"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "28"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 36.83 -40.64 180)
+				(length 5.08)
+				(name "GND"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 36.83 -40.64 180)
+				(length 5.08)
+				(name "GND"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "38"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 36.83 -40.64 180)
+				(length 5.08)
+				(name "GND"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 36.83 -40.64 180)
+				(length 5.08)
+				(name "GND"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "F"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -1032,5 +1032,6 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 )

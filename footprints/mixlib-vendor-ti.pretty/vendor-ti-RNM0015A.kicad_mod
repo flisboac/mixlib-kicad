@@ -1,9 +1,10 @@
-(footprint "SPECIFIC_TPS63070_RNM0015A"
+(footprint "vendor-ti-RNM0015A"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
 	(layer "F.Cu")
-	(tags "TPS63070RNMR ")
+	(descr "VQFN - 1 mm max height")
+	(tags "RNM0015A WSON TI Texas Instruments")
 	(property "Reference" "REF**"
 		(at 0 -2.55 0)
 		(unlocked yes)
@@ -16,7 +17,7 @@
 			)
 		)
 	)
-	(property "Value" "SPECIFIC_TPS63070_RNM0015A"
+	(property "Value" "RNM0015A"
 		(at 0 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
@@ -28,7 +29,7 @@
 			)
 		)
 	)
-	(property "Datasheet" ""
+	(property "Datasheet" "https://www.ti.com/lit/ml/mpqf446a/mpqf446a.pdf"
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
@@ -40,7 +41,7 @@
 			)
 		)
 	)
-	(property "Description" ""
+	(property "Description" "VQFN - 1 mm max height"
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
@@ -627,4 +628,15 @@
 		(uuid "d56610f0-513f-4079-bcf7-ec89c8a2e3b1")
 	)
 	(embedded_fonts no)
+	(model "${MIXLIB_KICAD_3DMODELS_DIR}/mixlib-vendor-ti.3dshapes/vendor-ti-RNM0015A.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
 )

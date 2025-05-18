@@ -1,0 +1,255 @@
+(footprint "vendor-ti-DRL0006A"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Package: SOT563 (6), DRL; Vendor Code: DRL0006A; Size: 1.20 mm × 1.60 mm")
+	(tags "SOT-5X3 DRL Texas Instruments TI")
+	(property "Reference" "U**"
+		(at 0.145 -1.877 0)
+		(layer "F.SilkS")
+		(uuid "72de6747-50a3-498c-a6f1-072123df4778")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Value" "DRL0006A"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "75ce400c-96a5-446d-8184-fbfc4252bec4")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.ti.com/lit/ml/mpds159i/mpds159i.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "39917435-027b-4d55-810b-227b55e4d7ae")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "SOT - 0.6 mm max height"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e200eb72-6f1e-4544-afe1-5aa6a9231003")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -1.075 -0.9)
+		(end -0.6 -0.9)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e7cd87ed-223c-490e-a4d0-5a01547e816d")
+	)
+	(fp_line
+		(start -0.25 -0.8)
+		(end 0.25 -0.8)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e814e14c-01f3-43a7-9606-3c803550aa41")
+	)
+	(fp_line
+		(start -0.25 0.8)
+		(end -0.25 -0.8)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "213d493d-19ba-48c1-bee7-c85131185906")
+	)
+	(fp_line
+		(start 0.25 -0.8)
+		(end 0.25 0.8)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "73337922-e14c-41d9-8dc7-f5d5ae6ed440")
+	)
+	(fp_line
+		(start 0.25 0.8)
+		(end -0.25 0.8)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "68d873a1-569b-4860-8db4-cd3501dcec1f")
+	)
+	(fp_line
+		(start -1.225 -1)
+		(end 1.225 -1)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "3dd61a38-0e24-47ce-a0ad-4736b8b7ea2d")
+	)
+	(fp_line
+		(start -1.225 1)
+		(end -1.225 -1)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "fb31bc50-1e9c-427e-b19a-e197d413eb1c")
+	)
+	(fp_line
+		(start 1.225 -1)
+		(end 1.225 1)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "63c4cea8-6db2-4e1d-8bd4-d29cc911bed1")
+	)
+	(fp_line
+		(start 1.225 1)
+		(end -1.225 1)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "11e8e39b-9908-463f-9841-6ce04cf4babb")
+	)
+	(fp_line
+		(start -0.6 -0.8)
+		(end 0.6 -0.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "dc4f4db2-cc0e-46ff-8c32-dd838a8d0040")
+	)
+	(fp_line
+		(start -0.6 -0.3)
+		(end -0.1 -0.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "09423805-a7d7-4723-9b92-6aa98c622047")
+	)
+	(fp_line
+		(start -0.6 0.8)
+		(end -0.6 -0.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "27399f0e-d3c4-494f-b838-630367596e5b")
+	)
+	(fp_line
+		(start 0.6 -0.8)
+		(end 0.6 0.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "f1c6a575-c170-456b-886e-98a7a6b07017")
+	)
+	(fp_line
+		(start 0.6 0.8)
+		(end -0.6 0.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "48a013a6-1efe-460e-ba76-d06ec15da5c9")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0.154 -1.88 0)
+		(layer "F.Fab")
+		(uuid "410a2bd0-286f-43a3-82d7-51b41b306967")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -0.838 -0.5 90)
+		(size 0.3 0.475)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "419eb178-fa0e-4456-ace1-47562b11f1f5")
+	)
+	(pad "2" smd rect
+		(at -0.838 0 90)
+		(size 0.3 0.475)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "5dea52ac-ca7a-4edc-94a8-30bc3632c3dd")
+	)
+	(pad "3" smd rect
+		(at -0.838 0.5 90)
+		(size 0.3 0.475)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "f0654956-0a91-48a2-936c-9e33c514f372")
+	)
+	(pad "4" smd rect
+		(at 0.838 0.5 90)
+		(size 0.3 0.475)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "56f10b65-9e24-4dc5-8c1e-c0f4f5967ad7")
+	)
+	(pad "5" smd rect
+		(at 0.838 0 90)
+		(size 0.3 0.475)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "8616d0af-cd1a-433d-9903-af6a52cd23ec")
+	)
+	(pad "6" smd rect
+		(at 0.838 -0.5 90)
+		(size 0.3 0.475)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "455a2222-bcc6-4a13-a217-43207ab1a826")
+	)
+	(embedded_fonts no)
+	(model "${MIXLIB_KICAD_3DMODELS_DIR}/mixlib-vendor-ti.3dshapes/vendor-ti-DRL0006A.step"
+		(offset
+			(xyz 0 0.02 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+)
