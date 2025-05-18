@@ -21,23 +21,22 @@
       "showGrid": true,
       "traces": [
         {
-          "color": "rgb(231, 138, 195)",
-          "signal": "I(R2)",
-          "trace_type": 2050
-        },
-        {
           "color": "rgb(152, 78, 163)",
           "signal": "V(/VG)",
           "trace_type": 2049
         },
         {
-          "color": "rgb(252, 141, 98)",
-          "signal": "V(Net-_U1-+_)",
-          "trace_type": 2049
-        },
-        {
-          "color": "rgb(141, 160, 203)",
-          "signal": "V(Net-_U2--_)",
+          "color": "rgb(228, 26, 28)",
+          "cursor1": {
+            "position": 30.23574244415259,
+            "x_format": "3~V",
+            "y_format": "3~V"
+          },
+          "cursorD": {
+            "x_format": "3~s",
+            "y_format": "3~V"
+          },
+          "signal": "V(/VOUT)",
           "trace_type": 2049
         }
       ]

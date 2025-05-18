@@ -282,7 +282,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at 0 5.08 0)
+			(at 1.27 6.604 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -291,7 +291,7 @@
 			)
 		)
 		(property "Value" "ADA4522-2"
-			(at 0 -5.08 0)
+			(at -1.778 4.572 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -572,7 +572,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at 0 5.08 0)
+			(at 0.762 6.858 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -581,7 +581,7 @@
 			)
 		)
 		(property "Value" "ADA4522-4"
-			(at 0 -5.08 0)
+			(at -2.032 4.826 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2456,7 +2456,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "MCP6404"
@@ -3327,7 +3326,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "MCP6409"

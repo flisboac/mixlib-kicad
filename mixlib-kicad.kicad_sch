@@ -774,6 +774,191 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "mixlib-discrete-zener:BZT52Cxx"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "BZT52Cxx"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_SMD:D_SOD-123"
+				(at 0 -4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzt52b2v4.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "500mW Small Signal Zener Diodes, SOD-123"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Library" "${MIXLIB_KICAD_SPICE_DIR}/mixlib-discrete-zener/${Value}.cir"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Name" "${Value}"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "SUBCKT"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "zener diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "D?SOD?123*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "BZT52Cxx_0_1"
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27) (xy -0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "BZT52Cxx_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -895,6 +1080,12 @@
 		(uuid "616f078e-02b1-4e3b-a4da-c422ba1a1ba4")
 	)
 	(junction
+		(at 82.55 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "63a8e322-c23b-4f37-b440-ce2d5e7705d4")
+	)
+	(junction
 		(at 54.61 121.92)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -929,6 +1120,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d64c03a3-cb1d-4033-b643-553fa7f67a7d")
+	)
+	(junction
+		(at 82.55 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "da4482ef-39e2-4372-bf28-1d27644aead7")
 	)
 	(junction
 		(at 72.39 71.12)
@@ -978,6 +1175,16 @@
 	)
 	(wire
 		(pts
+			(xy 82.55 83.82) (xy 87.63 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0fcabc24-a314-4041-944e-6c3e16794874")
+	)
+	(wire
+		(pts
 			(xy 68.58 127) (xy 71.12 127)
 		)
 		(stroke
@@ -995,6 +1202,16 @@
 			(type default)
 		)
 		(uuid "212670b1-9741-4f3c-8289-7322bb8069a0")
+	)
+	(wire
+		(pts
+			(xy 82.55 74.93) (xy 82.55 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "285eae8f-b9a7-4112-87e8-2f48e0e98e9f")
 	)
 	(wire
 		(pts
@@ -1228,7 +1445,17 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 95.25) (xy 92.71 95.25)
+			(xy 82.55 82.55) (xy 82.55 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a54fb889-65d1-41be-9339-6b744cedbd03")
+	)
+	(wire
+		(pts
+			(xy 72.39 95.25) (xy 82.55 95.25)
 		)
 		(stroke
 			(width 0)
@@ -1258,6 +1485,16 @@
 	)
 	(wire
 		(pts
+			(xy 82.55 91.44) (xy 82.55 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b448d72c-4647-4aca-9b56-7957d8390fb3")
+	)
+	(wire
+		(pts
 			(xy 49.53 95.25) (xy 59.69 95.25)
 		)
 		(stroke
@@ -1268,7 +1505,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 71.12) (xy 76.2 71.12)
+			(xy 72.39 71.12) (xy 82.55 71.12)
 		)
 		(stroke
 			(width 0)
@@ -1295,6 +1532,16 @@
 			(type default)
 		)
 		(uuid "deba7597-b6ba-4ce4-9e27-114a3067648a")
+	)
+	(wire
+		(pts
+			(xy 82.55 83.82) (xy 82.55 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df4334c4-0259-45ed-a892-f043386eb6d8")
 	)
 	(wire
 		(pts
@@ -1325,6 +1572,16 @@
 			(type default)
 		)
 		(uuid "e6b906e8-c032-4a5f-a8fc-3cfa89bf3a14")
+	)
+	(wire
+		(pts
+			(xy 82.55 95.25) (xy 92.71 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec3dff80-2dc0-4fff-bf7f-70763004d8a7")
 	)
 	(wire
 		(pts
@@ -1375,6 +1632,16 @@
 			(justify left bottom)
 		)
 		(uuid "32d90bce-f023-482b-bf83-cae47857064d")
+	)
+	(label "VOUT"
+		(at 87.63 83.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "444c5fd3-985d-4902-91f3-16e10085e263")
 	)
 	(label "VCC"
 		(at 45.72 109.22 0)
@@ -1501,6 +1768,112 @@
 			(project ""
 				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
 					(reference "V1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "mixlib-discrete-zener:BZT52Cxx")
+		(at 82.55 78.74 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "10b42424-ab10-4c8a-a8c9-2a04cb0b0e16")
+		(property "Reference" "D1"
+			(at 85.09 77.4699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BZT52C3V3"
+			(at 85.09 80.0099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 78.105 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzt52b2v4.pdf"
+			(at 82.55 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "500mW Small Signal Zener Diodes, SOD-123"
+			(at 82.55 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "${MIXLIB_KICAD_SPICE_DIR}/mixlib-discrete-zener/BZT52C3V3.cir"
+			(at 82.55 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "BZT52C3V3"
+			(at 82.55 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 82.55 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 82.55 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c79606ba-bf73-4087-94ab-bf0b9a419ddc")
+		)
+		(pin "1"
+			(uuid "b99686d5-7bea-49fa-920e-ede5f5a2031d")
+		)
+		(instances
+			(project ""
+				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -2651,6 +3024,94 @@
 			(project ""
 				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
 					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 82.55 88.9 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ef16a8cd-e229-4062-9985-5d8ce1eb28d1")
+		(property "Reference" "R4"
+			(at 85.09 87.6299 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10k"
+			(at 85.09 90.1699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 82.55 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 82.55 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 82.55 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "R"
+			(at 82.55 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=+ 2=-"
+			(at 82.55 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "368466d9-e010-40d2-a7c7-d71e2d18bb7d")
+		)
+		(pin "2"
+			(uuid "8e859667-80d9-4f5e-a8ca-3f6add1b6b57")
+		)
+		(instances
+			(project "mixlib-kicad"
+				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
+					(reference "R4")
 					(unit 1)
 				)
 			)

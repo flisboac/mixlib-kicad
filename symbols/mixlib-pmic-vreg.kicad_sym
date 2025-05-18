@@ -470,7 +470,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -7.62 13.97 0)
+			(at -1.524 16.256 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -479,7 +479,7 @@
 			)
 		)
 		(property "Value" "TPS63060"
-			(at 2.54 13.97 0)
+			(at -0.254 13.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -787,7 +787,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -7.62 13.97 0)
+			(at -1.778 16.002 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -796,7 +796,7 @@
 			)
 		)
 		(property "Value" "TPS63070"
-			(at 2.54 13.97 0)
+			(at 0 13.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)

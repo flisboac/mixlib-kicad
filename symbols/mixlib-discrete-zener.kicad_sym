@@ -55,7 +55,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Library" "${MIXLIB_KICAD_SPICE_DIR}/spice/mixlib-discrete-zener/${Value}.cir"
+		(property "Sim.Library" "${MIXLIB_KICAD_SPICE_DIR}/mixlib-discrete-zener/${Value}.cir"
 			(at 0 0 0)
 			(effects
 				(font

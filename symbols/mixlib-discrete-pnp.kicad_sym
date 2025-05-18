@@ -9,7 +9,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "Q"
 			(at 2.794 1.778 0)
 			(effects
 				(font
@@ -749,7 +749,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "Q"
 			(at 3.302 1.524 0)
 			(effects
 				(font
@@ -975,8 +975,8 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
-			(at 2.794 1.778 0)
+		(property "Reference" "Q"
+			(at 3.302 1.524 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -984,7 +984,7 @@
 			)
 		)
 		(property "Value" "MMDT5401"
-			(at 6.35 -0.508 0)
+			(at 7.62 -0.762 0)
 			(effects
 				(font
 					(size 1.27 1.27)
