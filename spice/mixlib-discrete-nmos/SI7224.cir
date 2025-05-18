@@ -1,0 +1,71 @@
+*October 22, 2007
+*Doc. ID: 69444, S-72175, Rev. A
+*File Name: Si7224DN_PS.txt and Si7224DN_PS.lib
+*This document is intended as a SPICE modeling guideline and does not
+*constitute a commercial product data sheet.  Designers should refer to the
+*appropriate data sheet of the same number for guaranteed specification
+*limits.
+*Dn1 Gn1 Sn1 Dn2 Gn2 Sn2
+.SUBCKT Si7224DN S1 G1 S2 G2 D1 D2
+X1    D1 G1 S1 Si7224C1
+X2    D2 G2 S2 Si7224C2
+
+*Channel 1
+.SUBCKT Si7224C1 D G S
+M1  3  GX S S NMOS W=853312u L=0.25u     
+M2  S  GX S D PMOS W=853312u L=0.28u      
+RG  G  GX     3.3
+R1  D  3      RTEMP 13E-3
+CGS GX S      415E-12
+DBD S  D      DBD
+**************************************************************** 
+.MODEL  NMOS        NMOS ( LEVEL  = 3           TOX    = 5E-8
++ RS     = 12.8E-3         RD     = 0           NSUB   = 1.97E17   
++ kp     = 1.6E-5          UO     = 650             
++ VMAX   = 0               XJ     = 5E-7        KAPPA  = 7E-2
++ ETA    = 1E-4            TPG    = 1  
++ IS     = 0               LD     = 0                             
++ CGSO   = 0               CGDO   = 0           CGBO   = 0 
++ NFS    = 0.8E12          DELTA  = 0.1)
+**************************************************************** 
+.MODEL  PMOS        PMOS ( LEVEL  = 3           TOX    = 5E-8
++NSUB    = 4E16            IS     = 0		TPG    = -1)   
+**************************************************************** 
+.MODEL DBD D (CJO=180E-12 VJ=0.38 M=0.35 
++FC=0.5 TT=1.34e-08 T_MEASURED=25 BV=31 
++RS=1.107e-02 N=1.287 IS=1.935e-10 IKF=1000
++EG=1.193 XTI=7.329e-01 TRS1=2.941e-03 )
+**************************************************************** 
+.MODEL RTEMP RES (TC1=9E-3 TC2=5.5E-6)
+**************************************************************** 
+.ENDS Si7224C1
+*Channel 2
+.SUBCKT Si7224C2 D G S
+M1  3  GX S S NMOS W=1239969u L=0.25u     
+M2  S  GX S D PMOS W=1239969u L=0.28u      
+RG  G  GX     2.7
+R1  D  3      RTEMP 9.7E-3
+CGS GX S      415E-12
+DBD S  D      DBD
+**************************************************************** 
+.MODEL  NMOS        NMOS ( LEVEL  = 3           TOX    = 5E-8
++ RS     = 9E-3            RD     = 0           NSUB   = 3E17   
++ kp     = 1.4E-5          UO     = 650             
++ VMAX   = 0               XJ     = 5E-7        KAPPA  = 7E-2
++ ETA    = 1E-4            TPG    = 1  
++ IS     = 0               LD     = 0                             
++ CGSO   = 0               CGDO   = 0           CGBO   = 0 
++ NFS    = 0.8E12          DELTA  = 0.1)
+**************************************************************** 
+.MODEL  PMOS        PMOS ( LEVEL  = 3           TOX    = 5E-8
++NSUB    = 4E16            IS     = 0		TPG    = -1)   
+**************************************************************** 
+.MODEL DBD D (CJO=160E-12 VJ=0.38 M=0.33 
++FC=0.5 TT=1.2e-08 T_MEASURED=25 BV=31 
++RS=1.019e-02 N=1.155 IS=1.491e-11 IKF=1000
++EG=1.197 XTI=1.452 TRS1=3.311e-03 )
+**************************************************************** 
+.MODEL RTEMP RES (TC1=8E-3 TC2=5.5E-6)
+**************************************************************** 
+.ENDS Si7224C2
+.ENDS Si7224DN 

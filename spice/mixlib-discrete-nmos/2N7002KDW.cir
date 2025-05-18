@@ -1,0 +1,89 @@
+***********************************************************************
+***********           PANJIT International Inc.             ***********
+***********************************************************************
+*Jun 13, 2017                                                         *
+*                                                                     *
+*This SPICE Model describes the characteristics of a typical device   *
+*and does not respresent the specification. Designer should refer to  *
+*the same type name data sheet for specification limits.              *
+***********************************************************************
+*$
+.subckt 2N7002KDW-AU S1 G1 D2 S2 G2 D1
+x1 D1 G1 S1 unit
+x2 D2 G2 S2 unit
+
+.subckt unit d g s
+*drain side network
+ld1 d 5 1e-12
+rd1 d 5 1e-6
+rd 5 3 1.55 tc=4.5e-3,2.00e-5
+*gate side network 
+lg1 g 1 1e-12
+rg1 g 1 1e-6
+rg 1 2 1
+*source side network
+ls1 s 7 1e-12
+rs1 s 7 1e-6
+rs 6 7 1e-6
+*body diode network
+dbd 6 8 dbd
+rbd 8 5 1e-6
+m1 3 2 6 6 dmos l=1u w=60475u m=1
++as=0 ad=0 ps=0 pd=0
+cgs 2 6 6.84e-11
+* cgd network
+c11    11   12   9e-9
+v11    11   0   0vdc
+g11    2 3 value { v(13, 0)*i(v11)*1e12 }
+e11    12   0  2 3  1
+e12    13   0  table {v(12)}       
++ 0      0
++ 0.5    1e-15
++ 1      1e-15
++ 2      2e-15
++ 3      2e-15
++ 4      3e-15
++ 5      3e-15
++ 6      3.33333e-15
++ 7      4e-15
++ 8      4e-15
++ 9      5e-15
++ 10     5e-15
++ 15     6e-15
++ 20     6e-15
++ 25     7e-15
++ 30     7e-15
+.model dmos nmos (level = 7                    
++tox = 6e-8                    
++vth0 = 0.938164               dvt0 = 2.2                    dvt1 = 0.53                   
++dvt2 = -0.032                 
++u0 = 1.871566e-3              ua = -4.41048e-9              ub = -5.432361e-17            
++vsat = 7.456868e3             a0 = 6.80087e-2               ags = 2.590318                
++a2 = 1                        rdsw = 0                      
++voff = -0.08                  nfactor = 1                   eta0 = 0.08                   
++cit = 0                       cdsc = 2.4e-4                 cdscb = 0                     
++cdscd = 0                     
++pclm = 0.15                   pdiblc1 = 0.2                   pdiblc2 = 8.955663e-3         
++pdiblcb = 0                   pscbe1 = 4.24e10              pscbe2 = 0                    
++cgso = 0                      cgdo = 0                      cgbo = 0                      
++rd = 0                        rs = 0                        cj = 8.42957e-10              
++mj = 0.529306                 cjsw = 3.68285e-10            js = 1.65e-5                  
++jsw = 3.3e-8                   pb = 0.8               
++tnom = 25                     ute = -2.574126               kt1 = -1.1
++ua1 = -8.087177e-9            ub1 = -7.609404e-18           at = 6e3               
++prt = 0              )
+**body diode**
+.model dbd d
+***** dc model parameter ***
++is = 1.180237e-14             n = 1.018047                  rs = 0.15                     
++bv = 66                            ibv = 250e-6
+***** capacitance parameter ***
++tt = 0                        cjo = 2.519177e-14             vj = 0.632546                 
++m = 0.366044                 fc = 0.535715                 
+***** temperature coefficient ***
++tnom = 25                     
++eg = 1.172944                 trs1 = 2.15686e-3  
+.ends unit
+
+.ends 2N7002KDW-AU
+*$

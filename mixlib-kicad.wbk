@@ -4,7 +4,7 @@
     {
       "analysis": "DC",
       "commands": [
-        ".dc V1 100m 5 100u",
+        ".dc V1 100m 30 100m",
         ".kicad adjustpaths",
         ".save all",
         ".probe alli",
@@ -26,23 +26,8 @@
           "trace_type": 2049
         },
         {
-          "color": "rgb(166, 216, 84)",
-          "signal": "V(/VOUT1)",
-          "trace_type": 2049
-        },
-        {
-          "color": "rgb(255, 217, 47)",
-          "signal": "V(/VOUT2)",
-          "trace_type": 2049
-        },
-        {
-          "color": "rgb(102, 194, 165)",
-          "signal": "V(Net-_U1-+_)",
-          "trace_type": 2049
-        },
-        {
-          "color": "rgb(252, 141, 98)",
-          "signal": "V(Net-_U2--_)",
+          "color": "rgb(179, 179, 179)",
+          "signal": "V(Net-_Q2-S_)",
           "trace_type": 2049
         }
       ]
