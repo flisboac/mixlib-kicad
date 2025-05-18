@@ -533,57 +533,54 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "mixlib-discrete-mosfet:DMT6005LPS"
+		(symbol "mixlib-discrete-npn:MMBT5551L"
 			(pin_names
+				(offset 0)
 				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "Q"
-				(at 3.302 2.032 0)
+				(at 5.08 1.905 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Value" "DMT6005LPS"
-				(at 8.636 -0.508 0)
+			(property "Value" "MMBT5551L"
+				(at 5.08 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Footprint" "mixlib-discrete-mosfet:POWERDI5060-8"
-				(at 0 -10.16 0)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+				(at 5.08 -1.905 0)
 				(effects
 					(font
 						(size 1.27 1.27)
+						(italic yes)
 					)
+					(justify left)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMT6005LPS.pdf"
-				(at -0.254 -9.398 0)
+			(property "Datasheet" "www.onsemi.com/pub/Collateral/MMBT5550LT1-D.PDF"
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 					(hide yes)
 				)
 			)
-			(property "Description" "60V N-CHANNEL ENHANCEMENT MODE MOSFET in a PowerDI5060-8 Package"
-				(at 0.762 -11.176 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Library" "${MIXLIB_KICAD_SPICE_DIR}/mixlib-discrete-nmos/DMT6005LPS.cir"
+			(property "Description" "0.6A Ic, 160V Vce, NPN Transistor, SOT-23"
 				(at 0 0 0)
 				(effects
 					(font
@@ -592,7 +589,16 @@
 					(hide yes)
 				)
 			)
-			(property "Sim.Name" "DMT6005LPS"
+			(property "Sim.Library" "${MIXLIB_KICAD_SPICE_DIR}/mixlib-discrete-npn/MMBT5551L.cir"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Name" "MMBT5551L"
 				(at 0 0 0)
 				(effects
 					(font
@@ -610,7 +616,7 @@
 					(hide yes)
 				)
 			)
-			(property "Sim.Pins" "1=S1 2=S2 3=S3 4=G 5=D"
+			(property "Sim.Pins" "1=B 2=E 3=C"
 				(at 0 0 0)
 				(effects
 					(font
@@ -619,22 +625,28 @@
 					(hide yes)
 				)
 			)
-			(symbol "DMT6005LPS_0_1"
-				(polyline
-					(pts
-						(xy -2.286 1.905) (xy -2.286 -1.905)
+			(property "ki_keywords" "NPN Transistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
+					(hide yes)
 				)
+			)
+			(property "ki_fp_filters" "SOT?23*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MMBT5551L_0_1"
 				(polyline
 					(pts
-						(xy -2.286 0) (xy -5.08 0)
+						(xy -2.54 0) (xy 0.635 0)
 					)
 					(stroke
 						(width 0)
@@ -646,81 +658,10 @@
 				)
 				(polyline
 					(pts
-						(xy -1.778 2.286) (xy -1.778 1.27)
+						(xy 0.635 1.905) (xy 0.635 -1.905)
 					)
 					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 0.508) (xy -1.778 -0.508)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 -1.27) (xy -1.778 -2.286)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 -1.778) (xy 0.762 -1.778) (xy 0.762 1.778) (xy -1.778 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.524 0) (xy -0.508 0.381) (xy -0.508 -0.381) (xy -1.524 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center -0.889 0)
-					(radius 2.794)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0 1.778)
-					)
-					(stroke
-						(width 0)
+						(width 0.508)
 						(type default)
 					)
 					(fill
@@ -728,57 +669,10 @@
 					)
 				)
 				(circle
-					(center 0 1.778)
-					(radius 0.254)
+					(center 1.27 0)
+					(radius 2.8194)
 					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 0 -1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -2.54) (xy 0 0) (xy -1.778 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 0.508) (xy 0.381 0.381) (xy 1.143 0.381) (xy 1.27 0.254)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 0.381) (xy 0.381 -0.254) (xy 1.143 -0.254) (xy 0.762 0.381)
-					)
-					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -786,47 +680,47 @@
 					)
 				)
 			)
-			(symbol "DMT6005LPS_1_1"
+			(symbol "MMBT5551L_1_1"
+				(polyline
+					(pts
+						(xy 0.635 0.635) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 -0.635) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.778) (xy 1.778 -1.27) (xy 2.286 -2.286) (xy 1.27 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
 				(pin input line
-					(at -7.62 0 0)
+					(at -5.08 0 0)
 					(length 2.54)
-					(name "G"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 5.08 270)
-					(length 2.54)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(name "S"
+					(name "B"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -842,27 +736,9 @@
 					)
 				)
 				(pin passive line
-					(at 0 -5.08 90)
+					(at 2.54 5.08 270)
 					(length 2.54)
-					(name "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(name "S"
+					(name "C"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -877,321 +753,10 @@
 						)
 					)
 				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "mixlib-discrete-mosfet:STL130N6F7"
-			(pin_names
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "Q"
-				(at 3.302 2.032 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "STL130N6F7"
-				(at 8.636 -0.508 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "mixlib-discrete-mosfet:POWERFLAT_5X6_C_STM"
-				(at 0 -10.16 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.st.com/resource/en/datasheet/stl130n6f7.pdf"
-				(at -0.254 -9.398 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "N-channel 60 V, 0.003 Ω typ., 130 A STripFET F7 Power MOSFET in a PowerFLAT 5x6 package"
-				(at 0.762 -11.176 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Library" "${MIXLIB_KICAD_SPICE_DIR}/mixlib-discrete-nmos/STL130N6F7.cir"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Name" "STL130N6F7"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Device" "SUBCKT"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Pins" "1=S1 2=S2 3=S3 4=G 5=D"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "STL130N6F7_0_1"
-				(polyline
-					(pts
-						(xy -2.286 1.905) (xy -2.286 -1.905)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.286 0) (xy -5.08 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 2.286) (xy -1.778 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 0.508) (xy -1.778 -0.508)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 -1.27) (xy -1.778 -2.286)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 -1.778) (xy 0.762 -1.778) (xy 0.762 1.778) (xy -1.778 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.524 0) (xy -0.508 0.381) (xy -0.508 -0.381) (xy -1.524 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center -0.889 0)
-					(radius 2.794)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 0 -1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -2.54) (xy 0 0) (xy -1.778 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 0.508) (xy 0.381 0.381) (xy 1.143 0.381) (xy 1.27 0.254)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 0.381) (xy 0.381 -0.254) (xy 1.143 -0.254) (xy 0.762 0.381)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "STL130N6F7_1_1"
-				(pin input line
-					(at -7.62 0 0)
-					(length 2.54)
-					(name "G"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin passive line
-					(at 0 5.08 270)
+					(at 2.54 -5.08 90)
 					(length 2.54)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(name "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(name "S"
+					(name "E"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1199,24 +764,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(name "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1336,12 +883,6 @@
 		(uuid "3cc5c76e-57c1-468f-83ae-ab09c47676bd")
 	)
 	(junction
-		(at 92.71 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "574f252e-d5f2-49be-82ac-ee1cd4c4ada6")
-	)
-	(junction
 		(at 54.61 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1352,12 +893,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "616f078e-02b1-4e3b-a4da-c422ba1a1ba4")
-	)
-	(junction
-		(at 76.2 71.12)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "880114e0-170c-4b82-aa3e-52f2b32822ac")
 	)
 	(junction
 		(at 54.61 121.92)
@@ -1378,34 +913,16 @@
 		(uuid "8d1bb29d-15b7-4e55-acd6-045f3720ce23")
 	)
 	(junction
-		(at 120.65 67.31)
+		(at 77.47 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "917ce26e-90f6-427d-afc9-1dacb238d011")
+		(uuid "95cdff46-c962-4836-913c-30a59618511c")
 	)
 	(junction
 		(at 72.39 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a23d60f4-9919-412d-8d45-6a6e83965f03")
-	)
-	(junction
-		(at 92.71 67.31)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a444e0d2-d5f6-4f97-9198-ae9c5fcb9d4c")
-	)
-	(junction
-		(at 120.65 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a7af1177-4ad0-4119-9b62-97c6bbe60e43")
-	)
-	(junction
-		(at 106.68 71.12)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b0dbf7c1-213d-4d06-bba6-dce3f0cea9f4")
 	)
 	(junction
 		(at 59.69 67.31)
@@ -1418,6 +935,16 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f9f93cb8-d32a-4df3-b217-2c673e11783f")
+	)
+	(wire
+		(pts
+			(xy 107.95 116.84) (xy 107.95 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02f9fa28-5e5c-4ba5-8bd6-0564ad245ff7")
 	)
 	(wire
 		(pts
@@ -1441,6 +968,16 @@
 	)
 	(wire
 		(pts
+			(xy 107.95 151.13) (xy 107.95 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b49925f-eac7-4794-b03a-0f7e64f6d4ff")
+	)
+	(wire
+		(pts
 			(xy 68.58 127) (xy 71.12 127)
 		)
 		(stroke
@@ -1458,16 +995,6 @@
 			(type default)
 		)
 		(uuid "212670b1-9741-4f3c-8289-7322bb8069a0")
-	)
-	(wire
-		(pts
-			(xy 92.71 80.01) (xy 92.71 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "21d70a98-4258-4d04-a5d7-4adfbfe25194")
 	)
 	(wire
 		(pts
@@ -1501,16 +1028,6 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 71.12) (xy 106.68 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2f07e8ae-1d92-4dc8-9b7e-69064f42d7a7")
-	)
-	(wire
-		(pts
 			(xy 54.61 135.89) (xy 54.61 148.59)
 		)
 		(stroke
@@ -1518,6 +1035,16 @@
 			(type default)
 		)
 		(uuid "361aad02-886d-4ebe-a610-cb0fcefb8562")
+	)
+	(wire
+		(pts
+			(xy 88.9 124.46) (xy 86.36 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38882460-fe95-4c7c-8463-c8e891cb0917")
 	)
 	(wire
 		(pts
@@ -1531,23 +1058,13 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 92.71) (xy 120.65 95.25)
+			(xy 107.95 129.54) (xy 107.95 140.97)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "45e5e8e4-89a6-4f79-8593-8a9ef345c87f")
-	)
-	(wire
-		(pts
-			(xy 85.09 80.01) (xy 85.09 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4f40f662-e87b-43cc-9304-563720460e92")
+		(uuid "5244189b-b717-4100-9db3-7ce6e9ce0509")
 	)
 	(wire
 		(pts
@@ -1601,27 +1118,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 67.31) (xy 92.71 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5e83b1d4-7b3d-4056-93e7-f7424c3a0915")
-	)
-	(wire
-		(pts
-			(xy 106.68 71.12) (xy 76.2 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "612fa7b3-dfe3-4319-bbf6-26839963005c")
-	)
-	(wire
-		(pts
-			(xy 96.52 146.05) (xy 86.36 146.05)
+			(xy 93.98 146.05) (xy 100.33 146.05)
 		)
 		(stroke
 			(width 0)
@@ -1651,16 +1148,6 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 80.01) (xy 85.09 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6f01497d-629c-4de7-8311-60d047637456")
-	)
-	(wire
-		(pts
 			(xy 59.69 67.31) (xy 59.69 59.69)
 		)
 		(stroke
@@ -1681,16 +1168,6 @@
 	)
 	(wire
 		(pts
-			(xy 127 67.31) (xy 120.65 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7be0c6d6-35f2-4c12-a11f-7d4f10ba8643")
-	)
-	(wire
-		(pts
 			(xy 54.61 156.21) (xy 54.61 154.94)
 		)
 		(stroke
@@ -1701,23 +1178,13 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 149.86) (xy 107.95 124.46)
+			(xy 100.33 124.46) (xy 93.98 124.46)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "868b047a-5787-4dd0-ba6e-f6145f19a898")
-	)
-	(wire
-		(pts
-			(xy 120.65 78.74) (xy 120.65 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8b1a7156-6b0c-489c-ad75-f5fbbbafae81")
+		(uuid "80d68501-e273-4007-8fe3-bbb18a5088d3")
 	)
 	(wire
 		(pts
@@ -1731,26 +1198,6 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 93.98) (xy 92.71 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "911f9e12-1442-4b54-a4f9-d4cf5e07913d")
-	)
-	(wire
-		(pts
-			(xy 77.47 80.01) (xy 76.2 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "930af21e-3749-488a-8bdd-489f1c37dacf")
-	)
-	(wire
-		(pts
 			(xy 71.12 143.51) (xy 68.58 143.51)
 		)
 		(stroke
@@ -1758,6 +1205,16 @@
 			(type default)
 		)
 		(uuid "97f85288-de9a-4985-a66b-7e6acf6d1508")
+	)
+	(wire
+		(pts
+			(xy 107.95 109.22) (xy 77.47 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b929b42-09e1-485f-92fc-7da308b23a83")
 	)
 	(wire
 		(pts
@@ -1781,13 +1238,13 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 95.25) (xy 127 95.25)
+			(xy 88.9 146.05) (xy 86.36 146.05)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ad7222bb-ee5e-4913-9cf5-2c059f006a94")
+		(uuid "b19b9241-d8d6-4a10-a883-73ddcd68e188")
 	)
 	(wire
 		(pts
@@ -1801,16 +1258,6 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 95.25) (xy 120.65 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b5851916-4dc9-4220-94eb-0e56943820e6")
-	)
-	(wire
-		(pts
 			(xy 49.53 95.25) (xy 59.69 95.25)
 		)
 		(stroke
@@ -1818,16 +1265,6 @@
 			(type default)
 		)
 		(uuid "c54e1c80-fe7f-4313-a2fc-b4db42937453")
-	)
-	(wire
-		(pts
-			(xy 107.95 71.12) (xy 106.68 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cfa19232-e498-4c01-9fcc-2176fafc0eaf")
 	)
 	(wire
 		(pts
@@ -1871,13 +1308,13 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 80.01) (xy 76.2 71.12)
+			(xy 107.95 111.76) (xy 107.95 109.22)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e297dbfc-8d80-4e51-85c8-c2aefe736fdd")
+		(uuid "e13cbe2a-b8c6-4ca6-9189-953f03f7bde6")
 	)
 	(wire
 		(pts
@@ -1891,26 +1328,6 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 87.63) (xy 113.03 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ecff7242-9cba-4051-8abb-e41be19ebaf3")
-	)
-	(wire
-		(pts
-			(xy 92.71 67.31) (xy 92.71 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f1cf7aff-912e-4d16-a9be-d346f6be6aef")
-	)
-	(wire
-		(pts
 			(xy 77.47 156.21) (xy 77.47 153.67)
 		)
 		(stroke
@@ -1918,26 +1335,6 @@
 			(type default)
 		)
 		(uuid "f1ecf5e0-9435-4294-b7d4-8584dd03c623")
-	)
-	(wire
-		(pts
-			(xy 96.52 149.86) (xy 96.52 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f37f8636-e04d-47cb-92a6-99dc2da07eaa")
-	)
-	(wire
-		(pts
-			(xy 120.65 67.31) (xy 120.65 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f6200419-a411-4aae-9570-47292c0791ad")
 	)
 	(wire
 		(pts
@@ -1959,16 +1356,6 @@
 		)
 		(uuid "ff86c623-14f4-4ed7-a983-439ea46f3a4b")
 	)
-	(wire
-		(pts
-			(xy 107.95 124.46) (xy 86.36 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ff8f36ed-928c-4351-baac-c2d413c3a988")
-	)
 	(label "VG"
 		(at 67.31 71.12 0)
 		(effects
@@ -1988,26 +1375,6 @@
 			(justify left bottom)
 		)
 		(uuid "32d90bce-f023-482b-bf83-cae47857064d")
-	)
-	(label "VOUT2"
-		(at 91.44 146.05 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "56b2b841-047d-466f-95ca-9fa08c0093fe")
-	)
-	(label "VOUT1"
-		(at 101.6 124.46 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "757f9a3e-b01f-43bf-902d-36edb4960ca0")
 	)
 	(label "VCC"
 		(at 45.72 109.22 0)
@@ -2141,6 +1508,92 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
+		(at 91.44 124.46 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "19ac15ad-412d-4bec-b34f-5f408eb61a84")
+		(property "Reference" "R3"
+			(at 91.44 129.54 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 91.44 127 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 91.44 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 91.44 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 91.44 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "R"
+			(at 91.44 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=+ 2=-"
+			(at 91.44 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2523019a-72c0-469a-8b37-1f1ca2becd68")
+		)
+		(pin "2"
+			(uuid "38dd79af-d8a7-4d89-9e48-594ca9f37028")
+		)
+		(instances
+			(project "mixlib-kicad"
+				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
 		(at 54.61 152.4 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2222,6 +1675,94 @@
 			(project "mixlib-kicad"
 				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
 					(reference "R13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 107.95 114.3 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4b489fb8-97d5-4fd1-9943-dbbba526f51a")
+		(property "Reference" "R2"
+			(at 110.49 113.0299 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10k"
+			(at 110.49 115.5699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 107.95 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 107.95 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 107.95 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "R"
+			(at 107.95 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=+ 2=-"
+			(at 107.95 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7191e486-8a15-4816-a0b2-174c92537d87")
+		)
+		(pin "2"
+			(uuid "48a83768-1483-407a-aff2-2521b83486ad")
+		)
+		(instances
+			(project "mixlib-kicad"
+				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -2383,382 +1924,32 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 80.01 80.01 90)
+		(at 91.44 146.05 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "62570b91-f807-4c68-82c7-1ea6a0f0ee1a")
-		(property "Reference" "R3"
-			(at 80.01 74.93 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Value" "22"
-			(at 80.01 77.47 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 80.01 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 80.01 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 80.01 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "R"
-			(at 80.01 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=+ 2=-"
-			(at 80.01 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8e065daf-c837-4113-8c45-493968cd420b")
-		)
-		(pin "2"
-			(uuid "4c6a5ba8-d8da-4247-9067-78ec3f50199f")
-		)
-		(instances
-			(project "mixlib-kicad"
-				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
-					(reference "R3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 120.65 76.2 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6dfc9080-778a-4d40-af52-66c6a69a8eb5")
-		(property "Reference" "R4"
-			(at 123.19 74.9299 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "5k"
-			(at 123.19 77.4699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 120.65 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 120.65 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 120.65 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "R"
-			(at 120.65 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=+ 2=-"
-			(at 120.65 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "621a48a6-8cbf-4558-a8fd-782194882ec5")
-		)
-		(pin "2"
-			(uuid "a7f69913-b021-408d-8620-5e12293881fe")
-		)
-		(instances
-			(project "mixlib-kicad"
-				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
-					(reference "R4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 109.22 87.63 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7281a760-92db-4774-a4c2-a984a397a4f9")
-		(property "Reference" "R6"
-			(at 109.22 82.55 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Value" "22"
-			(at 109.22 85.09 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 109.22 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 109.22 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 109.22 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "R"
-			(at 109.22 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=+ 2=-"
-			(at 109.22 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ca7d8c64-971f-4204-bcbc-fd6fbcfaa03f")
-		)
-		(pin "2"
-			(uuid "e4144b4e-a182-48bd-8f90-60078c44f060")
-		)
-		(instances
-			(project "mixlib-kicad"
-				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
-					(reference "R6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 107.95 152.4 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "78b03adf-d384-4404-9e6a-63a891146511")
-		(property "Reference" "R2"
-			(at 110.49 151.1299 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "10k"
-			(at 110.49 153.6699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 107.95 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 107.95 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 107.95 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "R"
-			(at 107.95 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=+ 2=-"
-			(at 107.95 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a0b68a78-66a8-47b4-9a7c-83fe8253d3e4")
-		)
-		(pin "2"
-			(uuid "5db7fd69-3075-428e-9dc4-9826d169b3c4")
-		)
-		(instances
-			(project "mixlib-kicad"
-				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
-					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 96.52 152.4 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "824d6f28-6c88-42ff-a128-0b808b7304c3")
 		(property "Reference" "R1"
-			(at 99.06 151.1299 0)
+			(at 91.44 151.13 90)
 			(effects
 				(font
 					(size 1.016 1.016)
 				)
-				(justify right)
 			)
 		)
 		(property "Value" "10k"
-			(at 99.06 153.6699 0)
+			(at 91.44 148.59 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 96.52 152.4 0)
+			(at 91.44 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2767,7 +1958,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 96.52 152.4 0)
+			(at 91.44 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2776,7 +1967,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 96.52 152.4 0)
+			(at 91.44 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2785,7 +1976,7 @@
 			)
 		)
 		(property "Sim.Device" "R"
-			(at 96.52 152.4 0)
+			(at 91.44 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2794,7 +1985,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=+ 2=-"
-			(at 96.52 152.4 0)
+			(at 91.44 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2812,6 +2003,118 @@
 			(project "mixlib-kicad"
 				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
 					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "mixlib-discrete-npn:MMBT5551L")
+		(at 105.41 146.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8444ea96-3931-4a66-a9e8-5f18071a9fee")
+		(property "Reference" "Q2"
+			(at 110.49 144.7799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MMBT5551L"
+			(at 110.49 147.3199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 110.49 147.955 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "www.onsemi.com/pub/Collateral/MMBT5550LT1-D.PDF"
+			(at 105.41 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.6A Ic, 160V Vce, NPN Transistor, SOT-23"
+			(at 105.41 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "${MIXLIB_KICAD_SPICE_DIR}/mixlib-discrete-npn/MMBT5551L.cir"
+			(at 105.41 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "MMBT5551L"
+			(at 105.41 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 105.41 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=B 2=E 3=C"
+			(at 105.41 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8f10208d-b932-44bd-aad0-8406a5454c0d")
+		)
+		(pin "3"
+			(uuid "e3c55801-22c6-43e3-b73d-51da9475896f")
+		)
+		(pin "1"
+			(uuid "b7503a47-460f-4fa4-9e11-1f029575221b")
+		)
+		(instances
+			(project "mixlib-kicad"
+				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
+					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -2878,209 +2181,6 @@
 			(project "mixlib-kicad"
 				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
 					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "mixlib-discrete-mosfet:DMT6005LPS")
-		(at 120.65 87.63 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8b5ac0ab-cc29-4328-9e80-17b95679c25c")
-		(property "Reference" "Q1"
-			(at 124.46 88.9001 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "DMT6005LPS"
-			(at 124.46 86.3601 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "mixlib-discrete-mosfet:POWERDI5060-8"
-			(at 120.65 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMT6005LPS.pdf"
-			(at 120.396 78.232 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "60V N-CHANNEL ENHANCEMENT MODE MOSFET in a PowerDI5060-8 Package"
-			(at 121.412 76.454 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Library" "${MIXLIB_KICAD_SPICE_DIR}/mixlib-discrete-nmos/DMT6005LPS.cir"
-			(at 120.65 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Name" "DMT6005LPS"
-			(at 120.65 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "SUBCKT"
-			(at 120.65 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=S1 2=S2 3=S3 4=G 5=D"
-			(at 120.65 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "95124819-993b-4978-8ebe-8512eb398f4a")
-		)
-		(pin "5"
-			(uuid "50889dba-8640-4f7f-b89e-a905eb0d42b2")
-		)
-		(pin "3"
-			(uuid "5b37aa69-ae9c-4618-97d8-8ab25ade976b")
-		)
-		(pin "2"
-			(uuid "87ad8300-8d49-42f3-9752-05e8651b89d5")
-		)
-		(pin "1"
-			(uuid "76c4a6cb-e8b0-4d2f-83f9-473df34f20ce")
-		)
-		(instances
-			(project ""
-				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
-					(reference "Q1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 92.71 77.47 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8c6e9a69-2556-4f5d-8067-dbdde2183eeb")
-		(property "Reference" "R5"
-			(at 95.25 76.1999 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "1k"
-			(at 95.25 78.7399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 92.71 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 92.71 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 92.71 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "R"
-			(at 92.71 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=+ 2=-"
-			(at 92.71 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "73ac9245-5434-4f48-a7e4-bd84b45e9dbb")
-		)
-		(pin "2"
-			(uuid "59948751-c1bc-4c0b-8d47-29a9ae5c6ebe")
-		)
-		(instances
-			(project "mixlib-kicad"
-				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
-					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -3267,72 +2367,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 96.52 154.94 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a42e90f2-6e4d-4a52-93a3-2eb8b49623a7")
-		(property "Reference" "#PWR05"
-			(at 96.52 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 96.52 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 96.52 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 96.52 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 96.52 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a339d86a-6486-47d8-9f5d-fc858494e71e")
-		)
-		(instances
-			(project "mixlib-kicad"
-				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
-					(reference "#PWR05")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 107.95 154.94 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3398,17 +2432,17 @@
 		)
 	)
 	(symbol
-		(lib_id "mixlib-discrete-mosfet:STL130N6F7")
-		(at 92.71 88.9 0)
-		(mirror x)
+		(lib_id "mixlib-discrete-npn:MMBT5551L")
+		(at 105.41 124.46 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "c80ee9d5-47d1-482b-84df-1a87d85f4f5f")
-		(property "Reference" "Q2"
-			(at 96.52 90.1701 0)
+		(fields_autoplaced yes)
+		(uuid "bf11e447-cd05-45dc-b679-741499c39e07")
+		(property "Reference" "Q1"
+			(at 110.49 123.1899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3416,8 +2450,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "STL130N6F7"
-			(at 96.52 87.6301 0)
+		(property "Value" "MMBT5551L"
+			(at 110.49 125.7299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3425,8 +2459,29 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "mixlib-discrete-mosfet:POWERFLAT_5X6_C_STM"
-			(at 92.71 78.74 0)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 110.49 126.365 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "www.onsemi.com/pub/Collateral/MMBT5550LT1-D.PDF"
+			(at 105.41 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.6A Ic, 160V Vce, NPN Transistor, SOT-23"
+			(at 105.41 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3434,8 +2489,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stl130n6f7.pdf"
-			(at 92.456 79.502 0)
+		(property "Sim.Library" "${MIXLIB_KICAD_SPICE_DIR}/mixlib-discrete-npn/MMBT5551L.cir"
+			(at 105.41 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3443,26 +2498,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "N-channel 60 V, 0.003 Ω typ., 130 A STripFET F7 Power MOSFET in a PowerFLAT 5x6 package"
-			(at 93.472 77.724 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Library" "${MIXLIB_KICAD_SPICE_DIR}/mixlib-discrete-nmos/STL130N6F7.cir"
-			(at 92.71 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Name" "STL130N6F7"
-			(at 92.71 88.9 0)
+		(property "Sim.Name" "MMBT5551L"
+			(at 105.41 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3471,7 +2508,7 @@
 			)
 		)
 		(property "Sim.Device" "SUBCKT"
-			(at 92.71 88.9 0)
+			(at 105.41 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3479,34 +2516,28 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Pins" "1=S1 2=S2 3=S3 4=G 5=D"
-			(at 92.71 88.9 0)
+		(property "Sim.Pins" "1=B 2=E 3=C"
+			(at 105.41 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "1"
-			(uuid "bfad228e-c9c1-4dda-9107-0bc27debea2f")
-		)
-		(pin "4"
-			(uuid "46966063-a936-4bfa-a3b4-d9c28248208a")
-		)
-		(pin "3"
-			(uuid "887a5556-3887-4e5d-92c3-9b0758ed6ae8")
-		)
-		(pin "5"
-			(uuid "4e2b4901-aa28-4229-a325-ef3140709d1d")
 		)
 		(pin "2"
-			(uuid "d734c532-8d41-4935-b27e-c992b61c6e19")
+			(uuid "8420cafa-b032-475e-b9f9-b2fb683f1100")
+		)
+		(pin "3"
+			(uuid "4739421a-19ec-4f75-bad4-ad83f1a8f4e2")
+		)
+		(pin "1"
+			(uuid "91ab37f8-7352-4858-b89a-dfc4c36d4a0a")
 		)
 		(instances
-			(project "mixlib-kicad"
+			(project ""
 				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
-					(reference "Q2")
+					(reference "Q1")
 					(unit 1)
 				)
 			)

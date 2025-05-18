@@ -21,13 +21,23 @@
       "showGrid": true,
       "traces": [
         {
+          "color": "rgb(231, 138, 195)",
+          "signal": "I(R2)",
+          "trace_type": 2050
+        },
+        {
           "color": "rgb(152, 78, 163)",
           "signal": "V(/VG)",
           "trace_type": 2049
         },
         {
-          "color": "rgb(179, 179, 179)",
-          "signal": "V(Net-_Q2-S_)",
+          "color": "rgb(252, 141, 98)",
+          "signal": "V(Net-_U1-+_)",
+          "trace_type": 2049
+        },
+        {
+          "color": "rgb(141, 160, 203)",
+          "signal": "V(Net-_U2--_)",
           "trace_type": 2049
         }
       ]
