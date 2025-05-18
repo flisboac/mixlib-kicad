@@ -23,4 +23,5 @@
   (lib (name "mixlib-discrete-npn")(type "KiCad")(uri "${KIPRJMOD}/symbols/mixlib-discrete-npn.kicad_sym")(options "")(descr ""))
   (lib (name "mixlib-discrete-pnp")(type "KiCad")(uri "${KIPRJMOD}/symbols/mixlib-discrete-pnp.kicad_sym")(options "")(descr ""))
   (lib (name "mixlib-analog-comparator")(type "KiCad")(uri "${KIPRJMOD}/symbols/mixlib-analog-comparator.kicad_sym")(options "")(descr ""))
+  (lib (name "mixlib-discrete-zener")(type "KiCad")(uri "${KIPRJMOD}/symbols/mixlib-discrete-zener.kicad_sym")(options "")(descr ""))
 )
