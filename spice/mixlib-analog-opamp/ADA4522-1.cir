@@ -1,0 +1,15 @@
+* ADA4522-1
+* Packages: SOIC-8, MSSOP-8
+* Pins:
+*  1: N/C
+*  2: -IN
+*  3: +IN
+*  4: V- (VIN-)
+*  5: N/C
+*  6: OUT
+*  7: V+ (VIN+)
+*  8: N/C
+.SUBCKT ADA4522-1  NC -IN +IN V- NC OUT V+ NC
+.include ./include/ADA4522.cir
+X1 IN+ IN- V+ V- OUT ADA4522
+.ENDS ADA4522-1
