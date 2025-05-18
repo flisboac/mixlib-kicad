@@ -7,7 +7,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at 0 7.62 0)
+			(at 3.556 -6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15,7 +15,7 @@
 			)
 		)
 		(property "Value" "TPS61022"
-			(at 7.62 -7.62 0)
+			(at 7.874 -8.382 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -252,7 +252,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -5.588 6.604 0)
+			(at -6.35 5.588 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -261,7 +261,7 @@
 			)
 		)
 		(property "Value" "TPS61023"
-			(at -4.572 5.08 0)
+			(at -9.652 3.302 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -297,7 +297,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Library" "spice/mixlib-pmic-vreg/TPS61023_TRANS.cir"
+		(property "Sim.Library" "${MIXLIB_KICAD_SPICE_DIR}/mixlib-pmic-vreg/TPS61023_TRANS.pspice.cir"
 			(at 0 0 0)
 			(effects
 				(font
@@ -306,7 +306,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Name" "${MIXLIB_KICAD_SPICE_DIR}/mixlib-pmic-vreg/TPS61023_TRANS.cir"
+		(property "Sim.Name" "TPS61023_Symbol"
 			(at 0 0 0)
 			(effects
 				(font
@@ -513,7 +513,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Library" "spice/mixlib-pmic-vreg/TPS63060_TRANS.pspice.cir"
+		(property "Sim.Library" "${MIXLIB_KICAD_SPICE_DIR}/mixlib-pmic-vreg/TPS63060_TRANS.pspice.cir"
 			(at 0 0 0)
 			(effects
 				(font
@@ -830,7 +830,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Library" "spice/mixlib-pmic-vreg/TPS63070_TRANS.pspice.cir"
+		(property "Sim.Library" "${MIXLIB_KICAD_SPICE_DIR}/mixlib-pmic-vreg/TPS63070_TRANS.pspice.cir"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1216,6 +1216,42 @@
 		)
 		(property "Description" "500-mA, 18-V, Ultra-Low IQ, Low-Dropout Linear Voltage Regulator With Power-Good (LDO, Adjustable version)"
 			(at 1.778 -25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "${MIXLIB_KICAD_SPICE_DIR}/mixlib-pmic-vreg/TPS7A2601_TRANS.pspice.cir"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "TPS7A2601_SYMBOL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=OUT 2=FB 3=PG 4=EN 5=GND 6=IN 7=EPAD"
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)

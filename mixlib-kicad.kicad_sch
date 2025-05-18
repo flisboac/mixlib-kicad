@@ -533,7 +533,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "mixlib-discrete-mosfet:AO3401A"
+		(symbol "mixlib-discrete-mosfet:DMT6005LPS"
 			(pin_names
 				(hide yes)
 			)
@@ -541,45 +541,49 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "Q"
-				(at 5.08 1.905 0)
+				(at 3.302 2.032 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Value" "AO3401A"
-				(at 5.08 0 0)
+			(property "Value" "DMT6005LPS"
+				(at 8.636 -0.508 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-				(at 5.08 -1.905 0)
+			(property "Footprint" "mixlib-discrete-mosfet:POWERDI5060-8"
+				(at 0 -10.16 0)
 				(effects
 					(font
 						(size 1.27 1.27)
-						(italic yes)
 					)
-					(justify left)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf"
-				(at 5.08 -3.81 0)
+			(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMT6005LPS.pdf"
+				(at -0.254 -9.398 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 					(hide yes)
 				)
 			)
-			(property "Description" "-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23"
+			(property "Description" "60V N-CHANNEL ENHANCEMENT MODE MOSFET in a PowerDI5060-8 Package"
+				(at 0.762 -11.176 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Library" "${MIXLIB_KICAD_SPICE_DIR}/mixlib-discrete-nmos/DMT6005LPS.cir"
 				(at 0 0 0)
 				(effects
 					(font
@@ -588,16 +592,7 @@
 					(hide yes)
 				)
 			)
-			(property "Sim.Library" "${MIXLIB_KICAD_SPICE_DIR}/mixlib-discrete-pmos/AO3401A.cir"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Name" "AO3401A"
+			(property "Sim.Name" "DMT6005LPS"
 				(at 0 0 0)
 				(effects
 					(font
@@ -615,7 +610,7 @@
 					(hide yes)
 				)
 			)
-			(property "Sim.Pins" "1=G 2=S 3=D"
+			(property "Sim.Pins" "1=S1 2=S2 3=S3 4=G 5=D"
 				(at 0 0 0)
 				(effects
 					(font
@@ -624,28 +619,10 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "P-Channel MOSFET"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "SOT?23*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "AO3401A_0_1"
+			(symbol "DMT6005LPS_0_1"
 				(polyline
 					(pts
-						(xy 0.254 1.905) (xy 0.254 -1.905)
+						(xy -2.286 1.905) (xy -2.286 -1.905)
 					)
 					(stroke
 						(width 0.254)
@@ -657,7 +634,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0.254 0) (xy -2.54 0)
+						(xy -2.286 0) (xy -5.08 0)
 					)
 					(stroke
 						(width 0)
@@ -669,7 +646,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0.762 2.286) (xy 0.762 1.27)
+						(xy -1.778 2.286) (xy -1.778 1.27)
 					)
 					(stroke
 						(width 0.254)
@@ -681,7 +658,31 @@
 				)
 				(polyline
 					(pts
-						(xy 0.762 1.778) (xy 3.302 1.778) (xy 3.302 -1.778) (xy 0.762 -1.778)
+						(xy -1.778 0.508) (xy -1.778 -0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -1.27) (xy -1.778 -2.286)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -1.778) (xy 0.762 -1.778) (xy 0.762 1.778) (xy -1.778 1.778)
 					)
 					(stroke
 						(width 0)
@@ -693,30 +694,18 @@
 				)
 				(polyline
 					(pts
-						(xy 0.762 0.508) (xy 0.762 -0.508)
+						(xy -1.524 0) (xy -0.508 0.381) (xy -0.508 -0.381) (xy -1.524 0)
 					)
 					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.27) (xy 0.762 -2.286)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
+						(type outline)
 					)
 				)
 				(circle
-					(center 1.651 0)
+					(center -0.889 0)
 					(radius 2.794)
 					(stroke
 						(width 0.254)
@@ -728,19 +717,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.286 0) (xy 1.27 0.381) (xy 1.27 -0.381) (xy 2.286 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy 2.54 1.778)
+						(xy 0 2.54) (xy 0 1.778)
 					)
 					(stroke
 						(width 0)
@@ -751,7 +728,7 @@
 					)
 				)
 				(circle
-					(center 2.54 1.778)
+					(center 0 1.778)
 					(radius 0.254)
 					(stroke
 						(width 0)
@@ -762,7 +739,7 @@
 					)
 				)
 				(circle
-					(center 2.54 -1.778)
+					(center 0 -1.778)
 					(radius 0.254)
 					(stroke
 						(width 0)
@@ -774,7 +751,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
+						(xy 0 -2.54) (xy 0 0) (xy -1.778 0)
 					)
 					(stroke
 						(width 0)
@@ -786,7 +763,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.794 -0.508) (xy 2.921 -0.381) (xy 3.683 -0.381) (xy 3.81 -0.254)
+						(xy 0.254 0.508) (xy 0.381 0.381) (xy 1.143 0.381) (xy 1.27 0.254)
 					)
 					(stroke
 						(width 0)
@@ -798,7 +775,7 @@
 				)
 				(polyline
 					(pts
-						(xy 3.302 -0.381) (xy 2.921 0.254) (xy 3.683 0.254) (xy 3.302 -0.381)
+						(xy 0.762 0.381) (xy 0.381 -0.254) (xy 1.143 -0.254) (xy 0.762 0.381)
 					)
 					(stroke
 						(width 0)
@@ -809,11 +786,47 @@
 					)
 				)
 			)
-			(symbol "AO3401A_1_1"
+			(symbol "DMT6005LPS_1_1"
 				(pin input line
-					(at -5.08 0 0)
+					(at -7.62 0 0)
 					(length 2.54)
 					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 5.08 270)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "S"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -829,9 +842,27 @@
 					)
 				)
 				(pin passive line
-					(at 2.54 5.08 270)
+					(at 0 -5.08 90)
 					(length 2.54)
-					(name "D"
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "S"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -846,8 +877,319 @@
 						)
 					)
 				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "mixlib-discrete-mosfet:STL130N6F7"
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Q"
+				(at 3.302 2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "STL130N6F7"
+				(at 8.636 -0.508 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "mixlib-discrete-mosfet:POWERFLAT_5X6_C_STM"
+				(at 0 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.st.com/resource/en/datasheet/stl130n6f7.pdf"
+				(at -0.254 -9.398 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "N-channel 60 V, 0.003 Ω typ., 130 A STripFET F7 Power MOSFET in a PowerFLAT 5x6 package"
+				(at 0.762 -11.176 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Library" "${MIXLIB_KICAD_SPICE_DIR}/mixlib-discrete-nmos/STL130N6F7.cir"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Name" "STL130N6F7"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "SUBCKT"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=S1 2=S2 3=S3 4=G 5=D"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "STL130N6F7_0_1"
+				(polyline
+					(pts
+						(xy -2.286 1.905) (xy -2.286 -1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.286 0) (xy -5.08 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 2.286) (xy -1.778 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 0.508) (xy -1.778 -0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -1.27) (xy -1.778 -2.286)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -1.778) (xy 0.762 -1.778) (xy 0.762 1.778) (xy -1.778 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 0) (xy -0.508 0.381) (xy -0.508 -0.381) (xy -1.524 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center -0.889 0)
+					(radius 2.794)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 0 -1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 0) (xy -1.778 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 0.508) (xy 0.381 0.381) (xy 1.143 0.381) (xy 1.27 0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 0.381) (xy 0.381 -0.254) (xy 1.143 -0.254) (xy 0.762 0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "STL130N6F7_1_1"
+				(pin input line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin passive line
-					(at 2.54 -5.08 90)
+					(at 0 5.08 270)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
 					(length 2.54)
 					(name "S"
 						(effects
@@ -857,6 +1199,24 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -970,16 +1330,16 @@
 		)
 	)
 	(junction
-		(at 74.93 71.12)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3998ab40-1078-4243-a821-6c3aaeb545ec")
-	)
-	(junction
 		(at 54.61 148.59)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3cc5c76e-57c1-468f-83ae-ab09c47676bd")
+	)
+	(junction
+		(at 92.71 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "574f252e-d5f2-49be-82ac-ee1cd4c4ada6")
 	)
 	(junction
 		(at 54.61 109.22)
@@ -992,6 +1352,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "616f078e-02b1-4e3b-a4da-c422ba1a1ba4")
+	)
+	(junction
+		(at 76.2 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "880114e0-170c-4b82-aa3e-52f2b32822ac")
 	)
 	(junction
 		(at 54.61 121.92)
@@ -1012,6 +1378,12 @@
 		(uuid "8d1bb29d-15b7-4e55-acd6-045f3720ce23")
 	)
 	(junction
+		(at 120.65 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "917ce26e-90f6-427d-afc9-1dacb238d011")
+	)
+	(junction
 		(at 72.39 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1024,10 +1396,16 @@
 		(uuid "a444e0d2-d5f6-4f97-9198-ae9c5fcb9d4c")
 	)
 	(junction
-		(at 92.71 95.25)
+		(at 120.65 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b55c3f1a-de20-4151-97ff-9d699aed1a0b")
+		(uuid "a7af1177-4ad0-4119-9b62-97c6bbe60e43")
+	)
+	(junction
+		(at 106.68 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b0dbf7c1-213d-4d06-bba6-dce3f0cea9f4")
 	)
 	(junction
 		(at 59.69 67.31)
@@ -1040,16 +1418,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f9f93cb8-d32a-4df3-b217-2c673e11783f")
-	)
-	(wire
-		(pts
-			(xy 92.71 91.44) (xy 92.71 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "04d64c7a-8b56-4c91-836b-54c18ac5ecd3")
 	)
 	(wire
 		(pts
@@ -1093,6 +1461,16 @@
 	)
 	(wire
 		(pts
+			(xy 92.71 80.01) (xy 92.71 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21d70a98-4258-4d04-a5d7-4adfbfe25194")
+	)
+	(wire
+		(pts
 			(xy 59.69 83.82) (xy 59.69 67.31)
 		)
 		(stroke
@@ -1123,6 +1501,16 @@
 	)
 	(wire
 		(pts
+			(xy 106.68 71.12) (xy 106.68 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f07e8ae-1d92-4dc8-9b7e-69064f42d7a7")
+	)
+	(wire
+		(pts
 			(xy 54.61 135.89) (xy 54.61 148.59)
 		)
 		(stroke
@@ -1140,6 +1528,26 @@
 			(type default)
 		)
 		(uuid "449b9867-cfdd-46db-b907-28e6b42ec012")
+	)
+	(wire
+		(pts
+			(xy 120.65 92.71) (xy 120.65 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45e5e8e4-89a6-4f79-8593-8a9ef345c87f")
+	)
+	(wire
+		(pts
+			(xy 85.09 80.01) (xy 85.09 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f40f662-e87b-43cc-9304-563720460e92")
 	)
 	(wire
 		(pts
@@ -1190,6 +1598,26 @@
 			(type default)
 		)
 		(uuid "5bf2e797-8e03-4a53-9a45-283c39a48329")
+	)
+	(wire
+		(pts
+			(xy 120.65 67.31) (xy 92.71 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e83b1d4-7b3d-4056-93e7-f7424c3a0915")
+	)
+	(wire
+		(pts
+			(xy 106.68 71.12) (xy 76.2 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "612fa7b3-dfe3-4319-bbf6-26839963005c")
 	)
 	(wire
 		(pts
@@ -1253,7 +1681,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 67.31) (xy 92.71 67.31)
+			(xy 127 67.31) (xy 120.65 67.31)
 		)
 		(stroke
 			(width 0)
@@ -1273,16 +1701,6 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 95.25) (xy 92.71 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "817abe38-32ff-43b6-a9f3-f0cdf44fa819")
-	)
-	(wire
-		(pts
 			(xy 107.95 149.86) (xy 107.95 124.46)
 		)
 		(stroke
@@ -1290,6 +1708,16 @@
 			(type default)
 		)
 		(uuid "868b047a-5787-4dd0-ba6e-f6145f19a898")
+	)
+	(wire
+		(pts
+			(xy 120.65 78.74) (xy 120.65 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b1a7156-6b0c-489c-ad75-f5fbbbafae81")
 	)
 	(wire
 		(pts
@@ -1303,7 +1731,17 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 80.01) (xy 74.93 80.01)
+			(xy 92.71 93.98) (xy 92.71 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "911f9e12-1442-4b54-a4f9-d4cf5e07913d")
+	)
+	(wire
+		(pts
+			(xy 77.47 80.01) (xy 76.2 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1333,13 +1771,23 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 95.25) (xy 127 95.25)
+			(xy 72.39 95.25) (xy 92.71 95.25)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "a75605ce-bb5c-497f-9890-f1f62684e8ca")
+	)
+	(wire
+		(pts
+			(xy 120.65 95.25) (xy 127 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad7222bb-ee5e-4913-9cf5-2c059f006a94")
 	)
 	(wire
 		(pts
@@ -1353,6 +1801,16 @@
 	)
 	(wire
 		(pts
+			(xy 92.71 95.25) (xy 120.65 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5851916-4dc9-4220-94eb-0e56943820e6")
+	)
+	(wire
+		(pts
 			(xy 49.53 95.25) (xy 59.69 95.25)
 		)
 		(stroke
@@ -1363,7 +1821,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 71.12) (xy 74.93 71.12)
+			(xy 107.95 71.12) (xy 106.68 71.12)
 		)
 		(stroke
 			(width 0)
@@ -1373,7 +1831,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 71.12) (xy 72.39 71.12)
+			(xy 72.39 71.12) (xy 76.2 71.12)
 		)
 		(stroke
 			(width 0)
@@ -1413,7 +1871,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 80.01) (xy 74.93 71.12)
+			(xy 76.2 80.01) (xy 76.2 71.12)
 		)
 		(stroke
 			(width 0)
@@ -1433,13 +1891,13 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 85.09) (xy 92.71 86.36)
+			(xy 111.76 87.63) (xy 113.03 87.63)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ecac36ca-91c0-41c1-a258-a46308e9deb9")
+		(uuid "ecff7242-9cba-4051-8abb-e41be19ebaf3")
 	)
 	(wire
 		(pts
@@ -1470,6 +1928,16 @@
 			(type default)
 		)
 		(uuid "f37f8636-e04d-47cb-92a6-99dc2da07eaa")
+	)
+	(wire
+		(pts
+			(xy 120.65 67.31) (xy 120.65 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6200419-a411-4aae-9570-47292c0791ad")
 	)
 	(wire
 		(pts
@@ -2000,55 +2468,35 @@
 		)
 	)
 	(symbol
-		(lib_id "mixlib-discrete-mosfet:AO3401A")
-		(at 90.17 80.01 0)
+		(lib_id "Device:R_Small")
+		(at 120.65 76.2 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "702304f9-20a8-4810-976e-276e1bd20723")
-		(property "Reference" "Q2"
-			(at 96.52 81.2801 0)
+		(fields_autoplaced yes)
+		(uuid "6dfc9080-778a-4d40-af52-66c6a69a8eb5")
+		(property "Reference" "R4"
+			(at 123.19 74.9299 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "5k"
+			(at 123.19 77.4699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "AO3401A"
-			(at 96.52 78.7401 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 95.25 81.915 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf"
-			(at 95.25 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23"
-			(at 90.17 80.01 0)
+		(property "Footprint" ""
+			(at 120.65 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2056,8 +2504,8 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Library" "${MIXLIB_KICAD_SPICE_DIR}/mixlib-discrete-pmos/AO3401A.cir"
-			(at 90.17 80.01 0)
+		(property "Datasheet" "~"
+			(at 120.65 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2065,8 +2513,8 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Name" "AO3401A"
-			(at 90.17 80.01 0)
+		(property "Description" "Resistor, small symbol"
+			(at 120.65 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2074,8 +2522,8 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" "SUBCKT"
-			(at 90.17 80.01 0)
+		(property "Sim.Device" "R"
+			(at 120.65 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2083,8 +2531,8 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Pins" "1=G 2=S 3=D"
-			(at 90.17 80.01 0)
+		(property "Sim.Pins" "1=+ 2=-"
+			(at 120.65 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2093,18 +2541,101 @@
 			)
 		)
 		(pin "1"
-			(uuid "3fd8d114-9121-4849-b395-0844d28c67ac")
+			(uuid "621a48a6-8cbf-4558-a8fd-782194882ec5")
 		)
 		(pin "2"
-			(uuid "5b8568f0-fa15-480b-931b-7d0021144d2c")
-		)
-		(pin "3"
-			(uuid "0e14bf24-ff04-4005-82ca-83fed85960be")
+			(uuid "a7f69913-b021-408d-8620-5e12293881fe")
 		)
 		(instances
-			(project ""
+			(project "mixlib-kicad"
 				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
-					(reference "Q2")
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 109.22 87.63 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7281a760-92db-4774-a4c2-a984a397a4f9")
+		(property "Reference" "R6"
+			(at 109.22 82.55 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "22"
+			(at 109.22 85.09 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 109.22 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 109.22 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 109.22 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "R"
+			(at 109.22 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=+ 2=-"
+			(at 109.22 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ca7d8c64-971f-4204-bcbc-fd6fbcfaa03f")
+		)
+		(pin "2"
+			(uuid "e4144b4e-a182-48bd-8f90-60078c44f060")
+		)
+		(instances
+			(project "mixlib-kicad"
+				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -2353,8 +2884,123 @@
 		)
 	)
 	(symbol
+		(lib_id "mixlib-discrete-mosfet:DMT6005LPS")
+		(at 120.65 87.63 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8b5ac0ab-cc29-4328-9e80-17b95679c25c")
+		(property "Reference" "Q1"
+			(at 124.46 88.9001 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "DMT6005LPS"
+			(at 124.46 86.3601 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mixlib-discrete-mosfet:POWERDI5060-8"
+			(at 120.65 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMT6005LPS.pdf"
+			(at 120.396 78.232 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "60V N-CHANNEL ENHANCEMENT MODE MOSFET in a PowerDI5060-8 Package"
+			(at 121.412 76.454 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "${MIXLIB_KICAD_SPICE_DIR}/mixlib-discrete-nmos/DMT6005LPS.cir"
+			(at 120.65 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "DMT6005LPS"
+			(at 120.65 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 120.65 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=S1 2=S2 3=S3 4=G 5=D"
+			(at 120.65 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "95124819-993b-4978-8ebe-8512eb398f4a")
+		)
+		(pin "5"
+			(uuid "50889dba-8640-4f7f-b89e-a905eb0d42b2")
+		)
+		(pin "3"
+			(uuid "5b37aa69-ae9c-4618-97d8-8ab25ade976b")
+		)
+		(pin "2"
+			(uuid "87ad8300-8d49-42f3-9752-05e8651b89d5")
+		)
+		(pin "1"
+			(uuid "76c4a6cb-e8b0-4d2f-83f9-473df34f20ce")
+		)
+		(instances
+			(project ""
+				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
+					(reference "Q1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
-		(at 92.71 88.9 180)
+		(at 92.71 77.47 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2363,7 +3009,7 @@
 		(fields_autoplaced yes)
 		(uuid "8c6e9a69-2556-4f5d-8067-dbdde2183eeb")
 		(property "Reference" "R5"
-			(at 95.25 87.6299 0)
+			(at 95.25 76.1999 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -2372,7 +3018,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 95.25 90.1699 0)
+			(at 95.25 78.7399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2381,7 +3027,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 92.71 88.9 0)
+			(at 92.71 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2390,7 +3036,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 92.71 88.9 0)
+			(at 92.71 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2399,7 +3045,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 92.71 88.9 0)
+			(at 92.71 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2408,7 +3054,7 @@
 			)
 		)
 		(property "Sim.Device" "R"
-			(at 92.71 88.9 0)
+			(at 92.71 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2417,7 +3063,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=+ 2=-"
-			(at 92.71 88.9 0)
+			(at 92.71 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2746,6 +3392,121 @@
 			(project "mixlib-kicad"
 				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
 					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "mixlib-discrete-mosfet:STL130N6F7")
+		(at 92.71 88.9 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c80ee9d5-47d1-482b-84df-1a87d85f4f5f")
+		(property "Reference" "Q2"
+			(at 96.52 90.1701 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "STL130N6F7"
+			(at 96.52 87.6301 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mixlib-discrete-mosfet:POWERFLAT_5X6_C_STM"
+			(at 92.71 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stl130n6f7.pdf"
+			(at 92.456 79.502 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "N-channel 60 V, 0.003 Ω typ., 130 A STripFET F7 Power MOSFET in a PowerFLAT 5x6 package"
+			(at 93.472 77.724 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "${MIXLIB_KICAD_SPICE_DIR}/mixlib-discrete-nmos/STL130N6F7.cir"
+			(at 92.71 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "STL130N6F7"
+			(at 92.71 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 92.71 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=S1 2=S2 3=S3 4=G 5=D"
+			(at 92.71 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bfad228e-c9c1-4dda-9107-0bc27debea2f")
+		)
+		(pin "4"
+			(uuid "46966063-a936-4bfa-a3b4-d9c28248208a")
+		)
+		(pin "3"
+			(uuid "887a5556-3887-4e5d-92c3-9b0758ed6ae8")
+		)
+		(pin "5"
+			(uuid "4e2b4901-aa28-4229-a325-ef3140709d1d")
+		)
+		(pin "2"
+			(uuid "d734c532-8d41-4935-b27e-c992b61c6e19")
+		)
+		(instances
+			(project "mixlib-kicad"
+				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
+					(reference "Q2")
 					(unit 1)
 				)
 			)

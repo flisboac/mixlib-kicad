@@ -356,52 +356,52 @@
 		(uuid "cb27a1a0-fb4d-4f30-9eaf-e802a34056a1")
 	)
 	(pad "5" smd rect
+		(at 0.8509 -1.71085)
+		(size 3.5814 0.9217)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "2d76f2fc-3014-4a03-9f1d-a9f1796df084")
+	)
+	(pad "5" smd rect
+		(at 0.8509 -0.625)
+		(size 3.5814 1.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "5367acf4-bba7-49a5-9282-d54f42dab160")
+	)
+	(pad "5" smd rect
+		(at 0.8509 0.6)
+		(size 3.5814 1.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "9724db7e-08c6-4ae0-8359-e5c1ae86b17e")
+	)
+	(pad "5" smd rect
 		(at 0.8509 1.68585)
 		(size 3.5814 0.9717)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "09e6164b-374a-410d-9614-7e30a4a9df4e")
 	)
 	(pad "5" smd rect
-		(at 2.8194 1.905)
+		(at 2.8194 -1.905)
 		(size 1.3208 0.4572)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "fb5fd0c8-05db-433d-a105-31677cc09557")
+		(uuid "1a92c1f3-8989-4673-98a2-e9603eb39d55")
 	)
-	(pad "6" smd rect
-		(at 0.8509 0.6)
-		(size 3.5814 1.2)
-		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "9724db7e-08c6-4ae0-8359-e5c1ae86b17e")
-	)
-	(pad "6" smd rect
-		(at 2.8194 0.635)
-		(size 1.3208 0.4572)
-		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "a364d9c7-367a-4dff-9b4e-0ea54b8708f8")
-	)
-	(pad "7" smd rect
-		(at 0.8509 -0.625)
-		(size 3.5814 1.25)
-		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "5367acf4-bba7-49a5-9282-d54f42dab160")
-	)
-	(pad "7" smd rect
+	(pad "5" smd rect
 		(at 2.8194 -0.635)
 		(size 1.3208 0.4572)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "f5fd02eb-1567-4463-bc0e-0f2b422a8e84")
 	)
-	(pad "8" smd rect
-		(at 0.8509 -1.71085)
-		(size 3.5814 0.9217)
-		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "2d76f2fc-3014-4a03-9f1d-a9f1796df084")
-	)
-	(pad "8" smd rect
-		(at 2.8194 -1.905)
+	(pad "5" smd rect
+		(at 2.8194 0.635)
 		(size 1.3208 0.4572)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "1a92c1f3-8989-4673-98a2-e9603eb39d55")
+		(uuid "a364d9c7-367a-4dff-9b4e-0ea54b8708f8")
+	)
+	(pad "5" smd rect
+		(at 2.8194 1.905)
+		(size 1.3208 0.4572)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "fb5fd0c8-05db-433d-a105-31677cc09557")
 	)
 	(embedded_fonts no)
 	(model "${MIXLIB_KICAD_3DMODELS_DIR}/mixlib-discrete-mosfet.3dshapes/POWERFLAT_5X6_C_STM.step"
