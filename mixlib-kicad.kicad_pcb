@@ -77,6 +77,7 @@
 			(outputdirectory "")
 		)
 	)
+	(property "MIXLIB_KICAD_BASE_PATH" ".")
 	(net 0 "")
 	(embedded_fonts no)
 )

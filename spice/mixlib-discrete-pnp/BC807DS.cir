@@ -1,0 +1,102 @@
+**********************************************************
+*
+* BC807DS
+*
+* Nexperia
+*
+* General purpose PNP double transistor
+* IC   = 500 mA
+* VCEO = 45 V
+* hFE  = 160 - 400 @ 1V/100mA
+*
+*
+*
+*
+* Package pinning does not match Spice model pinning.
+* Package: SOT 457
+*
+* Package Pin 1;4: Emitter   TR1;TR2
+* Package Pin 2;5: Base      TR1;TR2
+* Package Pin 3;6: Collector TR2;TR1
+*
+*
+* Extraction date (week/year): 44/2018
+* Spicemodel includes temperature dependency
+*
+**********************************************************
+*#
+* Please note: The following model is to be used twice in
+* schematic due to equality of both Transistors.
+*
+* Diode D1, Transistor Q2 and Resistor RQ
+* are dedicated to improve modeling of quasi
+* saturation area and reverse mode operation
+* and do not reflect physical devices.
+*
+.SUBCKT BC807DS E1 B1 C2 E2 B2 C1
+X1 C1 B1 E1 BC807DS_PNP
+X2 C2 B2 E2 BC807DS_PNP
+.ENDS BC807DS
+
+.SUBCKT BC807DS_PNP 1 2 3
+Q1 1 2 3 Transistor 0.9101
+Q2 11 2 3 Transistor 0.08993
+RQ 11 1 40.42
+D1 1 2 Diode
+
+.MODEL Transistor PNP
++ IS = 4.209E-014
++ NF = 0.9144
++ ISE = 1.532E-014
++ NE = 1.321
++ BF = 300
++ IKF = 0.45
++ VAF = 30
++ NR = 0.913
++ ISC = 6.368E-015
++ NC = 1.08
++ BR = 30
++ IKR = 0.2415
++ VAR = 25
++ RB = 20
++ IRB = 0.00116
++ RBM = 0.926
++ RE = 0.05838
++ RC = 0.1943
++ XTB = 2.261
++ EG = 1.11
++ XTI = 10.02
++ CJE = 5.547E-011
++ VJE = 0.8
++ MJE = 0.3947
++ TF = 9.2E-010
++ XTF = 1.859
++ VTF = 3.813
++ ITF = 0.4393
++ PTF = 0
++ CJC = 2.004E-011
++ VJC = 0.45
++ MJC = 0.3792
++ XCJC = 0.459
++ TR = 5.13E-08
++ CJS = 0
++ VJS = 0.75
++ MJS = 0.333
++ FC = 0.99
+
+.MODEL Diode D
++ IS = 3.478E-015
++ N = 0.9618
++ BV = 1000
++ IBV = 0.001
++ RS = 760.4
++ CJO = 0
++ VJ = 1
++ M = 0.5
++ FC = 0
++ TT = 0
++ EG = 1.11
++ XTI = 3
+.ENDS BC807DS_PNP
+
+*

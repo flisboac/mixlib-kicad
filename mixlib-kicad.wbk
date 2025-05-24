@@ -4,7 +4,7 @@
     {
       "analysis": "DC",
       "commands": [
-        ".dc V1 100m 30 100m",
+        ".dc V1 100m 50 100m",
         ".kicad adjustpaths",
         ".save all",
         ".probe alli",
@@ -21,27 +21,85 @@
       "showGrid": true,
       "traces": [
         {
+          "color": "rgb(247, 129, 191)",
+          "signal": "V(/VCC)",
+          "trace_type": 2049
+        },
+        {
           "color": "rgb(152, 78, 163)",
           "signal": "V(/VG)",
           "trace_type": 2049
         },
         {
+          "color": "rgb(102, 194, 165)",
+          "signal": "V(/VOUT_BOT)",
+          "trace_type": 2049
+        },
+        {
+          "color": "rgb(252, 141, 98)",
+          "signal": "V(/VOUT_TOP)",
+          "trace_type": 2049
+        },
+        {
+          "color": "rgb(255, 255, 51)",
+          "signal": "V(/VREF_BOT)",
+          "trace_type": 2049
+        },
+        {
+          "color": "rgb(166, 86, 40)",
+          "signal": "V(/VREF_TOP)",
+          "trace_type": 2049
+        }
+      ]
+    },
+    {
+      "analysis": "TRAN",
+      "commands": [
+        ".tran 10u 10m 0",
+        ".kicad adjustpaths",
+        ".save all",
+        ".probe alli",
+        ".probe allp"
+      ],
+      "dottedSecondary": true,
+      "margins": {
+        "bottom": 45,
+        "left": 70,
+        "right": 70,
+        "top": 30
+      },
+      "measurements": [],
+      "showGrid": true,
+      "traces": [
+        {
           "color": "rgb(228, 26, 28)",
           "cursor1": {
-            "position": 30.23574244415259,
-            "x_format": "3~V",
+            "position": 0.004246231155778895,
+            "x_format": "3~s",
+            "y_format": "9~V"
+          },
+          "cursor2": {
+            "position": 0.004742462311557789,
+            "x_format": "3~s",
             "y_format": "3~V"
           },
           "cursorD": {
             "x_format": "3~s",
             "y_format": "3~V"
           },
-          "signal": "V(/VOUT)",
-          "trace_type": 2049
+          "signal": "V(/VSIN_OUT)",
+          "trace_type": 257
+        },
+        {
+          "color": "rgb(77, 175, 74)",
+          "signal": "V(/VSIN_OUT2)",
+          "trace_type": 257
         }
       ]
     }
   ],
-  "user_defined_signals": [],
+  "user_defined_signals": [
+    "V(\"/vref\")-V(\"/vsin_in\")"
+  ],
   "version": 6
 }

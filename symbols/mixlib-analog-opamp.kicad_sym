@@ -55,6 +55,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Device" "SUBCKT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "Sim.Library" "${MIXLIB_KICAD_SPICE_DIR}/mixlib-analog-opamp/ADA4522-1.cir"
 			(at 0 0 0)
 			(effects
@@ -73,16 +82,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" "SUBCKT"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=NC 2=-IN 3=+IN 4=V- 5=NC 6=OUT 7=V+ 8=NC"
+		(property "Sim.Pins" "1=NC_1 2=IN- 3=IN+ 4=V- 5=NC 6=OUT 7=V+ 8=NC_2"
 			(at 0 0 0)
 			(effects
 				(font
@@ -616,6 +616,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Device" "SUBCKT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "Sim.Library" "${MIXLIB_KICAD_SPICE_DIR}/mixlib-analog-opamp/ADA4522-4.cir"
 			(at 0 0 0)
 			(effects
@@ -634,16 +643,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" "SUBCKT"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=OUTA 2=INA- 3=INA+ 4=V- 5=INB+ 6=INB- 7=OUTB 8=OUTC 9=INC- 10=INC+ 11=V+ 12=IND+ 13=IND- 14=OUTD"
+		(property "Sim.Pins" "1=OUTA 2=INA- 3=INA+ 4=V+ 5=INB+ 6=INB- 7=OUTB 8=OUTC 9=INC- 10=INC+ 11=V- 12=IND+ 13=IND- 14=OUTD"
 			(at 0 0 0)
 			(effects
 				(font

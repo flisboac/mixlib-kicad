@@ -1,0 +1,101 @@
+***********************************************************
+*
+* BC817DS
+*
+* Nexperia
+*
+* General purpose double NPN/NPN Transistor
+* IC   = 500 mA
+* VCEO = 45 V
+* hFE  = 160 - 400 @ 1V/100mA
+*
+*
+*
+*
+* Package pinning does not match Spice model pinning.
+* Package: SOT 457
+*
+* Package Pin 1;4: Emitter   TR1;TR2
+* Package Pin 2;5: Base      TR1;TR2
+* Package Pin 3;6: Collector TR2;TR1
+*
+*
+* Extraction date (week/year): 34/2021
+* Spicemodel includes temperature dependency
+*
+**********************************************************
+*#
+* Please note: The following model is to be used twice in
+* schematic due to equality of both Transistors.
+*
+* Diode D1, Transistor Q2 and Resistor RQ
+* are dedicated to improve modeling of quasi
+* saturation area and reverse mode operation
+* and do not reflect physical devices.
+*
+.SUBCKT BC817DS E1 B1 C2 E2 B2 C1
+X1 C1 B1 E1 BC817DS_NPN
+X2 C2 B2 E2 BC817DS_NPN
+.ENDS BC817DS
+
+.SUBCKT BC817DS_NPN 1 2 3
+Q1 1 2 3 MAIN 0.938
+Q2 11 2 3 MAIN 0.06196
+RQ 1 11 84.59
+D1 2 1 DIODE
+*
+.MODEL MAIN NPN
++ IS = 3.548E-14
++ NF = 0.9685
++ ISE = 1.919E-15
++ NE = 1.339
++ BF = 261.5
++ IKF = 8.026
++ VAF = 25.87
++ NR = 0.9684
++ ISC = 5.433E-15
++ NC = 1.162
++ BR = 53.12
++ IKR = 0.5085
++ VAR = 25
++ RB = 45
++ IRB = 0.0006
++ RBM = 1.68
++ RE = 0.14
++ RC = 0.2454
++ XTB = 1.143
++ EG = 1.11
++ XTI = 6.09
++ CJE = 4.694E-11
++ VJE = 0.6503
++ MJE = 0.3229
++ TF = 6.904E-10
++ XTF = 7.923
++ VTF = 1.924
++ ITF = 0.8398
++ PTF = 0
++ CJC = 8.947E-12
++ VJC = 0.5032
++ MJC = 0.3673
++ XCJC = 1
++ TR = 3.4E-08
++ CJS = 0
++ VJS = 0.75
++ MJS = 0.333
++ FC = 0.78
+.MODEL DIODE D
++ IS = 1.123E-15
++ N = 0.9452
++ BV = 1000
++ IBV = 0.001
++ RS = 1165
++ CJO = 0
++ VJ = 1
++ M = 0.5
++ FC = 0
++ TT = 0
++ EG = 1.11
++ XTI = 3
+.ENDS BC817DS_NPN
+
+*

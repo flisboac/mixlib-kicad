@@ -9,7 +9,7 @@
 *  6: OUT
 *  7: V+ (VIN+)
 *  8: N/C
-.SUBCKT ADA4522-1  NC -IN +IN V- NC OUT V+ NC
+.SUBCKT ADA4522-1 NC_1 IN- IN+ V- NC_2 OUT V+ NC_3
 .include ./include/ADA4522.cir
 X1 IN+ IN- V+ V- OUT ADA4522
 .ENDS ADA4522-1

@@ -333,54 +333,35 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "mixlib-analog-opamp:MCP6401"
+		(symbol "Simulation_SPICE:VSIN"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.0254)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at 2.54 6.35 0)
+			(property "Reference" "V"
+				(at 2.54 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Value" "MCP6401"
-				(at 6.35 3.556 0)
+			(property "Value" "VSIN"
+				(at 2.54 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-353_SC-70-5"
-				(at 1.778 -11.938 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://ww1.microchip.com/downloads/aemDocuments/documents/MSLD/ProductDocuments/DataSheets/MCP6401-Data-Sheet-DS20002229.pdf"
-				(at 1.524 -13.97 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "1 MHz, 45 μA, 6V Single Op-Amp"
-				(at 1.778 -12.446 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Library" "${MIXLIB_KICAD_SPICE_DIR}/mixlib-analog-opamp/MCP6401.cir"
+			(property "Footprint" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -389,7 +370,219 @@
 					(hide yes)
 				)
 			)
-			(property "Sim.Name" "MCP6401"
+			(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#sec_Independent_Sources_for"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Voltage source, sinusoidal"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=+ 2=-"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Params" "dc=0 ampl=1 f=1k ac=1"
+				(at 2.54 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Sim.Type" "SIN"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "V"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "simulation ac vac"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "VSIN_0_0"
+				(arc
+					(start -1.27 0)
+					(mid -0.635 0.6323)
+					(end 0 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.27 0)
+					(mid 0.635 -0.6323)
+					(end 0 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "+"
+					(at 0 1.905 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(symbol "VSIN_0_1"
+				(circle
+					(center 0 0)
+					(radius 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "VSIN_1_1"
+				(pin passive line
+					(at 0 5.08 270)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "mixlib-analog-opamp:ADA4522-2"
+			(pin_names
+				(offset 0.127)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 1.27 6.604 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "ADA4522-2"
+				(at -1.778 4.572 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4522-1_4522-2_4522-4.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "55 V supply, 5uV max Vos, 3MHz GBW, EMI Enhanced, Zero Drift, 5.8 nV/√Hz, RRO dual operational amplifiers"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Library" "${MIXLIB_KICAD_SPICE_DIR}/mixlib-analog-opamp/ADA4522-2.cir"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Name" "ADA4522-2"
 				(at 0 0 0)
 				(effects
 					(font
@@ -407,7 +600,7 @@
 					(hide yes)
 				)
 			)
-			(property "Sim.Pins" "1=VOUT 2=VSS 3=VIN+ 4=VIN- 5=VDD"
+			(property "Sim.Pins" "1=OUTA 2=INA- 3=INA+ 4=V- 5=INB+ 6=INB- 7=OUTB 8=V+"
 				(at 0 0 0)
 				(effects
 					(font
@@ -416,7 +609,15 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SC-70-5*"
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "analog-devices opamp chopper"
 				(at 0 0 0)
 				(effects
 					(font
@@ -425,7 +626,709 @@
 					(hide yes)
 				)
 			)
-			(symbol "MCP6401_0_1"
+			(property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm* MSOP*3x3mm*P0.65mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "ADA4522-2_1_1"
+				(polyline
+					(pts
+						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "ADA4522-2_2_1"
+				(polyline
+					(pts
+						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "ADA4522-2_3_1"
+				(pin power_in line
+					(at -2.54 7.62 270)
+					(length 3.81)
+					(name "V+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 -7.62 90)
+					(length 3.81)
+					(name "V-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "mixlib-analog-opamp:ADA4522-4"
+			(pin_names
+				(offset 0.127)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0.762 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "ADA4522-4"
+				(at -2.032 4.826 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.27 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4522-1_4522-2_4522-4.pdf"
+				(at 1.27 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "55 V supply, 5uV max Vos, 3MHz GBW, EMI Enhanced, Zero Drift, 5.8 nV/√Hz, RRO quad operational amplifiers"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "SUBCKT"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Library" "${MIXLIB_KICAD_SPICE_DIR}/mixlib-analog-opamp/ADA4522-4.cir"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Name" "ADA4522-4"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=OUTA 2=INA- 3=INA+ 4=V+ 5=INB+ 6=INB- 7=OUTB 8=OUTC 9=INC- 10=INC+ 11=V- 12=IND+ 13=IND- 14=OUTD"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "analog-devices opamp chopper"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOIC*3.9x8.7mm*P1.27mm* TSSOP*4.4x5mm*P0.65mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "ADA4522-4_1_1"
+				(polyline
+					(pts
+						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "ADA4522-4_2_1"
+				(polyline
+					(pts
+						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "ADA4522-4_3_1"
+				(polyline
+					(pts
+						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "ADA4522-4_4_1"
+				(polyline
+					(pts
+						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "ADA4522-4_5_1"
+				(pin power_in line
+					(at -2.54 7.62 270)
+					(length 3.81)
+					(name "V+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 -7.62 90)
+					(length 3.81)
+					(name "V-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "mixlib-analog-opamp:MCP6404"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 7.366 5.842 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MCP6404"
+				(at 11.176 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://ww1.microchip.com/downloads/aemDocuments/documents/MSLD/ProductDocuments/DataSheets/MCP6401-Data-Sheet-DS20002229.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "1 MHz, 45 μA, 6V Dual Op-Amp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "SUBCKT"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Library" "${MIXLIB_KICAD_SPICE_DIR}/mixlib-analog-opamp/MCP6404.cir"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Name" "MCP6404"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=VOUTA 2=VINA- 3=VINA- 4=VDD 5=VINB+ 6=VINB- 7=VOUTB 8=VOUTC 9=VINC- 10=VINC+ 11=VSS 12=VIND+ 13=VIND- 14=VOUTD"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "MCP6404_1_1"
 				(polyline
 					(pts
 						(xy -3.81 5.08) (xy 6.35 0) (xy -3.81 -5.08) (xy -3.81 5.08)
@@ -438,8 +1341,6 @@
 						(type background)
 					)
 				)
-			)
-			(symbol "MCP6401_1_1"
 				(pin input line
 					(at -6.35 2.54 0)
 					(length 2.54)
@@ -468,42 +1369,6 @@
 							)
 						)
 					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 7.62 270)
-					(length 4.445)
-					(name "V+"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -7.62 90)
-					(length 4.445)
-					(name "V-"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
 					(number "2"
 						(effects
 							(font
@@ -523,6 +1388,248 @@
 						)
 					)
 					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "MCP6404_2_1"
+				(polyline
+					(pts
+						(xy -3.81 5.08) (xy 6.35 0) (xy -3.81 -5.08) (xy -3.81 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -6.35 2.54 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -6.35 -2.54 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 8.89 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "MCP6404_3_1"
+				(polyline
+					(pts
+						(xy -3.81 5.08) (xy 6.35 0) (xy -3.81 -5.08) (xy -3.81 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -6.35 2.54 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -6.35 -2.54 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 8.89 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "MCP6404_4_1"
+				(polyline
+					(pts
+						(xy -3.81 5.08) (xy 6.35 0) (xy -3.81 -5.08) (xy -3.81 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -6.35 2.54 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -6.35 -2.54 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 8.89 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "MCP6404_5_1"
+				(pin power_in line
+					(at 0 7.62 270)
+					(length 3.81)
+					(name "V+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 3.81)
+					(name "V-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -774,191 +1881,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "mixlib-discrete-zener:BZT52Cxx"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "BZT52Cxx"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Diode_SMD:D_SOD-123"
-				(at 0 -4.445 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzt52b2v4.pdf"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "500mW Small Signal Zener Diodes, SOD-123"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Library" "${MIXLIB_KICAD_SPICE_DIR}/mixlib-discrete-zener/${Value}.cir"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Name" "${Value}"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Device" "SUBCKT"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Pins" "1=K 2=A"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "zener diode"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "D?SOD?123*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "BZT52Cxx_0_1"
-				(polyline
-					(pts
-						(xy -1.27 -1.27) (xy -1.27 1.27) (xy -0.762 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy -1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "BZT52Cxx_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -1062,80 +1984,208 @@
 		)
 	)
 	(junction
-		(at 54.61 148.59)
+		(at 195.58 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "04567178-e8be-4305-9f05-4c45fc42b805")
+	)
+	(junction
+		(at 261.62 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0aee73c4-6202-4b67-86f6-8fead5bc55fb")
+	)
+	(junction
+		(at 322.58 161.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1f272a33-e146-483e-9c5f-0dbadb3c213d")
+	)
+	(junction
+		(at 322.58 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "22218084-0992-4adf-adcb-b6d0eca4cb99")
+	)
+	(junction
+		(at 238.76 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2a787043-7ad0-4fa4-a3c5-ac2de3dba537")
+	)
+	(junction
+		(at 341.63 147.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3843fb4f-94e6-47b6-aff1-04dee226cf6a")
+	)
+	(junction
+		(at 195.58 133.35)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "38a1bc46-0003-43dc-bc80-0f36d6ae185b")
+	)
+	(junction
+		(at 17.78 151.13)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3cc5c76e-57c1-468f-83ae-ab09c47676bd")
 	)
 	(junction
-		(at 54.61 109.22)
+		(at 238.76 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4b5ea400-05d1-487d-8efe-e07a59ba4cc8")
+	)
+	(junction
+		(at 195.58 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "580dc6ea-09a4-4088-93cc-810069c63f69")
+	)
+	(junction
+		(at 17.78 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5972ed32-80a2-4f8d-a271-cfa7605d669b")
 	)
 	(junction
-		(at 69.85 95.25)
+		(at 219.71 130.81)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "616f078e-02b1-4e3b-a4da-c422ba1a1ba4")
+		(uuid "62efde9a-e7b6-4a77-b6c7-c0b3ebef5811")
 	)
 	(junction
-		(at 82.55 95.25)
+		(at 217.17 64.77)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "63a8e322-c23b-4f37-b440-ce2d5e7705d4")
+		(uuid "73c71733-b351-4168-92da-dc512b10fb19")
 	)
 	(junction
-		(at 54.61 121.92)
+		(at 298.45 161.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "763cd1ee-a38c-46bf-901a-dfe6bc2d4f8c")
+	)
+	(junction
+		(at 17.78 124.46)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "888bbc75-33b6-4532-9d49-a506eb2a7a5f")
 	)
 	(junction
-		(at 59.69 95.25)
+		(at 331.47 161.29)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8a251396-0192-4709-b9c9-3e97485bdb81")
 	)
 	(junction
-		(at 68.58 133.35)
+		(at 31.75 135.89)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8d1bb29d-15b7-4e55-acd6-045f3720ce23")
 	)
 	(junction
-		(at 77.47 109.22)
+		(at 172.72 133.35)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "95cdff46-c962-4836-913c-30a59618511c")
+		(uuid "8fd5594d-14e8-460b-9ebb-f05938d98cbc")
 	)
 	(junction
-		(at 72.39 95.25)
+		(at 71.12 154.94)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "a23d60f4-9919-412d-8d45-6a6e83965f03")
+		(uuid "9428f3f1-b63d-4b1c-8147-0d8c4079a73c")
 	)
 	(junction
-		(at 59.69 67.31)
+		(at 217.17 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a21d041e-56dc-4ea3-9d27-3996ce1dbc9c")
+	)
+	(junction
+		(at 311.15 161.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c74f9fb5-8c5b-4bfd-ba2c-5c922ad5a9d3")
+	)
+	(junction
+		(at 195.58 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c9220de0-772d-4861-a959-0b40135ac466")
+	)
+	(junction
+		(at 238.76 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ccccadba-1abd-469e-bddd-cda658659e62")
+	)
+	(junction
+		(at 341.63 161.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cfad9ac3-3de3-4429-ac7b-fc0b2bdfeb69")
+	)
+	(junction
+		(at 331.47 134.62)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d64c03a3-cb1d-4033-b643-553fa7f67a7d")
 	)
 	(junction
-		(at 82.55 83.82)
+		(at 298.45 134.62)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "da4482ef-39e2-4372-bf28-1d27644aead7")
+		(uuid "dd8a2471-c6d1-4609-b119-00ef26d74f6e")
 	)
 	(junction
-		(at 72.39 71.12)
+		(at 195.58 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "f9f93cb8-d32a-4df3-b217-2c673e11783f")
+		(uuid "e01be629-b914-48a2-8ceb-7a991d2f6755")
+	)
+	(junction
+		(at 195.58 128.27)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e3469c07-07a7-4dc2-a19a-48cde487d59a")
+	)
+	(junction
+		(at 85.09 120.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f8162c9c-e1b5-4faf-9e37-905a957558c0")
+	)
+	(junction
+		(at 311.15 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f8b09f7f-b507-4043-8ed6-1f30bf96a2f4")
 	)
 	(wire
 		(pts
-			(xy 107.95 116.84) (xy 107.95 119.38)
+			(xy 172.72 133.35) (xy 172.72 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "012175e5-31a8-42bd-a37a-f20dd86af237")
+	)
+	(wire
+		(pts
+			(xy 261.62 78.74) (xy 273.05 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "025f976c-58ec-4289-b3c1-16362154d583")
+	)
+	(wire
+		(pts
+			(xy 85.09 119.38) (xy 85.09 120.65)
 		)
 		(stroke
 			(width 0)
@@ -1145,27 +2195,37 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 95.25) (xy 69.85 97.79)
+			(xy 195.58 74.93) (xy 217.17 74.93)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "07062711-1143-4cd6-9052-41a932b1fd0b")
+		(uuid "07126acf-af86-4ebc-bea8-df2569fd207e")
 	)
 	(wire
 		(pts
-			(xy 49.53 67.31) (xy 59.69 67.31)
+			(xy 41.91 185.42) (xy 41.91 187.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "089ed1bd-2601-4c12-9df2-f79f8fa5aa1e")
+		(uuid "079d4c14-85ca-4c4e-a5ac-0cdb724151ab")
 	)
 	(wire
 		(pts
-			(xy 107.95 151.13) (xy 107.95 154.94)
+			(xy 214.63 146.05) (xy 195.58 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b1b8d85-985e-4835-9b21-ee9df5c7518b")
+	)
+	(wire
+		(pts
+			(xy 71.12 153.67) (xy 71.12 154.94)
 		)
 		(stroke
 			(width 0)
@@ -1175,17 +2235,17 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 83.82) (xy 87.63 83.82)
+			(xy 195.58 67.31) (xy 195.58 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0fcabc24-a314-4041-944e-6c3e16794874")
+		(uuid "0df7e068-f9b5-44bd-9f30-c8b11cdff923")
 	)
 	(wire
 		(pts
-			(xy 68.58 127) (xy 71.12 127)
+			(xy 31.75 129.54) (xy 34.29 129.54)
 		)
 		(stroke
 			(width 0)
@@ -1195,7 +2255,77 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 93.98) (xy 59.69 95.25)
+			(xy 195.58 93.98) (xy 195.58 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19655c36-3298-4de4-8fd2-428c52fbdf91")
+	)
+	(wire
+		(pts
+			(xy 213.36 64.77) (xy 217.17 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1bd7c1ee-de65-483c-8add-4e04511a94ac")
+	)
+	(wire
+		(pts
+			(xy 283.21 134.62) (xy 298.45 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c733677-d566-4c70-86e2-9b337153c8d5")
+	)
+	(wire
+		(pts
+			(xy 195.58 133.35) (xy 199.39 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d5aa076-de8a-4234-a383-3b32a65e35be")
+	)
+	(wire
+		(pts
+			(xy 85.09 154.94) (xy 71.12 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d68cb32-ef16-459a-8dd4-5600a157f8af")
+	)
+	(wire
+		(pts
+			(xy 238.76 64.77) (xy 238.76 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f7a6e30-57f6-4833-9a3c-ebd918317ce5")
+	)
+	(wire
+		(pts
+			(xy 311.15 139.7) (xy 311.15 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "201ae902-bb19-49c0-bb84-13fad5842978")
+	)
+	(wire
+		(pts
+			(xy 331.47 160.02) (xy 331.47 161.29)
 		)
 		(stroke
 			(width 0)
@@ -1205,17 +2335,47 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 74.93) (xy 82.55 71.12)
+			(xy 261.62 78.74) (xy 256.54 78.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "285eae8f-b9a7-4112-87e8-2f48e0e98e9f")
+		(uuid "21b28475-5506-4f82-9e80-ae5704d90d80")
 	)
 	(wire
 		(pts
-			(xy 59.69 83.82) (xy 59.69 67.31)
+			(xy 311.15 161.29) (xy 322.58 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22abdaff-054c-491b-acb6-a8783543f9d0")
+	)
+	(wire
+		(pts
+			(xy 198.12 93.98) (xy 195.58 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "251b5d97-9ab8-41f7-9abc-bec884c32425")
+	)
+	(wire
+		(pts
+			(xy 238.76 109.22) (xy 238.76 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "295738e1-ae22-4aea-8155-3ee75bacd724")
+	)
+	(wire
+		(pts
+			(xy 331.47 149.86) (xy 331.47 134.62)
 		)
 		(stroke
 			(width 0)
@@ -1225,17 +2385,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 67.31) (xy 59.69 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2cf84bd4-86b1-4422-bb32-6cf887203891")
-	)
-	(wire
-		(pts
-			(xy 54.61 109.22) (xy 54.61 113.03)
+			(xy 17.78 111.76) (xy 17.78 115.57)
 		)
 		(stroke
 			(width 0)
@@ -1245,7 +2395,57 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 135.89) (xy 54.61 148.59)
+			(xy 195.58 81.28) (xy 195.58 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31e0315d-f4a3-4539-b628-66236b6f8fb8")
+	)
+	(wire
+		(pts
+			(xy 217.17 92.71) (xy 217.17 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32ca152e-0dee-47b8-9851-94348f278cfa")
+	)
+	(wire
+		(pts
+			(xy 193.04 128.27) (xy 195.58 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32db0753-6882-40bf-ad5d-09cb4af8d580")
+	)
+	(wire
+		(pts
+			(xy 238.76 96.52) (xy 238.76 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "337d760c-8522-4353-b99e-056a40be90c4")
+	)
+	(wire
+		(pts
+			(xy 311.15 134.62) (xy 322.58 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35c00581-47a3-4173-9898-f77922976b01")
+	)
+	(wire
+		(pts
+			(xy 17.78 138.43) (xy 17.78 151.13)
 		)
 		(stroke
 			(width 0)
@@ -1255,7 +2455,17 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 124.46) (xy 86.36 124.46)
+			(xy 233.68 64.77) (xy 238.76 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "387f7f1c-0055-4872-9827-78a4357381fc")
+	)
+	(wire
+		(pts
+			(xy 57.15 127) (xy 49.53 127)
 		)
 		(stroke
 			(width 0)
@@ -1265,7 +2475,57 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 133.35) (xy 68.58 127)
+			(xy 71.12 120.65) (xy 85.09 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ac54c05-f5f6-4304-a9d1-583abbcbf735")
+	)
+	(wire
+		(pts
+			(xy 172.72 99.06) (xy 198.12 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b4480bd-9b42-42e1-8dfa-4b38bfc11445")
+	)
+	(wire
+		(pts
+			(xy 233.68 96.52) (xy 238.76 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f6236b1-632d-4247-bcb8-64beddb056ce")
+	)
+	(wire
+		(pts
+			(xy 219.71 115.57) (xy 219.71 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44345215-fd7d-44c8-910d-58eddd978bf7")
+	)
+	(wire
+		(pts
+			(xy 195.58 83.82) (xy 217.17 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "447fbbbd-59ee-496c-8fb3-faac435d4d2e")
+	)
+	(wire
+		(pts
+			(xy 31.75 135.89) (xy 31.75 129.54)
 		)
 		(stroke
 			(width 0)
@@ -1275,37 +2535,27 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 129.54) (xy 107.95 140.97)
+			(xy 298.45 156.21) (xy 298.45 161.29)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5244189b-b717-4100-9db3-7ce6e9ce0509")
+		(uuid "47042c8b-9c0f-48ee-89c3-816d54fe8802")
 	)
 	(wire
 		(pts
-			(xy 69.85 95.25) (xy 72.39 95.25)
+			(xy 238.76 81.28) (xy 238.76 96.52)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "52473550-d302-46ee-8a31-88f773ae0548")
+		(uuid "4cc05143-1fb3-49a3-acec-89faa619ef8b")
 	)
 	(wire
 		(pts
-			(xy 77.47 138.43) (xy 83.82 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "55286fa2-bfc9-409c-ba90-608e5b4c5730")
-	)
-	(wire
-		(pts
-			(xy 68.58 143.51) (xy 68.58 133.35)
+			(xy 31.75 146.05) (xy 31.75 135.89)
 		)
 		(stroke
 			(width 0)
@@ -1315,7 +2565,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 121.92) (xy 71.12 121.92)
+			(xy 17.78 124.46) (xy 34.29 124.46)
 		)
 		(stroke
 			(width 0)
@@ -1325,7 +2575,17 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 121.92) (xy 54.61 130.81)
+			(xy 185.42 73.66) (xy 195.58 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ae5496a-39eb-47cb-9d84-08ca9c943594")
+	)
+	(wire
+		(pts
+			(xy 17.78 124.46) (xy 17.78 133.35)
 		)
 		(stroke
 			(width 0)
@@ -1335,7 +2595,37 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 146.05) (xy 100.33 146.05)
+			(xy 219.71 130.81) (xy 214.63 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c7b75d6-c0a9-4b05-8151-d0c5e67b671d")
+	)
+	(wire
+		(pts
+			(xy 311.15 154.94) (xy 311.15 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5dbdbadc-a582-4836-8d5e-2c1366275203")
+	)
+	(wire
+		(pts
+			(xy 322.58 153.67) (xy 322.58 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61bdd806-07b4-4b8b-a4c9-b82e8265b90d")
+	)
+	(wire
+		(pts
+			(xy 62.23 148.59) (xy 63.5 148.59)
 		)
 		(stroke
 			(width 0)
@@ -1345,7 +2635,17 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 148.59) (xy 71.12 148.59)
+			(xy 219.71 130.81) (xy 229.87 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "649fc58a-bef4-485a-baba-89b216a18492")
+	)
+	(wire
+		(pts
+			(xy 17.78 151.13) (xy 34.29 151.13)
 		)
 		(stroke
 			(width 0)
@@ -1355,7 +2655,17 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 109.22) (xy 77.47 109.22)
+			(xy 238.76 105.41) (xy 238.76 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67edc8d2-b8aa-4b8e-bf96-37b505ee6752")
+	)
+	(wire
+		(pts
+			(xy 17.78 111.76) (xy 85.09 111.76)
 		)
 		(stroke
 			(width 0)
@@ -1365,7 +2675,87 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 67.31) (xy 59.69 59.69)
+			(xy 195.58 115.57) (xy 195.58 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6bb0df8b-b040-451a-80e9-661b2a0ef59e")
+	)
+	(wire
+		(pts
+			(xy 322.58 134.62) (xy 322.58 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6dc747ab-f1f2-4b0c-bef3-629a5597bff8")
+	)
+	(wire
+		(pts
+			(xy 261.62 64.77) (xy 261.62 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7098f131-41ff-4d0d-93e9-d803fd7a59b1")
+	)
+	(wire
+		(pts
+			(xy 195.58 85.09) (xy 195.58 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7246ccde-1c95-4e93-9132-025b48964764")
+	)
+	(wire
+		(pts
+			(xy 341.63 134.62) (xy 331.47 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "755058ba-412a-4f7a-931e-21a7bd8cd22d")
+	)
+	(wire
+		(pts
+			(xy 298.45 134.62) (xy 311.15 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "774771ac-be89-4e52-85eb-a0d5cd37d96c")
+	)
+	(wire
+		(pts
+			(xy 213.36 96.52) (xy 217.17 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78016d06-02b0-4c83-9c62-e3457be74a8b")
+	)
+	(wire
+		(pts
+			(xy 198.12 67.31) (xy 195.58 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a1320d9-1cd6-447c-a58e-e75c98c631f6")
+	)
+	(wire
+		(pts
+			(xy 331.47 134.62) (xy 331.47 132.08)
 		)
 		(stroke
 			(width 0)
@@ -1375,7 +2765,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 59.69) (xy 59.69 59.69)
+			(xy 326.39 132.08) (xy 331.47 132.08)
 		)
 		(stroke
 			(width 0)
@@ -1385,7 +2775,27 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 156.21) (xy 54.61 154.94)
+			(xy 217.17 96.52) (xy 228.6 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b7e4a5f-c9e2-4b81-9ee8-9483ee52700f")
+	)
+	(wire
+		(pts
+			(xy 208.28 115.57) (xy 219.71 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c62617b-661d-496d-94f6-6459b402782e")
+	)
+	(wire
+		(pts
+			(xy 17.78 158.75) (xy 17.78 157.48)
 		)
 		(stroke
 			(width 0)
@@ -1395,7 +2805,7 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 124.46) (xy 93.98 124.46)
+			(xy 77.47 127) (xy 62.23 127)
 		)
 		(stroke
 			(width 0)
@@ -1405,17 +2815,77 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 71.12) (xy 72.39 71.12)
+			(xy 283.21 156.21) (xy 283.21 161.29)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8f12415c-8e6d-49f3-8d79-9f046ed2f7d9")
+		(uuid "83780a7a-53fb-4ff2-9ede-c2e8dae598fb")
 	)
 	(wire
 		(pts
-			(xy 71.12 143.51) (xy 68.58 143.51)
+			(xy 238.76 109.22) (xy 250.19 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8928f3af-4af1-46be-baa1-562b8ee56646")
+	)
+	(wire
+		(pts
+			(xy 41.91 185.42) (xy 44.45 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89b412b2-a932-46a4-8fda-ec88f19434a2")
+	)
+	(wire
+		(pts
+			(xy 283.21 161.29) (xy 298.45 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8fc70b95-c384-4674-b41c-3413fd127471")
+	)
+	(wire
+		(pts
+			(xy 322.58 134.62) (xy 331.47 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90643f7c-6265-4311-87fa-1c9d49534623")
+	)
+	(wire
+		(pts
+			(xy 185.42 85.09) (xy 195.58 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "934c293a-edb1-4add-bd61-364e5b1872e4")
+	)
+	(wire
+		(pts
+			(xy 172.72 133.35) (xy 187.96 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96c5523f-6793-4cba-8524-d4aa4d84a222")
+	)
+	(wire
+		(pts
+			(xy 34.29 146.05) (xy 31.75 146.05)
 		)
 		(stroke
 			(width 0)
@@ -1425,17 +2895,17 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 109.22) (xy 77.47 109.22)
+			(xy 185.42 76.2) (xy 185.42 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9b929b42-09e1-485f-92fc-7da308b23a83")
+		(uuid "a095ba40-3f51-4a7d-b447-0248e50437e4")
 	)
 	(wire
 		(pts
-			(xy 45.72 109.22) (xy 54.61 109.22)
+			(xy 8.89 111.76) (xy 17.78 111.76)
 		)
 		(stroke
 			(width 0)
@@ -1445,27 +2915,117 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 82.55) (xy 82.55 83.82)
+			(xy 255.27 109.22) (xy 266.7 109.22)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a54fb889-65d1-41be-9339-6b744cedbd03")
+		(uuid "a39a26cd-de75-4212-af34-8324032182b5")
 	)
 	(wire
 		(pts
-			(xy 72.39 95.25) (xy 82.55 95.25)
+			(xy 71.12 143.51) (xy 71.12 120.65)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a75605ce-bb5c-497f-9890-f1f62684e8ca")
+		(uuid "a470e533-36bf-40be-b67e-f3f1ee615797")
 	)
 	(wire
 		(pts
-			(xy 88.9 146.05) (xy 86.36 146.05)
+			(xy 217.17 64.77) (xy 217.17 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a51d0a45-81a4-4417-b98e-f206a01a3980")
+	)
+	(wire
+		(pts
+			(xy 177.8 128.27) (xy 187.96 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a668f698-b1a0-4ff8-9f83-aa45b46807f1")
+	)
+	(wire
+		(pts
+			(xy 172.72 99.06) (xy 172.72 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a70ee97d-dc78-4155-a0a2-2ec7921c1d04")
+	)
+	(wire
+		(pts
+			(xy 283.21 140.97) (xy 283.21 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7da6d90-cf05-4516-8b27-70858e6792e9")
+	)
+	(wire
+		(pts
+			(xy 195.58 134.62) (xy 195.58 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a937bf17-039d-4964-91fa-fc0507167531")
+	)
+	(wire
+		(pts
+			(xy 195.58 73.66) (xy 195.58 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa53129c-15be-4d7d-8cd5-1847616c6345")
+	)
+	(wire
+		(pts
+			(xy 298.45 140.97) (xy 298.45 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aacf2f06-ecce-49f4-ab95-74cb385db7a8")
+	)
+	(wire
+		(pts
+			(xy 341.63 157.48) (xy 341.63 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab3491b8-547a-4fbc-8426-1bbf3f02cc00")
+	)
+	(wire
+		(pts
+			(xy 341.63 142.24) (xy 341.63 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab8e62ed-7ce7-4d97-a2a2-334fed60765d")
+	)
+	(wire
+		(pts
+			(xy 57.15 148.59) (xy 49.53 148.59)
 		)
 		(stroke
 			(width 0)
@@ -1475,7 +3035,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 133.35) (xy 68.58 133.35)
+			(xy 25.4 135.89) (xy 31.75 135.89)
 		)
 		(stroke
 			(width 0)
@@ -1485,47 +3045,157 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 91.44) (xy 82.55 95.25)
+			(xy 298.45 161.29) (xy 311.15 161.29)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b448d72c-4647-4aca-9b56-7957d8390fb3")
+		(uuid "b67391a5-ed37-4f0a-8491-3f0b44097d18")
 	)
 	(wire
 		(pts
-			(xy 49.53 95.25) (xy 59.69 95.25)
+			(xy 199.39 128.27) (xy 195.58 128.27)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c54e1c80-fe7f-4313-a2fc-b4db42937453")
+		(uuid "bc7182ee-95f7-4e5b-8bd2-f7972832bef5")
 	)
 	(wire
 		(pts
-			(xy 72.39 71.12) (xy 82.55 71.12)
+			(xy 85.09 132.08) (xy 85.09 154.94)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d1cc0a31-ce68-41de-ac48-7b4693f2a385")
+		(uuid "bf95a38f-5555-4de3-9b16-ac1ac85d126f")
 	)
 	(wire
 		(pts
-			(xy 77.47 116.84) (xy 77.47 109.22)
+			(xy 217.17 83.82) (xy 217.17 87.63)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d736a786-cc1d-485b-b196-de103f254ca6")
+		(uuid "c0afca85-f5d1-4dd0-afb4-1a209f64fcb4")
 	)
 	(wire
 		(pts
-			(xy 54.61 149.86) (xy 54.61 148.59)
+			(xy 251.46 64.77) (xy 261.62 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2d21f2b-c38d-4f43-8dc0-cfec55ba4829")
+	)
+	(wire
+		(pts
+			(xy 238.76 81.28) (xy 241.3 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4c68a54-3041-4e3d-8353-1a369aa96824")
+	)
+	(wire
+		(pts
+			(xy 39.37 161.29) (xy 44.45 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6c49a99-229a-4300-9170-5dd27c299676")
+	)
+	(wire
+		(pts
+			(xy 85.09 120.65) (xy 85.09 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c77c33fa-733b-438f-9905-bafd722487a2")
+	)
+	(wire
+		(pts
+			(xy 172.72 62.23) (xy 198.12 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7e8d049-a353-4d82-9eb0-928fc186f8d3")
+	)
+	(wire
+		(pts
+			(xy 217.17 72.39) (xy 217.17 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cacc85e4-808d-4d52-94d8-f3639c3f2b82")
+	)
+	(wire
+		(pts
+			(xy 341.63 134.62) (xy 341.63 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc55b616-af68-4eda-a058-2e66451a5c2d")
+	)
+	(wire
+		(pts
+			(xy 341.63 147.32) (xy 341.63 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf7d3054-d6de-427b-af20-248d850c00ab")
+	)
+	(wire
+		(pts
+			(xy 217.17 64.77) (xy 228.6 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7f210b2-b6aa-418f-8eb9-3b2324ebb250")
+	)
+	(wire
+		(pts
+			(xy 322.58 161.29) (xy 331.47 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d99111e6-c43a-4743-8107-de88f716f250")
+	)
+	(wire
+		(pts
+			(xy 238.76 76.2) (xy 241.3 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db856e03-fdab-453b-bea2-16ec1a3863ee")
+	)
+	(wire
+		(pts
+			(xy 17.78 152.4) (xy 17.78 151.13)
 		)
 		(stroke
 			(width 0)
@@ -1535,27 +3205,17 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 83.82) (xy 82.55 86.36)
+			(xy 193.04 133.35) (xy 195.58 133.35)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "df4334c4-0259-45ed-a892-f043386eb6d8")
+		(uuid "df3e19ac-1b9a-4b50-85d2-6fb211e03866")
 	)
 	(wire
 		(pts
-			(xy 72.39 71.12) (xy 72.39 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e139d705-0b9c-4af9-9154-673c2281e862")
-	)
-	(wire
-		(pts
-			(xy 107.95 111.76) (xy 107.95 109.22)
+			(xy 85.09 114.3) (xy 85.09 111.76)
 		)
 		(stroke
 			(width 0)
@@ -1565,37 +3225,117 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 93.98) (xy 72.39 95.25)
+			(xy 185.42 81.28) (xy 185.42 85.09)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e6b906e8-c032-4a5f-a8fc-3cfa89bf3a14")
+		(uuid "e156876b-82bd-4ce9-a75a-0911dae9aaa5")
 	)
 	(wire
 		(pts
-			(xy 82.55 95.25) (xy 92.71 95.25)
+			(xy 255.27 109.22) (xy 255.27 110.49)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ec3dff80-2dc0-4fff-bf7f-70763004d8a7")
+		(uuid "e19d61f0-5efc-466b-96b0-fcc7964d065a")
 	)
 	(wire
 		(pts
-			(xy 77.47 156.21) (xy 77.47 153.67)
+			(xy 44.45 184.15) (xy 44.45 185.42)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f1ecf5e0-9435-4294-b7d4-8584dd03c623")
+		(uuid "e2d850de-2dcf-4090-8d23-8961fe68cb7a")
 	)
 	(wire
 		(pts
-			(xy 59.69 95.25) (xy 69.85 95.25)
+			(xy 96.52 120.65) (xy 85.09 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7cc265b-ba81-4969-b3d8-0bd8b196fb35")
+	)
+	(wire
+		(pts
+			(xy 195.58 115.57) (xy 203.2 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e90b4ed0-58a0-486e-9fa4-edec92cb558a")
+	)
+	(wire
+		(pts
+			(xy 71.12 154.94) (xy 71.12 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed78e46c-b91c-4605-bb4f-e99412e3a13e")
+	)
+	(wire
+		(pts
+			(xy 44.45 161.29) (xy 44.45 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f05a980a-1d65-45cc-95c6-11dbc7e61d1e")
+	)
+	(wire
+		(pts
+			(xy 341.63 147.32) (xy 347.98 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f101d88c-54df-4422-b5b7-2aaeaebe5fc0")
+	)
+	(wire
+		(pts
+			(xy 195.58 146.05) (xy 195.58 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2720410-715d-4c3c-9b29-5fc2debc2519")
+	)
+	(wire
+		(pts
+			(xy 238.76 64.77) (xy 246.38 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f76ea553-f8d8-4198-9ccd-9d9f1e247f9b")
+	)
+	(wire
+		(pts
+			(xy 195.58 74.93) (xy 195.58 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9e3bd97-007a-48e9-b184-566af8b190be")
+	)
+	(wire
+		(pts
+			(xy 331.47 161.29) (xy 341.63 161.29)
 		)
 		(stroke
 			(width 0)
@@ -1605,7 +3345,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 118.11) (xy 54.61 121.92)
+			(xy 17.78 120.65) (xy 17.78 124.46)
 		)
 		(stroke
 			(width 0)
@@ -1613,38 +3353,148 @@
 		)
 		(uuid "ff86c623-14f4-4ed7-a983-439ea46f3a4b")
 	)
-	(label "VG"
-		(at 67.31 71.12 0)
+	(label "VOUT_TOP"
+		(at 49.53 127 0)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 0.762 0.762)
 			)
 			(justify left bottom)
 		)
-		(uuid "20e9519a-0c7e-4d2b-84c0-edac5b9e031e")
+		(uuid "09d12c2f-8f64-429e-80b0-d8ae4e7556d2")
 	)
-	(label "VCC"
-		(at 83.82 138.43 0)
+	(label "VSIN_CMP_BOT"
+		(at 227.33 96.52 180)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify right bottom)
+		)
+		(uuid "24faeed1-0d2a-460c-8106-18fce56a618d")
+	)
+	(label "VSIN_VREF"
+		(at 266.7 109.22 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "38f79676-f876-47c5-8ceb-af7f556827ed")
+	)
+	(label "VREF_TOP"
+		(at 24.13 124.46 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "32d90bce-f023-482b-bf83-cae47857064d")
+		(uuid "3c0008aa-5398-4091-9560-179bc6896010")
+	)
+	(label "VREF"
+		(at 214.63 146.05 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "42f19b2a-4e2d-4a12-9197-a2d4e08431d1")
+	)
+	(label "VSIN_CMP_TOP"
+		(at 227.33 64.77 180)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify right bottom)
+		)
+		(uuid "447cdd77-2e44-4c44-8db7-126680653cca")
+	)
+	(label "VSIN_IN"
+		(at 176.53 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "58ad141c-64c1-4e8e-95f2-9e41b16ebb11")
 	)
 	(label "VOUT"
-		(at 87.63 83.82 0)
+		(at 96.52 120.65 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "599871e9-8736-4267-84d3-8cca70fab322")
+	)
+	(label "VSIN_OUT"
+		(at 273.05 78.74 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "759d0aa7-b91d-4f5c-a9f5-0db4fd496f2a")
+	)
+	(label "VMID"
+		(at 347.98 147.32 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "7b842c2f-04ec-4f88-be26-85255d68e551")
+	)
+	(label "VREF_BOT"
+		(at 24.13 151.13 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "444c5fd3-985d-4902-91f3-16e10085e263")
+		(uuid "8d3c3a84-f149-48bc-afb4-2c49d6b06056")
+	)
+	(label "VSIN_VREF"
+		(at 172.72 62.23 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8d85c313-61f5-42e7-83da-8873999aa517")
+	)
+	(label "VOUT_BOT"
+		(at 49.53 148.59 0)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify left bottom)
+		)
+		(uuid "8fc2a7bf-012b-4abf-a7a7-ebf1c56ac150")
+	)
+	(label "VREF"
+		(at 250.19 109.22 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a5e0fb3e-3be8-414a-a1ce-22955f72a34e")
 	)
 	(label "VCC"
-		(at 45.72 109.22 0)
+		(at 8.89 111.76 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1654,7 +3504,7 @@
 		(uuid "adc71357-5c64-45c6-b02a-38f806945012")
 	)
 	(label "VG"
-		(at 62.23 133.35 0)
+		(at 25.4 135.89 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1664,7 +3514,7 @@
 		(uuid "ae89045d-cb75-4f90-9462-d8e76643e932")
 	)
 	(label "VCC"
-		(at 54.61 59.69 0)
+		(at 326.39 132.08 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1673,38 +3523,65 @@
 		)
 		(uuid "b9c2c5dd-a366-4339-bf22-20d521c4af5b")
 	)
+	(label "VSIN_VREF"
+		(at 177.8 128.27 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c382998b-909a-45a8-bf4d-b2cd3fb6e570")
+	)
+	(label "VG"
+		(at 39.37 161.29 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cfa66bd3-38ed-41c9-af9e-a37c35069d40")
+	)
+	(label "VSIN_OUT2"
+		(at 229.87 130.81 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e069f44f-fb66-4b17-93b9-b399538fb300")
+	)
 	(symbol
 		(lib_id "Simulation_SPICE:VDC")
-		(at 72.39 88.9 0)
+		(at 44.45 179.07 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "09445a3a-bd62-423e-9a7b-e33268c1ff6d")
 		(property "Reference" "V1"
-			(at 76.2 87.5001 0)
+			(at 48.26 177.6701 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
-		(property "Value" "30"
-			(at 76.2 88.7701 0)
+		(property "Value" "50"
+			(at 48.26 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
-			(at 72.39 88.9 0)
+			(at 44.45 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1713,7 +3590,7 @@
 			)
 		)
 		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#sec_Independent_Sources_for"
-			(at 72.39 88.9 0)
+			(at 44.45 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1722,7 +3599,7 @@
 			)
 		)
 		(property "Description" "Voltage source, DC"
-			(at 72.39 88.9 0)
+			(at 44.45 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1731,7 +3608,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=+ 2=-"
-			(at 72.39 88.9 0)
+			(at 44.45 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1740,7 +3617,7 @@
 			)
 		)
 		(property "Sim.Type" "DC"
-			(at 72.39 88.9 0)
+			(at 44.45 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1749,7 +3626,7 @@
 			)
 		)
 		(property "Sim.Device" "V"
-			(at 72.39 88.9 0)
+			(at 44.45 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1765,7 +3642,7 @@
 			(uuid "bd4e43b2-975f-4893-8692-af731374888d")
 		)
 		(instances
-			(project ""
+			(project "mixlib-kicad"
 				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
 					(reference "V1")
 					(unit 1)
@@ -1774,17 +3651,17 @@
 		)
 	)
 	(symbol
-		(lib_id "mixlib-discrete-zener:BZT52Cxx")
-		(at 82.55 78.74 270)
+		(lib_id "Simulation_SPICE:VDC")
+		(at 255.27 115.57 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "10b42424-ab10-4c8a-a8c9-2a04cb0b0e16")
-		(property "Reference" "D1"
-			(at 85.09 77.4699 90)
+		(uuid "0b21e7ed-0ac1-4f65-b6b1-4313ba59fab6")
+		(property "Reference" "V5"
+			(at 259.08 114.1701 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1792,121 +3669,17 @@
 				(justify left)
 			)
 		)
-		(property "Value" "BZT52C3V3"
-			(at 85.09 80.0099 90)
+		(property "Value" "45"
+			(at 259.08 116.7101 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 78.105 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzt52b2v4.pdf"
-			(at 82.55 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "500mW Small Signal Zener Diodes, SOD-123"
-			(at 82.55 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Library" "${MIXLIB_KICAD_SPICE_DIR}/mixlib-discrete-zener/BZT52C3V3.cir"
-			(at 82.55 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Name" "BZT52C3V3"
-			(at 82.55 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "SUBCKT"
-			(at 82.55 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 82.55 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "c79606ba-bf73-4087-94ab-bf0b9a419ddc")
-		)
-		(pin "1"
-			(uuid "b99686d5-7bea-49fa-920e-ede5f5a2031d")
-		)
-		(instances
-			(project ""
-				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
-					(reference "D1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 91.44 124.46 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "19ac15ad-412d-4bec-b34f-5f408eb61a84")
-		(property "Reference" "R3"
-			(at 91.44 129.54 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 91.44 127 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(property "Footprint" ""
-			(at 91.44 124.46 0)
+			(at 255.27 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1914,8 +3687,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 91.44 124.46 0)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#sec_Independent_Sources_for"
+			(at 255.27 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1923,17 +3696,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, small symbol"
-			(at 91.44 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "R"
-			(at 91.44 124.46 0)
+		(property "Description" "Voltage source, DC"
+			(at 255.27 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1942,7 +3706,285 @@
 			)
 		)
 		(property "Sim.Pins" "1=+ 2=-"
-			(at 91.44 124.46 0)
+			(at 255.27 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" "DC"
+			(at 255.27 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "V"
+			(at 255.27 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f715bbaf-d0b7-4da6-adf4-46b8f324c924")
+		)
+		(pin "1"
+			(uuid "f4c3494c-a07f-4bf6-bd79-6874d6014456")
+		)
+		(instances
+			(project "mixlib-kicad"
+				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
+					(reference "V5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 248.92 64.77 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0be933ca-36f1-456f-89b0-858aacc94ff5")
+		(property "Reference" "R19"
+			(at 248.92 59.69 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 248.92 62.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 248.92 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 248.92 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 248.92 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "R"
+			(at 248.92 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=+ 2=-"
+			(at 248.92 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a0372c2d-525b-4a7c-aaa4-cce139951ab4")
+		)
+		(pin "2"
+			(uuid "775fdffd-e95e-433c-8c68-b0fb4f3b9f9a")
+		)
+		(instances
+			(project "mixlib-kicad"
+				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
+					(reference "R19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 195.58 137.16 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "18333e49-4e53-4905-bbd3-e24d98439b60")
+		(property "Reference" "R22"
+			(at 198.12 135.8899 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "200k"
+			(at 198.12 138.4299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 195.58 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 195.58 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 195.58 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "R"
+			(at 195.58 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=+ 2=-"
+			(at 195.58 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dc103e3d-eadc-489b-afeb-ec896820ce81")
+		)
+		(pin "2"
+			(uuid "b6b18bc4-8275-4f7a-ba7d-d4de86017046")
+		)
+		(instances
+			(project "mixlib-kicad"
+				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
+					(reference "R22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 59.69 127 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "19ac15ad-412d-4bec-b34f-5f408eb61a84")
+		(property "Reference" "R3"
+			(at 59.69 132.08 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 59.69 129.54 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 59.69 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 59.69 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 59.69 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "R"
+			(at 59.69 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=+ 2=-"
+			(at 59.69 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1967,16 +4009,16 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 54.61 152.4 180)
+		(at 341.63 139.7 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "2254c7bb-70bc-4b73-81e9-a4e9c72dd0ca")
-		(property "Reference" "R13"
-			(at 57.15 151.1299 0)
+		(uuid "1edf7c6a-9ffc-42f2-be6a-8ebc1e3de838")
+		(property "Reference" "R7"
+			(at 344.17 138.4299 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -1985,7 +4027,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 57.15 153.6699 0)
+			(at 344.17 140.9699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1994,7 +4036,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 54.61 152.4 0)
+			(at 341.63 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2003,7 +4045,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 54.61 152.4 0)
+			(at 341.63 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2012,7 +4054,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 54.61 152.4 0)
+			(at 341.63 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2021,7 +4063,7 @@
 			)
 		)
 		(property "Sim.Device" "R"
-			(at 54.61 152.4 0)
+			(at 341.63 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2030,7 +4072,95 @@
 			)
 		)
 		(property "Sim.Pins" "1=+ 2=-"
-			(at 54.61 152.4 0)
+			(at 341.63 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2b299446-f359-4665-bb63-503068b3b2cd")
+		)
+		(pin "2"
+			(uuid "8ed84538-217e-4702-92e6-8f0c384abc78")
+		)
+		(instances
+			(project "mixlib-kicad"
+				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
+					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 17.78 154.94 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2254c7bb-70bc-4b73-81e9-a4e9c72dd0ca")
+		(property "Reference" "R13"
+			(at 20.32 153.6699 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10k"
+			(at 20.32 156.2099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 17.78 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 17.78 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 17.78 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "R"
+			(at 17.78 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=+ 2=-"
+			(at 17.78 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2055,16 +4185,16 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 107.95 114.3 180)
+		(at 195.58 78.74 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "4b489fb8-97d5-4fd1-9943-dbbba526f51a")
-		(property "Reference" "R2"
-			(at 110.49 113.0299 0)
+		(uuid "25f86d63-55aa-4f93-bea1-458391903dcb")
+		(property "Reference" "R10"
+			(at 198.12 77.4699 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -2072,8 +4202,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
-			(at 110.49 115.5699 0)
+		(property "Value" "560"
+			(at 198.12 80.0099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2082,7 +4212,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 107.95 114.3 0)
+			(at 195.58 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2091,7 +4221,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 107.95 114.3 0)
+			(at 195.58 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2100,7 +4230,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 107.95 114.3 0)
+			(at 195.58 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2109,7 +4239,7 @@
 			)
 		)
 		(property "Sim.Device" "R"
-			(at 107.95 114.3 0)
+			(at 195.58 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2118,7 +4248,717 @@
 			)
 		)
 		(property "Sim.Pins" "1=+ 2=-"
-			(at 107.95 114.3 0)
+			(at 195.58 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6fb05e12-67b4-4906-a215-a44707a78950")
+		)
+		(pin "2"
+			(uuid "21a35ebe-a3e2-4229-bb8d-b397412ab2f8")
+		)
+		(instances
+			(project "mixlib-kicad"
+				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
+					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 231.14 96.52 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "27e54296-b436-4b0a-8c3c-f7880712ca8c")
+		(property "Reference" "R18"
+			(at 231.14 91.44 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 231.14 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 231.14 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 231.14 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 231.14 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "R"
+			(at 231.14 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=+ 2=-"
+			(at 231.14 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "046ea38c-761b-42a9-8f93-2ee5adb7e37d")
+		)
+		(pin "2"
+			(uuid "1665a10b-3ab5-4649-9c65-3dd0d6e2d27c")
+		)
+		(instances
+			(project "mixlib-kicad"
+				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
+					(reference "R18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 341.63 161.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2ac659d5-9a91-431f-8b61-a1338b1dd8ab")
+		(property "Reference" "#PWR07"
+			(at 341.63 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 341.63 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 341.63 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 341.63 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 341.63 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "355fbd03-d455-4ca1-ba09-ab2946c2dacb")
+		)
+		(instances
+			(project "mixlib-kicad"
+				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
+					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 238.76 120.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "401f42cf-5a2d-4a5b-bcea-e9288aab5a64")
+		(property "Reference" "#PWR05"
+			(at 238.76 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 238.76 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 238.76 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 238.76 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 238.76 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3726175b-358f-4659-8b56-74c56b9336b7")
+		)
+		(instances
+			(project "mixlib-kicad"
+				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "mixlib-analog-opamp:MCP6404")
+		(at 361.95 106.68 0)
+		(mirror x)
+		(unit 4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "46ccfd34-87c9-4d73-9dfd-6381919f2e7e")
+		(property "Reference" "U2"
+			(at 368.3 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MCP6404"
+			(at 368.3 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 361.95 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ww1.microchip.com/downloads/aemDocuments/documents/MSLD/ProductDocuments/DataSheets/MCP6401-Data-Sheet-DS20002229.pdf"
+			(at 361.95 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1 MHz, 45 μA, 6V Dual Op-Amp"
+			(at 361.95 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 361.95 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "spice/mixlib-analog-opamp/MCP6404.cir"
+			(at 361.95 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "MCP6404"
+			(at 361.95 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=VOUTA 2=VINA- 3=VINA+ 4=VDD 5=VINB+ 6=VINB- 7=VOUTB 8=VOUTC 9=VINC- 10=VINC+ 11=VSS 12=VIND+ 13=VIND- 14=VOUTD"
+			(at 361.95 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "e20c6882-eb5a-4969-a226-caebdaa6267c")
+		)
+		(pin "7"
+			(uuid "c7abf3a4-8832-46e3-b33b-2e7166cd93fc")
+		)
+		(pin "6"
+			(uuid "21fdd5fd-2b40-4462-b732-7d597c32ffcb")
+		)
+		(pin "14"
+			(uuid "02efc04d-961a-4aeb-b285-e6bccb56753a")
+		)
+		(pin "1"
+			(uuid "c73de37a-0c18-4a11-a769-feb6b4e65cd4")
+		)
+		(pin "2"
+			(uuid "7cd8d1f3-82dc-413e-8043-3dff02a58f4d")
+		)
+		(pin "3"
+			(uuid "87249b7c-55ca-4f55-9183-e5498595e53e")
+		)
+		(pin "12"
+			(uuid "1b68e67b-a055-478c-9f03-b43967cfe498")
+		)
+		(pin "5"
+			(uuid "eb940a0f-df67-4212-93ec-05c053a9160f")
+		)
+		(pin "9"
+			(uuid "57c96597-f4e5-4cd5-a5a0-42ed38929f44")
+		)
+		(pin "13"
+			(uuid "4fed8328-0d59-4c7b-92d3-b0d73cc6cf7d")
+		)
+		(pin "10"
+			(uuid "c0190ed7-15c5-44b3-9325-7515d2edf57f")
+		)
+		(pin "4"
+			(uuid "5d9566fe-0067-4ee5-8f71-41737c410a7f")
+		)
+		(pin "11"
+			(uuid "2b1bfc2b-c61a-486d-b2fb-595620ce7a49")
+		)
+		(instances
+			(project "mixlib-kicad"
+				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
+					(reference "U2")
+					(unit 4)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "mixlib-analog-opamp:ADA4522-4")
+		(at 207.01 130.81 0)
+		(mirror x)
+		(unit 4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "47eb7016-46e4-48bd-8592-c67673e735cb")
+		(property "Reference" "U1"
+			(at 207.01 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ADA4522-4"
+			(at 207.01 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 205.74 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4522-1_4522-2_4522-4.pdf"
+			(at 208.28 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "55 V supply, 5uV max Vos, 3MHz GBW, EMI Enhanced, Zero Drift, 5.8 nV/√Hz, RRO quad operational amplifiers"
+			(at 207.01 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 207.01 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "${MIXLIB_KICAD_SPICE_DIR}/mixlib-analog-opamp/ADA4522-4.cir"
+			(at 207.01 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "ADA4522-4"
+			(at 207.01 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=OUTA 2=INA- 3=INA+ 4=V+ 5=INB+ 6=INB- 7=OUTB 8=OUTC 9=INC- 10=INC+ 11=V- 12=IND+ 13=IND- 14=OUTD"
+			(at 207.01 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "13"
+			(uuid "eaeca589-9291-44c6-92eb-42e2fac08d14")
+		)
+		(pin "6"
+			(uuid "e39b42f2-5ee6-4825-a17e-efdddf37d5c3")
+		)
+		(pin "9"
+			(uuid "bba0ba1e-e436-442c-a07f-0c9c81ea53dd")
+		)
+		(pin "12"
+			(uuid "c9967829-4693-4203-a896-11d29647286b")
+		)
+		(pin "11"
+			(uuid "e664a631-b589-4556-870b-79391766b272")
+		)
+		(pin "14"
+			(uuid "2dff8218-cf9c-4c66-ab7f-a0f7054b0aa9")
+		)
+		(pin "4"
+			(uuid "94fb25a7-f432-4eb1-8fed-e07752a8c3f6")
+		)
+		(pin "7"
+			(uuid "b2bc683b-9b96-4b25-9bba-edba6a360332")
+		)
+		(pin "5"
+			(uuid "33b9f391-6767-47af-9636-2a0469b11c54")
+		)
+		(pin "1"
+			(uuid "58f5c1e8-73b1-44b3-8ecd-38556c8b3781")
+		)
+		(pin "10"
+			(uuid "966cbb76-acd8-4016-9b41-8c13a9905f7f")
+		)
+		(pin "2"
+			(uuid "77def5ca-90e8-4953-90b8-09117186e09d")
+		)
+		(pin "3"
+			(uuid "60188a3e-9e41-400a-9b8f-d6c5eb23894c")
+		)
+		(pin "8"
+			(uuid "62db7f63-e595-4d81-80ea-309046daf2e3")
+		)
+		(instances
+			(project ""
+				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
+					(reference "U1")
+					(unit 4)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "mixlib-analog-opamp:ADA4522-2")
+		(at 41.91 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4875562c-afed-408b-b790-28a9e98d7e93")
+		(property "Reference" "U3"
+			(at 41.91 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ADA4522-2"
+			(at 41.91 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 41.91 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4522-1_4522-2_4522-4.pdf"
+			(at 41.91 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "55 V supply, 5uV max Vos, 3MHz GBW, EMI Enhanced, Zero Drift, 5.8 nV/√Hz, RRO dual operational amplifiers"
+			(at 41.91 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "spice/mixlib-analog-opamp/ADA4522-2.cir"
+			(at 41.91 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "ADA4522-2"
+			(at 41.91 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 41.91 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=OUTA 2=INA- 3=INA+ 4=V- 5=INB+ 6=INB- 7=OUTB 8=V+"
+			(at 41.91 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "84abff72-0980-4dd2-9a19-6710fdafacb8")
+		)
+		(pin "5"
+			(uuid "7b1d65ec-1766-4b09-93a4-bb1326172259")
+		)
+		(pin "1"
+			(uuid "618748ba-4b50-4bf9-b680-13eda77122ac")
+		)
+		(pin "2"
+			(uuid "08b5ae4b-d7db-4b98-baac-d7952dc3de4d")
+		)
+		(pin "3"
+			(uuid "12ba869e-8db3-44d9-a695-8c8814c6732a")
+		)
+		(pin "7"
+			(uuid "f9d3625c-fa74-4dc0-a331-309f79ddf5cd")
+		)
+		(pin "6"
+			(uuid "bb1987db-48e9-44e4-91ee-ff690488b998")
+		)
+		(pin "8"
+			(uuid "627aa5dc-fd28-449e-b8cf-36cc424c22bf")
+		)
+		(instances
+			(project ""
+				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 85.09 116.84 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4b489fb8-97d5-4fd1-9943-dbbba526f51a")
+		(property "Reference" "R2"
+			(at 87.63 115.5699 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10k"
+			(at 87.63 118.1099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 85.09 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 85.09 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 85.09 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "R"
+			(at 85.09 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=+ 2=-"
+			(at 85.09 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2142,8 +4982,182 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 341.63 154.94 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "522b5395-2292-42b1-839a-9fe19b8e532a")
+		(property "Reference" "R8"
+			(at 344.17 153.6699 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10k"
+			(at 344.17 156.2099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 341.63 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 341.63 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 341.63 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "R"
+			(at 341.63 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=+ 2=-"
+			(at 341.63 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "07ba4c6d-206d-4be4-9854-35e437fd2250")
+		)
+		(pin "2"
+			(uuid "0965f5de-edf3-4d1d-b5c5-111bc1e5d7bc")
+		)
+		(instances
+			(project "mixlib-kicad"
+				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
+					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 190.5 133.35 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5299a47e-c084-4012-aa28-8c33cb458973")
+		(property "Reference" "R21"
+			(at 190.5 138.43 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 190.5 135.89 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 190.5 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 190.5 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 190.5 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "R"
+			(at 190.5 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=+ 2=-"
+			(at 190.5 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "21280873-fc20-4d19-9f3d-0a2597d1bd4e")
+		)
+		(pin "2"
+			(uuid "edee21fb-d29c-483b-b5df-8d23c099a5aa")
+		)
+		(instances
+			(project "mixlib-kicad"
+				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
+					(reference "R21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 54.61 156.21 0)
+		(at 17.78 158.75 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2152,7 +5166,7 @@
 		(fields_autoplaced yes)
 		(uuid "535078f2-72b7-4d20-a3c8-2f79ab0cebbc")
 		(property "Reference" "#PWR02"
-			(at 54.61 162.56 0)
+			(at 17.78 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2161,15 +5175,16 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 54.61 161.29 0)
+			(at 17.78 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
-			(at 54.61 156.21 0)
+			(at 17.78 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2178,7 +5193,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 54.61 156.21 0)
+			(at 17.78 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2187,7 +5202,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 54.61 156.21 0)
+			(at 17.78 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2209,7 +5224,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 54.61 133.35 180)
+		(at 17.78 135.89 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2218,7 +5233,7 @@
 		(fields_autoplaced yes)
 		(uuid "5abddffc-0189-4ae7-8ba7-eb7afe0581d2")
 		(property "Reference" "R12"
-			(at 57.15 132.0799 0)
+			(at 20.32 134.6199 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -2227,7 +5242,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 57.15 134.6199 0)
+			(at 20.32 137.1599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2236,7 +5251,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 54.61 133.35 0)
+			(at 17.78 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2245,7 +5260,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 54.61 133.35 0)
+			(at 17.78 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2254,7 +5269,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 54.61 133.35 0)
+			(at 17.78 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2263,7 +5278,7 @@
 			)
 		)
 		(property "Sim.Device" "R"
-			(at 54.61 133.35 0)
+			(at 17.78 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2272,7 +5287,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=+ 2=-"
-			(at 54.61 133.35 0)
+			(at 17.78 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2296,25 +5311,150 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 91.44 146.05 270)
-		(mirror x)
-		(unit 1)
+		(lib_id "mixlib-analog-opamp:ADA4522-2")
+		(at 325.12 146.05 0)
+		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "824d6f28-6c88-42ff-a128-0b808b7304c3")
-		(property "Reference" "R1"
-			(at 91.44 151.13 90)
+		(fields_autoplaced yes)
+		(uuid "68cf73d6-6961-4169-9386-f77f13160530")
+		(property "Reference" "U3"
+			(at 323.85 144.7799 0)
 			(effects
 				(font
-					(size 1.016 1.016)
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "ADA4522-2"
+			(at 323.85 147.3199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 325.12 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4522-1_4522-2_4522-4.pdf"
+			(at 325.12 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "55 V supply, 5uV max Vos, 3MHz GBW, EMI Enhanced, Zero Drift, 5.8 nV/√Hz, RRO dual operational amplifiers"
+			(at 325.12 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "spice/mixlib-analog-opamp/ADA4522-2.cir"
+			(at 325.12 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "ADA4522-2"
+			(at 325.12 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 325.12 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=OUTA 2=INA- 3=INA+ 4=V- 5=INB+ 6=INB- 7=OUTB 8=V+"
+			(at 325.12 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "84abff72-0980-4dd2-9a19-6710fdafacb8")
+		)
+		(pin "5"
+			(uuid "7b1d65ec-1766-4b09-93a4-bb1326172259")
+		)
+		(pin "1"
+			(uuid "618748ba-4b50-4bf9-b680-13eda77122ac")
+		)
+		(pin "2"
+			(uuid "08b5ae4b-d7db-4b98-baac-d7952dc3de4d")
+		)
+		(pin "3"
+			(uuid "12ba869e-8db3-44d9-a695-8c8814c6732a")
+		)
+		(pin "7"
+			(uuid "f9d3625c-fa74-4dc0-a331-309f79ddf5cd")
+		)
+		(pin "6"
+			(uuid "bb1987db-48e9-44e4-91ee-ff690488b998")
+		)
+		(pin "8"
+			(uuid "627aa5dc-fd28-449e-b8cf-36cc424c22bf")
+		)
+		(instances
+			(project ""
+				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
+					(reference "U3")
+					(unit 3)
 				)
 			)
 		)
-		(property "Value" "10k"
-			(at 91.44 148.59 90)
+	)
+	(symbol
+		(lib_id "mixlib-analog-opamp:ADA4522-4")
+		(at 248.92 78.74 0)
+		(mirror x)
+		(unit 3)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6d595684-1a35-42d0-b3d7-5d6984be49c2")
+		(property "Reference" "U1"
+			(at 248.92 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ADA4522-4"
+			(at 248.92 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2322,7 +5462,149 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 91.44 146.05 0)
+			(at 247.65 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4522-1_4522-2_4522-4.pdf"
+			(at 250.19 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "55 V supply, 5uV max Vos, 3MHz GBW, EMI Enhanced, Zero Drift, 5.8 nV/√Hz, RRO quad operational amplifiers"
+			(at 248.92 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 248.92 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "${MIXLIB_KICAD_SPICE_DIR}/mixlib-analog-opamp/ADA4522-4.cir"
+			(at 248.92 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "ADA4522-4"
+			(at 248.92 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=OUTA 2=INA- 3=INA+ 4=V+ 5=INB+ 6=INB- 7=OUTB 8=OUTC 9=INC- 10=INC+ 11=V- 12=IND+ 13=IND- 14=OUTD"
+			(at 248.92 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "13"
+			(uuid "eaeca589-9291-44c6-92eb-42e2fac08d14")
+		)
+		(pin "6"
+			(uuid "e39b42f2-5ee6-4825-a17e-efdddf37d5c3")
+		)
+		(pin "9"
+			(uuid "bba0ba1e-e436-442c-a07f-0c9c81ea53dd")
+		)
+		(pin "12"
+			(uuid "c9967829-4693-4203-a896-11d29647286b")
+		)
+		(pin "11"
+			(uuid "e664a631-b589-4556-870b-79391766b272")
+		)
+		(pin "14"
+			(uuid "2dff8218-cf9c-4c66-ab7f-a0f7054b0aa9")
+		)
+		(pin "4"
+			(uuid "94fb25a7-f432-4eb1-8fed-e07752a8c3f6")
+		)
+		(pin "7"
+			(uuid "b2bc683b-9b96-4b25-9bba-edba6a360332")
+		)
+		(pin "5"
+			(uuid "33b9f391-6767-47af-9636-2a0469b11c54")
+		)
+		(pin "1"
+			(uuid "58f5c1e8-73b1-44b3-8ecd-38556c8b3781")
+		)
+		(pin "10"
+			(uuid "966cbb76-acd8-4016-9b41-8c13a9905f7f")
+		)
+		(pin "2"
+			(uuid "77def5ca-90e8-4953-90b8-09117186e09d")
+		)
+		(pin "3"
+			(uuid "60188a3e-9e41-400a-9b8f-d6c5eb23894c")
+		)
+		(pin "8"
+			(uuid "62db7f63-e595-4d81-80ea-309046daf2e3")
+		)
+		(instances
+			(project ""
+				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
+					(reference "U1")
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 238.76 102.87 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "793c8517-cbac-4e44-abe4-2739d52eea53")
+		(property "Reference" "R4"
+			(at 241.3 101.5999 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10k"
+			(at 241.3 104.1399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 238.76 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2331,7 +5613,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 91.44 146.05 0)
+			(at 238.76 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2340,7 +5622,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 91.44 146.05 0)
+			(at 238.76 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2349,7 +5631,7 @@
 			)
 		)
 		(property "Sim.Device" "R"
-			(at 91.44 146.05 0)
+			(at 238.76 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2358,7 +5640,498 @@
 			)
 		)
 		(property "Sim.Pins" "1=+ 2=-"
-			(at 91.44 146.05 0)
+			(at 238.76 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "47af9377-07f3-444c-8033-9c1c783faef8")
+		)
+		(pin "2"
+			(uuid "0dd2893f-7e82-4f97-b023-cad7c83b10bd")
+		)
+		(instances
+			(project "mixlib-kicad"
+				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "mixlib-analog-opamp:MCP6404")
+		(at 408.94 57.15 0)
+		(mirror x)
+		(unit 3)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "79520b84-2e85-4b4b-8659-90b7eebb544b")
+		(property "Reference" "U2"
+			(at 410.21 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MCP6404"
+			(at 410.21 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 408.94 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ww1.microchip.com/downloads/aemDocuments/documents/MSLD/ProductDocuments/DataSheets/MCP6401-Data-Sheet-DS20002229.pdf"
+			(at 408.94 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1 MHz, 45 μA, 6V Dual Op-Amp"
+			(at 408.94 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 408.94 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "spice/mixlib-analog-opamp/MCP6404.cir"
+			(at 408.94 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "MCP6404"
+			(at 408.94 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=VOUTA 2=VINA- 3=VINA+ 4=VDD 5=VINB+ 6=VINB- 7=VOUTB 8=VOUTC 9=VINC- 10=VINC+ 11=VSS 12=VIND+ 13=VIND- 14=VOUTD"
+			(at 408.94 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "663caf8a-0a6e-4c18-8675-56c1ad45bc84")
+		)
+		(pin "7"
+			(uuid "c7abf3a4-8832-46e3-b33b-2e7166cd93fc")
+		)
+		(pin "6"
+			(uuid "21fdd5fd-2b40-4462-b732-7d597c32ffcb")
+		)
+		(pin "14"
+			(uuid "e0810a63-9b9e-4200-94e0-335c056d5cff")
+		)
+		(pin "1"
+			(uuid "c73de37a-0c18-4a11-a769-feb6b4e65cd4")
+		)
+		(pin "2"
+			(uuid "7cd8d1f3-82dc-413e-8043-3dff02a58f4d")
+		)
+		(pin "3"
+			(uuid "87249b7c-55ca-4f55-9183-e5498595e53e")
+		)
+		(pin "12"
+			(uuid "06f539c0-2605-4af5-9097-7b7216566858")
+		)
+		(pin "5"
+			(uuid "eb940a0f-df67-4212-93ec-05c053a9160f")
+		)
+		(pin "9"
+			(uuid "f5049561-a13f-4bd3-980d-994a418d4fbb")
+		)
+		(pin "13"
+			(uuid "b421739a-3f0a-4e2a-9902-088454ccbe35")
+		)
+		(pin "10"
+			(uuid "22fa9282-97d9-4cbc-a313-f03450bbee4a")
+		)
+		(pin "4"
+			(uuid "5d9566fe-0067-4ee5-8f71-41737c410a7f")
+		)
+		(pin "11"
+			(uuid "2b1bfc2b-c61a-486d-b2fb-595620ce7a49")
+		)
+		(instances
+			(project "mixlib-kicad"
+				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
+					(reference "U2")
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "mixlib-analog-opamp:ADA4522-2")
+		(at 41.91 148.59 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7a49e6e2-4dfd-4d05-9d1a-6d6b02359c29")
+		(property "Reference" "U3"
+			(at 41.91 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ADA4522-2"
+			(at 41.91 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 41.91 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4522-1_4522-2_4522-4.pdf"
+			(at 41.91 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "55 V supply, 5uV max Vos, 3MHz GBW, EMI Enhanced, Zero Drift, 5.8 nV/√Hz, RRO dual operational amplifiers"
+			(at 41.91 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "spice/mixlib-analog-opamp/ADA4522-2.cir"
+			(at 41.91 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "ADA4522-2"
+			(at 41.91 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 41.91 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=OUTA 2=INA- 3=INA+ 4=V- 5=INB+ 6=INB- 7=OUTB 8=V+"
+			(at 41.91 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "84abff72-0980-4dd2-9a19-6710fdafacb8")
+		)
+		(pin "5"
+			(uuid "7b1d65ec-1766-4b09-93a4-bb1326172259")
+		)
+		(pin "1"
+			(uuid "618748ba-4b50-4bf9-b680-13eda77122ac")
+		)
+		(pin "2"
+			(uuid "08b5ae4b-d7db-4b98-baac-d7952dc3de4d")
+		)
+		(pin "3"
+			(uuid "12ba869e-8db3-44d9-a695-8c8814c6732a")
+		)
+		(pin "7"
+			(uuid "f9d3625c-fa74-4dc0-a331-309f79ddf5cd")
+		)
+		(pin "6"
+			(uuid "bb1987db-48e9-44e4-91ee-ff690488b998")
+		)
+		(pin "8"
+			(uuid "627aa5dc-fd28-449e-b8cf-36cc424c22bf")
+		)
+		(instances
+			(project ""
+				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
+					(reference "U3")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "mixlib-analog-opamp:ADA4522-4")
+		(at 285.75 148.59 0)
+		(unit 5)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7e6dda3b-67ee-4ec1-91ad-04482c667c25")
+		(property "Reference" "U1"
+			(at 284.48 147.3199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "ADA4522-4"
+			(at 284.48 149.8599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 284.48 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4522-1_4522-2_4522-4.pdf"
+			(at 287.02 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "55 V supply, 5uV max Vos, 3MHz GBW, EMI Enhanced, Zero Drift, 5.8 nV/√Hz, RRO quad operational amplifiers"
+			(at 285.75 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 285.75 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "${MIXLIB_KICAD_SPICE_DIR}/mixlib-analog-opamp/ADA4522-4.cir"
+			(at 285.75 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "ADA4522-4"
+			(at 285.75 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=OUTA 2=INA- 3=INA+ 4=V+ 5=INB+ 6=INB- 7=OUTB 8=OUTC 9=INC- 10=INC+ 11=V- 12=IND+ 13=IND- 14=OUTD"
+			(at 285.75 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "13"
+			(uuid "eaeca589-9291-44c6-92eb-42e2fac08d14")
+		)
+		(pin "6"
+			(uuid "e39b42f2-5ee6-4825-a17e-efdddf37d5c3")
+		)
+		(pin "9"
+			(uuid "bba0ba1e-e436-442c-a07f-0c9c81ea53dd")
+		)
+		(pin "12"
+			(uuid "c9967829-4693-4203-a896-11d29647286b")
+		)
+		(pin "11"
+			(uuid "e664a631-b589-4556-870b-79391766b272")
+		)
+		(pin "14"
+			(uuid "2dff8218-cf9c-4c66-ab7f-a0f7054b0aa9")
+		)
+		(pin "4"
+			(uuid "94fb25a7-f432-4eb1-8fed-e07752a8c3f6")
+		)
+		(pin "7"
+			(uuid "b2bc683b-9b96-4b25-9bba-edba6a360332")
+		)
+		(pin "5"
+			(uuid "33b9f391-6767-47af-9636-2a0469b11c54")
+		)
+		(pin "1"
+			(uuid "58f5c1e8-73b1-44b3-8ecd-38556c8b3781")
+		)
+		(pin "10"
+			(uuid "966cbb76-acd8-4016-9b41-8c13a9905f7f")
+		)
+		(pin "2"
+			(uuid "77def5ca-90e8-4953-90b8-09117186e09d")
+		)
+		(pin "3"
+			(uuid "60188a3e-9e41-400a-9b8f-d6c5eb23894c")
+		)
+		(pin "8"
+			(uuid "62db7f63-e595-4d81-80ea-309046daf2e3")
+		)
+		(instances
+			(project ""
+				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
+					(reference "U1")
+					(unit 5)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 59.69 148.59 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "824d6f28-6c88-42ff-a128-0b808b7304c3")
+		(property "Reference" "R1"
+			(at 59.69 153.67 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 59.69 151.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 59.69 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 59.69 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 59.69 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "R"
+			(at 59.69 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=+ 2=-"
+			(at 59.69 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2382,8 +6155,181 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 172.72 154.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "82a14c69-3805-4a37-9d3f-7e3ccb094e26")
+		(property "Reference" "#PWR03"
+			(at 172.72 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 172.72 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 172.72 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172.72 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 172.72 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b805400c-2b32-48c4-b992-b4fe426faa5b")
+		)
+		(instances
+			(project "mixlib-kicad"
+				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Simulation_SPICE:VSIN")
+		(at 172.72 149.86 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "836beef2-fb4e-495b-8c26-5c8a728c33bc")
+		(property "Reference" "V3"
+			(at 176.53 148.4601 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "VSIN"
+			(at 176.53 151.0001 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 172.72 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#sec_Independent_Sources_for"
+			(at 172.72 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Voltage source, sinusoidal"
+			(at 172.72 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=+ 2=-"
+			(at 172.72 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "dc=45 ampl=10u f=1k td=0 theta=0 phase=0 ac=1"
+			(at 176.53 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Sim.Type" "SIN"
+			(at 172.72 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "V"
+			(at 172.72 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e81ef2cd-1013-4ca6-afde-074f49ea6fdd")
+		)
+		(pin "2"
+			(uuid "666a930e-b269-40c7-b716-5810eaa0a4ee")
+		)
+		(instances
+			(project "mixlib-kicad"
+				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
+					(reference "V3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "mixlib-discrete-npn:MMBT5551L")
-		(at 105.41 146.05 0)
+		(at 68.58 148.59 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2392,7 +6338,7 @@
 		(fields_autoplaced yes)
 		(uuid "8444ea96-3931-4a66-a9e8-5f18071a9fee")
 		(property "Reference" "Q2"
-			(at 110.49 144.7799 0)
+			(at 73.66 147.3199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2401,7 +6347,7 @@
 			)
 		)
 		(property "Value" "MMBT5551L"
-			(at 110.49 147.3199 0)
+			(at 73.66 149.8599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2410,7 +6356,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 110.49 147.955 0)
+			(at 73.66 150.495 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2421,7 +6367,7 @@
 			)
 		)
 		(property "Datasheet" "www.onsemi.com/pub/Collateral/MMBT5550LT1-D.PDF"
-			(at 105.41 146.05 0)
+			(at 68.58 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2431,7 +6377,7 @@
 			)
 		)
 		(property "Description" "0.6A Ic, 160V Vce, NPN Transistor, SOT-23"
-			(at 105.41 146.05 0)
+			(at 68.58 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2439,8 +6385,8 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Library" "${MIXLIB_KICAD_SPICE_DIR}/mixlib-discrete-npn/MMBT5551L.cir"
-			(at 105.41 146.05 0)
+		(property "Sim.Library" "spice/mixlib-discrete-npn/MMBT5551L.cir"
+			(at 68.58 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2449,7 +6395,7 @@
 			)
 		)
 		(property "Sim.Name" "MMBT5551L"
-			(at 105.41 146.05 0)
+			(at 68.58 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2458,7 +6404,7 @@
 			)
 		)
 		(property "Sim.Device" "SUBCKT"
-			(at 105.41 146.05 0)
+			(at 68.58 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2467,7 +6413,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=B 2=E 3=C"
-			(at 105.41 146.05 0)
+			(at 68.58 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2494,99 +6440,32 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 77.47 156.21 0)
+		(lib_id "mixlib-analog-opamp:MCP6404")
+		(at 365.76 43.18 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8b05f054-6e44-48a2-be58-6a220741bce6")
-		(property "Reference" "#PWR04"
-			(at 77.47 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 77.47 161.29 0)
+		(uuid "8a205484-dda5-4372-bbc9-50f8216d58a3")
+		(property "Reference" "U2"
+			(at 367.03 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 77.47 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 77.47 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 77.47 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "45b13a7d-6282-4326-9c38-95f338ab82ce")
-		)
-		(instances
-			(project "mixlib-kicad"
-				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
-					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "mixlib-analog-opamp:MCP6401")
-		(at 77.47 124.46 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "92d6d1da-ca1d-4586-9a21-704cfaceca3f")
-		(property "Reference" "U1"
-			(at 90.17 118.0398 0)
+		(property "Value" "MCP6404"
+			(at 367.03 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "MCP6401"
-			(at 90.17 120.5798 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-353_SC-70-5"
-			(at 79.248 136.398 0)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 365.76 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2595,7 +6474,7 @@
 			)
 		)
 		(property "Datasheet" "https://ww1.microchip.com/downloads/aemDocuments/documents/MSLD/ProductDocuments/DataSheets/MCP6401-Data-Sheet-DS20002229.pdf"
-			(at 78.994 138.43 0)
+			(at 365.76 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2603,26 +6482,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1 MHz, 45 μA, 6V Single Op-Amp"
-			(at 79.248 136.906 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Library" "${MIXLIB_KICAD_SPICE_DIR}/mixlib-analog-opamp/MCP6401.cir"
-			(at 77.47 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Name" "MCP6401"
-			(at 77.47 124.46 0)
+		(property "Description" "1 MHz, 45 μA, 6V Dual Op-Amp"
+			(at 365.76 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2631,7 +6492,7 @@
 			)
 		)
 		(property "Sim.Device" "SUBCKT"
-			(at 77.47 124.46 0)
+			(at 365.76 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2639,29 +6500,397 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Pins" "1=VOUT 2=VSS 3=VIN+ 4=VIN- 5=VDD"
-			(at 77.47 124.46 0)
+		(property "Sim.Library" "spice/mixlib-analog-opamp/MCP6404.cir"
+			(at 365.76 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "MCP6404"
+			(at 365.76 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=VOUTA 2=VINA- 3=VINA+ 4=VDD 5=VINB+ 6=VINB- 7=VOUTB 8=VOUTC 9=VINC- 10=VINC+ 11=VSS 12=VIND+ 13=VIND- 14=VOUTD"
+			(at 365.76 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "e20c6882-eb5a-4969-a226-caebdaa6267d")
+		)
+		(pin "7"
+			(uuid "c7abf3a4-8832-46e3-b33b-2e7166cd93fd")
+		)
+		(pin "6"
+			(uuid "21fdd5fd-2b40-4462-b732-7d597c32ffcc")
+		)
+		(pin "14"
+			(uuid "e0810a63-9b9e-4200-94e0-335c056d5d00")
+		)
+		(pin "1"
+			(uuid "07859b18-bda5-45c5-a4d7-045c8f891bf6")
+		)
+		(pin "2"
+			(uuid "b3c3b60e-a906-4d89-a95d-d65d5cc39aab")
+		)
+		(pin "3"
+			(uuid "2e0b2dfc-6957-4919-86c6-59febe98563d")
+		)
+		(pin "12"
+			(uuid "06f539c0-2605-4af5-9097-7b7216566859")
+		)
+		(pin "5"
+			(uuid "eb940a0f-df67-4212-93ec-05c053a91610")
+		)
+		(pin "9"
+			(uuid "57c96597-f4e5-4cd5-a5a0-42ed38929f45")
+		)
+		(pin "13"
+			(uuid "b421739a-3f0a-4e2a-9902-088454ccbe36")
+		)
+		(pin "10"
+			(uuid "c0190ed7-15c5-44b3-9325-7515d2edf580")
+		)
+		(pin "4"
+			(uuid "5d9566fe-0067-4ee5-8f71-41737c410a80")
+		)
+		(pin "11"
+			(uuid "2b1bfc2b-c61a-486d-b2fb-595620ce7a4a")
+		)
+		(instances
+			(project "mixlib-kicad"
+				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Simulation_SPICE:VDC")
+		(at 238.76 115.57 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8ca2e660-cd57-49c7-8fc6-d29b9b9ebc2f")
+		(property "Reference" "V4"
+			(at 242.57 114.1701 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2.5"
+			(at 242.57 116.7101 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 238.76 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#sec_Independent_Sources_for"
+			(at 238.76 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Voltage source, DC"
+			(at 238.76 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=+ 2=-"
+			(at 238.76 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" "DC"
+			(at 238.76 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "V"
+			(at 238.76 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
 		(pin "2"
-			(uuid "eff50c3a-6cdd-4ab6-aee0-4ce6256cf4dd")
+			(uuid "1a04417b-5f9d-45d2-8b27-7a5c110c42a4")
 		)
 		(pin "1"
-			(uuid "7e4634d6-a297-47fa-a06f-983cee5854f4")
+			(uuid "4d68fe8d-219b-4f61-a539-f21f4d6372ca")
 		)
-		(pin "3"
-			(uuid "7d21d5f9-d42a-436f-b968-10a8b6e2d66f")
+		(instances
+			(project "mixlib-kicad"
+				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
+					(reference "V4")
+					(unit 1)
+				)
+			)
 		)
-		(pin "5"
-			(uuid "e9078f24-81fa-45ff-bd99-da00d99fc37d")
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 205.74 115.57 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9dde1e05-a3a0-4e3d-bdc2-f6d8dccdac68")
+		(property "Reference" "R17"
+			(at 205.74 110.49 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "200k"
+			(at 205.74 113.03 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 205.74 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 205.74 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 205.74 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "R"
+			(at 205.74 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=+ 2=-"
+			(at 205.74 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "06e3aa76-58cb-4c0f-8086-489d15d11b33")
+		)
+		(pin "2"
+			(uuid "d2b691c6-9395-46b0-86af-309b2313ee6b")
+		)
+		(instances
+			(project "mixlib-kicad"
+				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
+					(reference "R17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "mixlib-analog-opamp:ADA4522-4")
+		(at 205.74 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a0970115-647d-4535-b1a9-64342a01720e")
+		(property "Reference" "U1"
+			(at 205.74 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ADA4522-4"
+			(at 205.74 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 204.47 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4522-1_4522-2_4522-4.pdf"
+			(at 207.01 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "55 V supply, 5uV max Vos, 3MHz GBW, EMI Enhanced, Zero Drift, 5.8 nV/√Hz, RRO quad operational amplifiers"
+			(at 205.74 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 205.74 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "${MIXLIB_KICAD_SPICE_DIR}/mixlib-analog-opamp/ADA4522-4.cir"
+			(at 205.74 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "ADA4522-4"
+			(at 205.74 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=OUTA 2=INA- 3=INA+ 4=V+ 5=INB+ 6=INB- 7=OUTB 8=OUTC 9=INC- 10=INC+ 11=V- 12=IND+ 13=IND- 14=OUTD"
+			(at 205.74 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "13"
+			(uuid "eaeca589-9291-44c6-92eb-42e2fac08d14")
+		)
+		(pin "6"
+			(uuid "e39b42f2-5ee6-4825-a17e-efdddf37d5c3")
+		)
+		(pin "9"
+			(uuid "bba0ba1e-e436-442c-a07f-0c9c81ea53dd")
+		)
+		(pin "12"
+			(uuid "c9967829-4693-4203-a896-11d29647286b")
+		)
+		(pin "11"
+			(uuid "e664a631-b589-4556-870b-79391766b272")
+		)
+		(pin "14"
+			(uuid "2dff8218-cf9c-4c66-ab7f-a0f7054b0aa9")
 		)
 		(pin "4"
-			(uuid "6d3a044d-fad0-453c-8da3-f123f98235e9")
+			(uuid "94fb25a7-f432-4eb1-8fed-e07752a8c3f6")
+		)
+		(pin "7"
+			(uuid "b2bc683b-9b96-4b25-9bba-edba6a360332")
+		)
+		(pin "5"
+			(uuid "33b9f391-6767-47af-9636-2a0469b11c54")
+		)
+		(pin "1"
+			(uuid "58f5c1e8-73b1-44b3-8ecd-38556c8b3781")
+		)
+		(pin "10"
+			(uuid "966cbb76-acd8-4016-9b41-8c13a9905f7f")
+		)
+		(pin "2"
+			(uuid "77def5ca-90e8-4953-90b8-09117186e09d")
+		)
+		(pin "3"
+			(uuid "60188a3e-9e41-400a-9b8f-d6c5eb23894c")
+		)
+		(pin "8"
+			(uuid "62db7f63-e595-4d81-80ea-309046daf2e3")
 		)
 		(instances
 			(project ""
@@ -2674,16 +6903,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 77.47 132.08 0)
+		(at 255.27 120.65 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "9e9ecf76-5150-4178-976e-215fd2184d66")
-		(property "Reference" "#PWR03"
-			(at 77.47 138.43 0)
+		(uuid "a347f49f-f380-4f85-a1ee-d86b1f3ad673")
+		(property "Reference" "#PWR08"
+			(at 255.27 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2692,15 +6921,16 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 77.47 137.16 0)
+			(at 255.27 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
-			(at 77.47 132.08 0)
+			(at 255.27 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2709,7 +6939,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 77.47 132.08 0)
+			(at 255.27 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2718,7 +6948,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 77.47 132.08 0)
+			(at 255.27 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2727,20 +6957,162 @@
 			)
 		)
 		(pin "1"
-			(uuid "5ea86135-ffea-444b-bd18-556fa8970876")
+			(uuid "e7897e7c-0888-49a9-9f95-1197de97cb03")
 		)
 		(instances
 			(project "mixlib-kicad"
 				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
-					(reference "#PWR03")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
+		(lib_id "mixlib-analog-opamp:MCP6404")
+		(at 298.45 148.59 0)
+		(mirror y)
+		(unit 5)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "afa708c2-4124-4437-9efb-61bff0246324")
+		(property "Reference" "U2"
+			(at 299.72 149.8601 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "MCP6404"
+			(at 299.72 147.3201 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 298.45 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ww1.microchip.com/downloads/aemDocuments/documents/MSLD/ProductDocuments/DataSheets/MCP6401-Data-Sheet-DS20002229.pdf"
+			(at 298.45 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1 MHz, 45 μA, 6V Dual Op-Amp"
+			(at 298.45 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 298.45 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "spice/mixlib-analog-opamp/MCP6404.cir"
+			(at 298.45 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "MCP6404"
+			(at 298.45 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=VOUTA 2=VINA- 3=VINA+ 4=VDD 5=VINB+ 6=VINB- 7=VOUTB 8=VOUTC 9=VINC- 10=VINC+ 11=VSS 12=VIND+ 13=VIND- 14=VOUTD"
+			(at 298.45 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "e20c6882-eb5a-4969-a226-caebdaa6267c")
+		)
+		(pin "7"
+			(uuid "c7abf3a4-8832-46e3-b33b-2e7166cd93fc")
+		)
+		(pin "6"
+			(uuid "21fdd5fd-2b40-4462-b732-7d597c32ffcb")
+		)
+		(pin "14"
+			(uuid "e0810a63-9b9e-4200-94e0-335c056d5cff")
+		)
+		(pin "1"
+			(uuid "c73de37a-0c18-4a11-a769-feb6b4e65cd4")
+		)
+		(pin "2"
+			(uuid "7cd8d1f3-82dc-413e-8043-3dff02a58f4d")
+		)
+		(pin "3"
+			(uuid "87249b7c-55ca-4f55-9183-e5498595e53e")
+		)
+		(pin "12"
+			(uuid "06f539c0-2605-4af5-9097-7b7216566858")
+		)
+		(pin "5"
+			(uuid "eb940a0f-df67-4212-93ec-05c053a9160f")
+		)
+		(pin "9"
+			(uuid "57c96597-f4e5-4cd5-a5a0-42ed38929f44")
+		)
+		(pin "13"
+			(uuid "b421739a-3f0a-4e2a-9902-088454ccbe35")
+		)
+		(pin "10"
+			(uuid "c0190ed7-15c5-44b3-9325-7515d2edf57f")
+		)
+		(pin "4"
+			(uuid "5d9566fe-0067-4ee5-8f71-41737c410a7f")
+		)
+		(pin "11"
+			(uuid "2b1bfc2b-c61a-486d-b2fb-595620ce7a49")
+		)
+		(instances
+			(project ""
+				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
+					(reference "U2")
+					(unit 5)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 107.95 154.94 0)
+		(at 71.12 157.48 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2749,7 +7121,7 @@
 		(fields_autoplaced yes)
 		(uuid "afdeea63-84e2-4ba0-94d6-3937b55bd0df")
 		(property "Reference" "#PWR06"
-			(at 107.95 161.29 0)
+			(at 71.12 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2758,15 +7130,16 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 107.95 160.02 0)
+			(at 71.12 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
-			(at 107.95 154.94 0)
+			(at 71.12 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2775,7 +7148,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 107.95 154.94 0)
+			(at 71.12 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2784,7 +7157,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 107.95 154.94 0)
+			(at 71.12 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2805,8 +7178,93 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 190.5 128.27 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bb26b341-d674-4a19-8016-73ac046fb7b5")
+		(property "Reference" "R20"
+			(at 190.5 123.19 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 190.5 125.73 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 190.5 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 190.5 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 190.5 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "R"
+			(at 190.5 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=+ 2=-"
+			(at 190.5 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cfbbbef0-e516-4dd5-a01b-114701bdd8e3")
+		)
+		(pin "2"
+			(uuid "e97f643b-264b-49c8-81cd-0e2d7a0691f6")
+		)
+		(instances
+			(project "mixlib-kicad"
+				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
+					(reference "R20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "mixlib-discrete-npn:MMBT5551L")
-		(at 105.41 124.46 0)
+		(at 82.55 127 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2815,7 +7273,7 @@
 		(fields_autoplaced yes)
 		(uuid "bf11e447-cd05-45dc-b679-741499c39e07")
 		(property "Reference" "Q1"
-			(at 110.49 123.1899 0)
+			(at 87.63 125.7299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2824,7 +7282,7 @@
 			)
 		)
 		(property "Value" "MMBT5551L"
-			(at 110.49 125.7299 0)
+			(at 87.63 128.2699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2833,7 +7291,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 110.49 126.365 0)
+			(at 87.63 128.905 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2844,7 +7302,7 @@
 			)
 		)
 		(property "Datasheet" "www.onsemi.com/pub/Collateral/MMBT5550LT1-D.PDF"
-			(at 105.41 124.46 0)
+			(at 82.55 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2854,7 +7312,7 @@
 			)
 		)
 		(property "Description" "0.6A Ic, 160V Vce, NPN Transistor, SOT-23"
-			(at 105.41 124.46 0)
+			(at 82.55 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2862,8 +7320,8 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Library" "${MIXLIB_KICAD_SPICE_DIR}/mixlib-discrete-npn/MMBT5551L.cir"
-			(at 105.41 124.46 0)
+		(property "Sim.Library" "spice/mixlib-discrete-npn/MMBT5551L.cir"
+			(at 82.55 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2872,7 +7330,7 @@
 			)
 		)
 		(property "Sim.Name" "MMBT5551L"
-			(at 105.41 124.46 0)
+			(at 82.55 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2881,7 +7339,7 @@
 			)
 		)
 		(property "Sim.Device" "SUBCKT"
-			(at 105.41 124.46 0)
+			(at 82.55 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2890,7 +7348,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=B 2=E 3=C"
-			(at 105.41 124.46 0)
+			(at 82.55 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2917,130 +7375,17 @@
 		)
 	)
 	(symbol
-		(lib_id "mixlib-analog-opamp:MCP6401")
-		(at 77.47 146.05 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d220017f-929c-4ef8-b139-30dc26b1ba32")
-		(property "Reference" "U2"
-			(at 90.17 139.6298 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MCP6401"
-			(at 90.17 142.1698 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-353_SC-70-5"
-			(at 79.248 157.988 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://ww1.microchip.com/downloads/aemDocuments/documents/MSLD/ProductDocuments/DataSheets/MCP6401-Data-Sheet-DS20002229.pdf"
-			(at 78.994 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "1 MHz, 45 μA, 6V Single Op-Amp"
-			(at 79.248 158.496 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Library" "${MIXLIB_KICAD_SPICE_DIR}/mixlib-analog-opamp/MCP6401.cir"
-			(at 77.47 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Name" "MCP6401"
-			(at 77.47 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "SUBCKT"
-			(at 77.47 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=VOUT 2=VSS 3=VIN+ 4=VIN- 5=VDD"
-			(at 77.47 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "5"
-			(uuid "e75dfcc0-1c91-4ca9-adf2-2f25bbb2b681")
-		)
-		(pin "2"
-			(uuid "06a3d056-6309-453b-93f5-2c92b48441eb")
-		)
-		(pin "4"
-			(uuid "58c474e0-ee39-44c0-ad4a-17205b7b69aa")
-		)
-		(pin "3"
-			(uuid "8034a373-0348-4bd3-bc07-ac795807d3eb")
-		)
-		(pin "1"
-			(uuid "22ec0b5c-105b-4f39-88f3-ffb9b7974617")
-		)
-		(instances
-			(project ""
-				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
-					(reference "U2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small")
-		(at 82.55 88.9 180)
+		(at 185.42 78.74 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "ef16a8cd-e229-4062-9985-5d8ce1eb28d1")
-		(property "Reference" "R4"
-			(at 85.09 87.6299 0)
+		(uuid "cb1657f6-e669-4657-bbcb-21850381157a")
+		(property "Reference" "R9"
+			(at 187.96 77.4699 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -3048,8 +7393,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
-			(at 85.09 90.1699 0)
+		(property "Value" "1.5k"
+			(at 187.96 80.0099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3058,7 +7403,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 82.55 88.9 0)
+			(at 185.42 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3067,7 +7412,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 82.55 88.9 0)
+			(at 185.42 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3076,7 +7421,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 82.55 88.9 0)
+			(at 185.42 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3085,7 +7430,7 @@
 			)
 		)
 		(property "Sim.Device" "R"
-			(at 82.55 88.9 0)
+			(at 185.42 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3094,7 +7439,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=+ 2=-"
-			(at 82.55 88.9 0)
+			(at 185.42 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3103,50 +7448,50 @@
 			)
 		)
 		(pin "1"
-			(uuid "368466d9-e010-40d2-a7c7-d71e2d18bb7d")
+			(uuid "6d3bc74f-726f-47bf-a33c-41ab3ae15d7b")
 		)
 		(pin "2"
-			(uuid "8e859667-80d9-4f5e-a8ca-3f6add1b6b57")
+			(uuid "820e5ad8-fa68-4f46-af09-e47b76fefd1a")
 		)
 		(instances
 			(project "mixlib-kicad"
 				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
-					(reference "R4")
+					(reference "R9")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:VDC")
-		(at 59.69 88.9 0)
+		(lib_id "Device:R_Small")
+		(at 217.17 90.17 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "f9760512-72fc-48a0-af67-11fc43930e9c")
-		(property "Reference" "V2"
-			(at 63.5 87.5001 0)
+		(uuid "ce648544-cfe4-4539-85d5-110a2c0ca285")
+		(property "Reference" "R5"
+			(at 219.71 88.8999 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "5"
-			(at 63.5 90.0401 0)
+		(property "Value" "10k"
+			(at 219.71 91.4399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 59.69 88.9 0)
+			(at 217.17 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3154,8 +7499,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#sec_Independent_Sources_for"
-			(at 59.69 88.9 0)
+		(property "Datasheet" "~"
+			(at 217.17 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3163,8 +7508,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Voltage source, DC"
-			(at 59.69 88.9 0)
+		(property "Description" "Resistor, small symbol"
+			(at 217.17 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "R"
+			(at 217.17 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3173,7 +7527,367 @@
 			)
 		)
 		(property "Sim.Pins" "1=+ 2=-"
-			(at 59.69 88.9 0)
+			(at 217.17 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "de356a52-5591-4bbf-91fa-ccc736495eda")
+		)
+		(pin "2"
+			(uuid "59ce9ac8-706d-4839-ac63-2f87e7039b81")
+		)
+		(instances
+			(project "mixlib-kicad"
+				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "mixlib-analog-opamp:MCP6404")
+		(at 365.76 74.93 0)
+		(mirror x)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dfb948f4-b852-4e34-818f-d17acc782b16")
+		(property "Reference" "U2"
+			(at 367.03 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MCP6404"
+			(at 367.03 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 365.76 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ww1.microchip.com/downloads/aemDocuments/documents/MSLD/ProductDocuments/DataSheets/MCP6401-Data-Sheet-DS20002229.pdf"
+			(at 365.76 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1 MHz, 45 μA, 6V Dual Op-Amp"
+			(at 365.76 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 365.76 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "spice/mixlib-analog-opamp/MCP6404.cir"
+			(at 365.76 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "MCP6404"
+			(at 365.76 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=VOUTA 2=VINA- 3=VINA+ 4=VDD 5=VINB+ 6=VINB- 7=VOUTB 8=VOUTC 9=VINC- 10=VINC+ 11=VSS 12=VIND+ 13=VIND- 14=VOUTD"
+			(at 365.76 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "e20c6882-eb5a-4969-a226-caebdaa6267e")
+		)
+		(pin "7"
+			(uuid "38451c74-98a3-4c1e-bd2f-b44339b42197")
+		)
+		(pin "6"
+			(uuid "c39d80a7-0dde-4690-9ac2-170fa29abad1")
+		)
+		(pin "14"
+			(uuid "e0810a63-9b9e-4200-94e0-335c056d5d01")
+		)
+		(pin "1"
+			(uuid "c73de37a-0c18-4a11-a769-feb6b4e65cd6")
+		)
+		(pin "2"
+			(uuid "7cd8d1f3-82dc-413e-8043-3dff02a58f4f")
+		)
+		(pin "3"
+			(uuid "87249b7c-55ca-4f55-9183-e5498595e540")
+		)
+		(pin "12"
+			(uuid "06f539c0-2605-4af5-9097-7b721656685a")
+		)
+		(pin "5"
+			(uuid "512f27af-ba25-4000-a2b8-ba2e227cf09a")
+		)
+		(pin "9"
+			(uuid "57c96597-f4e5-4cd5-a5a0-42ed38929f46")
+		)
+		(pin "13"
+			(uuid "b421739a-3f0a-4e2a-9902-088454ccbe37")
+		)
+		(pin "10"
+			(uuid "c0190ed7-15c5-44b3-9325-7515d2edf581")
+		)
+		(pin "4"
+			(uuid "5d9566fe-0067-4ee5-8f71-41737c410a81")
+		)
+		(pin "11"
+			(uuid "2b1bfc2b-c61a-486d-b2fb-595620ce7a4b")
+		)
+		(instances
+			(project "mixlib-kicad"
+				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
+					(reference "U2")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "mixlib-analog-opamp:ADA4522-4")
+		(at 205.74 96.52 0)
+		(mirror x)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f32ab926-a9c5-4008-b930-7fc335543730")
+		(property "Reference" "U1"
+			(at 205.74 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ADA4522-4"
+			(at 205.74 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 204.47 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4522-1_4522-2_4522-4.pdf"
+			(at 207.01 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "55 V supply, 5uV max Vos, 3MHz GBW, EMI Enhanced, Zero Drift, 5.8 nV/√Hz, RRO quad operational amplifiers"
+			(at 205.74 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 205.74 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "${MIXLIB_KICAD_SPICE_DIR}/mixlib-analog-opamp/ADA4522-4.cir"
+			(at 205.74 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "ADA4522-4"
+			(at 205.74 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=OUTA 2=INA- 3=INA+ 4=V+ 5=INB+ 6=INB- 7=OUTB 8=OUTC 9=INC- 10=INC+ 11=V- 12=IND+ 13=IND- 14=OUTD"
+			(at 205.74 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "13"
+			(uuid "eaeca589-9291-44c6-92eb-42e2fac08d14")
+		)
+		(pin "6"
+			(uuid "e39b42f2-5ee6-4825-a17e-efdddf37d5c3")
+		)
+		(pin "9"
+			(uuid "bba0ba1e-e436-442c-a07f-0c9c81ea53dd")
+		)
+		(pin "12"
+			(uuid "c9967829-4693-4203-a896-11d29647286b")
+		)
+		(pin "11"
+			(uuid "e664a631-b589-4556-870b-79391766b272")
+		)
+		(pin "14"
+			(uuid "2dff8218-cf9c-4c66-ab7f-a0f7054b0aa9")
+		)
+		(pin "4"
+			(uuid "94fb25a7-f432-4eb1-8fed-e07752a8c3f6")
+		)
+		(pin "7"
+			(uuid "b2bc683b-9b96-4b25-9bba-edba6a360332")
+		)
+		(pin "5"
+			(uuid "33b9f391-6767-47af-9636-2a0469b11c54")
+		)
+		(pin "1"
+			(uuid "58f5c1e8-73b1-44b3-8ecd-38556c8b3781")
+		)
+		(pin "10"
+			(uuid "966cbb76-acd8-4016-9b41-8c13a9905f7f")
+		)
+		(pin "2"
+			(uuid "77def5ca-90e8-4953-90b8-09117186e09d")
+		)
+		(pin "3"
+			(uuid "60188a3e-9e41-400a-9b8f-d6c5eb23894c")
+		)
+		(pin "8"
+			(uuid "62db7f63-e595-4d81-80ea-309046daf2e3")
+		)
+		(instances
+			(project ""
+				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
+					(reference "U1")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Simulation_SPICE:VDC")
+		(at 331.47 154.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f9760512-72fc-48a0-af67-11fc43930e9c")
+		(property "Reference" "V2"
+			(at 335.28 153.5401 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "50"
+			(at 335.28 156.0801 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 331.47 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#sec_Independent_Sources_for"
+			(at 331.47 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Voltage source, DC"
+			(at 331.47 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=+ 2=-"
+			(at 331.47 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3182,7 +7896,7 @@
 			)
 		)
 		(property "Sim.Type" "DC"
-			(at 59.69 88.9 0)
+			(at 331.47 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3191,7 +7905,7 @@
 			)
 		)
 		(property "Sim.Device" "V"
-			(at 59.69 88.9 0)
+			(at 331.47 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3217,7 +7931,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 54.61 115.57 180)
+		(at 17.78 118.11 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3226,7 +7940,7 @@
 		(fields_autoplaced yes)
 		(uuid "f9d14e22-6599-4ee2-831b-9312978a680e")
 		(property "Reference" "R11"
-			(at 57.15 114.2999 0)
+			(at 20.32 116.8399 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -3235,7 +7949,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 57.15 116.8399 0)
+			(at 20.32 119.3799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3244,7 +7958,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 54.61 115.57 0)
+			(at 17.78 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3253,7 +7967,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 54.61 115.57 0)
+			(at 17.78 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3262,7 +7976,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 54.61 115.57 0)
+			(at 17.78 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3271,7 +7985,7 @@
 			)
 		)
 		(property "Sim.Device" "R"
-			(at 54.61 115.57 0)
+			(at 17.78 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3280,7 +7994,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=+ 2=-"
-			(at 54.61 115.57 0)
+			(at 17.78 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3305,7 +8019,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 69.85 97.79 0)
+		(at 41.91 187.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3314,7 +8028,7 @@
 		(fields_autoplaced yes)
 		(uuid "fa4e53d0-b5f5-4483-a33f-bcf808f15631")
 		(property "Reference" "#PWR01"
-			(at 69.85 104.14 0)
+			(at 41.91 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3323,15 +8037,16 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 69.85 102.87 0)
+			(at 41.91 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
-			(at 69.85 97.79 0)
+			(at 41.91 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3340,7 +8055,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 69.85 97.79 0)
+			(at 41.91 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3349,7 +8064,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 69.85 97.79 0)
+			(at 41.91 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3361,9 +8076,182 @@
 			(uuid "8ebfc33f-5d51-40d3-a804-215fbef91daf")
 		)
 		(instances
-			(project ""
+			(project "mixlib-kicad"
 				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
 					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 217.17 69.85 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fda107db-9852-4b8b-8dfd-8a74b8862bd9")
+		(property "Reference" "R6"
+			(at 219.71 68.5799 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10k"
+			(at 219.71 71.1199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 217.17 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 217.17 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 217.17 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "R"
+			(at 217.17 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=+ 2=-"
+			(at 217.17 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4289891c-1122-4aed-af81-1b515e0a4897")
+		)
+		(pin "2"
+			(uuid "648496cf-cd51-41ab-8649-4b01de7919c8")
+		)
+		(instances
+			(project "mixlib-kicad"
+				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 231.14 64.77 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ff6f3b68-82c2-477d-ba55-100e140ba432")
+		(property "Reference" "R16"
+			(at 231.14 59.69 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 231.14 62.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 231.14 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 231.14 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 231.14 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "R"
+			(at 231.14 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=+ 2=-"
+			(at 231.14 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ce932d5f-49d7-49b9-a769-2d81a3c57803")
+		)
+		(pin "2"
+			(uuid "74be7f5f-778c-4ee7-9790-2f78f1b98d92")
+		)
+		(instances
+			(project "mixlib-kicad"
+				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
+					(reference "R16")
 					(unit 1)
 				)
 			)
