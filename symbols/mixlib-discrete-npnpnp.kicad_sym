@@ -1309,7 +1309,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "Q"
-			(at 3.048 1.524 0)
+			(at 7.874 6.604 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1317,7 +1317,7 @@
 			)
 		)
 		(property "Value" "PMD3001D"
-			(at 8.382 -0.762 0)
+			(at 12.192 4.064 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1361,7 +1361,7 @@
 			)
 		)
 		(property "Sim.Name" "PMD3001D"
-			(at 9.906 -22.352 0)
+			(at 9.906 -17.272 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1370,7 +1370,7 @@
 			)
 		)
 		(property "Sim.Device" "SUBCKT"
-			(at 5.842 -21.59 0)
+			(at 5.842 -16.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1408,7 +1408,7 @@
 		(symbol "PMD3001D_0_1"
 			(polyline
 				(pts
-					(xy -5.08 0) (xy -5.08 -10.16)
+					(xy -3.81 3.81) (xy -3.81 -3.81)
 				)
 				(stroke
 					(width 0)
@@ -1420,7 +1420,7 @@
 			)
 			(polyline
 				(pts
-					(xy -5.08 0) (xy -1.905 0)
+					(xy -3.81 3.81) (xy -0.635 3.81)
 				)
 				(stroke
 					(width 0)
@@ -1432,7 +1432,7 @@
 			)
 			(polyline
 				(pts
-					(xy -5.08 -10.16) (xy -1.905 -10.16)
+					(xy -3.81 0) (xy -6.35 0)
 				)
 				(stroke
 					(width 0)
@@ -1444,7 +1444,19 @@
 			)
 			(polyline
 				(pts
-					(xy -1.905 1.905) (xy -1.905 -1.905)
+					(xy -3.81 -3.81) (xy -0.635 -3.81)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -0.635 5.715) (xy -0.635 1.905)
 				)
 				(stroke
 					(width 0.508)
@@ -1456,7 +1468,7 @@
 			)
 			(polyline
 				(pts
-					(xy -1.905 0.635) (xy 0 2.54)
+					(xy -0.635 4.445) (xy 1.27 6.35)
 				)
 				(stroke
 					(width 0)
@@ -1468,7 +1480,7 @@
 			)
 			(polyline
 				(pts
-					(xy -1.905 -0.635) (xy 0 -2.54)
+					(xy -0.635 3.175) (xy 1.27 1.27)
 				)
 				(stroke
 					(width 0)
@@ -1480,7 +1492,7 @@
 			)
 			(polyline
 				(pts
-					(xy -1.905 -9.525) (xy 0 -7.62)
+					(xy -0.635 -3.175) (xy 1.27 -1.27)
 				)
 				(stroke
 					(width 0)
@@ -1492,7 +1504,7 @@
 			)
 			(polyline
 				(pts
-					(xy -1.905 -10.795) (xy 0 -12.7)
+					(xy -0.635 -4.445) (xy 1.27 -6.35)
 				)
 				(stroke
 					(width 0)
@@ -1504,7 +1516,7 @@
 			)
 			(polyline
 				(pts
-					(xy -1.905 -12.065) (xy -1.905 -8.255)
+					(xy -0.635 -5.715) (xy -0.635 -1.905)
 				)
 				(stroke
 					(width 0.508)
@@ -1515,7 +1527,7 @@
 				)
 			)
 			(circle
-				(center -1.27 0)
+				(center 0 3.81)
 				(radius 2.8194)
 				(stroke
 					(width 0.254)
@@ -1526,10 +1538,34 @@
 				)
 			)
 			(circle
-				(center -1.27 -10.16)
+				(center 0 -3.81)
 				(radius 2.8194)
 				(stroke
 					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 1.27) (xy 1.27 -1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 0) (xy 6.35 0)
+				)
+				(stroke
+					(width 0)
 					(type default)
 				)
 				(fill
@@ -1538,8 +1574,19 @@
 			)
 		)
 		(symbol "PMD3001D_1_1"
+			(rectangle
+				(start -6.35 8.89)
+				(end 6.35 -8.89)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type background)
+				)
+			)
 			(circle
-				(center -5.08 -5.08)
+				(center -3.81 0)
 				(radius 0.3796)
 				(stroke
 					(width 0)
@@ -1551,7 +1598,7 @@
 			)
 			(polyline
 				(pts
-					(xy -1.905 0.635) (xy 0 2.54)
+					(xy -0.635 4.445) (xy 1.27 6.35)
 				)
 				(stroke
 					(width 0)
@@ -1563,7 +1610,7 @@
 			)
 			(polyline
 				(pts
-					(xy -1.905 -0.635) (xy 0 -2.54)
+					(xy -0.635 3.175) (xy 1.27 1.27)
 				)
 				(stroke
 					(width 0)
@@ -1575,7 +1622,7 @@
 			)
 			(polyline
 				(pts
-					(xy -1.905 -9.525) (xy 0 -7.62)
+					(xy -0.635 -3.175) (xy 1.27 -1.27)
 				)
 				(stroke
 					(width 0)
@@ -1587,7 +1634,7 @@
 			)
 			(polyline
 				(pts
-					(xy -1.905 -10.795) (xy 0 -12.7)
+					(xy -0.635 -4.445) (xy 1.27 -6.35)
 				)
 				(stroke
 					(width 0)
@@ -1599,7 +1646,19 @@
 			)
 			(polyline
 				(pts
-					(xy -1.27 -1.778) (xy -0.762 -1.27) (xy -0.254 -2.286) (xy -1.27 -1.778)
+					(xy 0 7.62) (xy 1.27 7.62) (xy 1.27 6.35)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 2.032) (xy 0.508 2.54) (xy 1.016 1.524) (xy 0 2.032)
 				)
 				(stroke
 					(width 0)
@@ -1611,19 +1670,7 @@
 			)
 			(polyline
 				(pts
-					(xy -0.1352 -8.2743) (xy -0.6432 -7.7663) (xy -1.1512 -8.7823) (xy -0.1352 -8.2743)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type outline)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 -2.54) (xy 0 -7.62)
+					(xy 0 -7.62) (xy 1.27 -7.62) (xy 1.27 -6.35)
 				)
 				(stroke
 					(width 0)
@@ -1631,10 +1678,22 @@
 				)
 				(fill
 					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.1348 -1.9243) (xy 0.6268 -1.4163) (xy 0.1188 -2.4323) (xy 1.1348 -1.9243)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
 				)
 			)
 			(circle
-				(center 0 -5.08)
+				(center 1.27 0)
 				(radius 0.3796)
 				(stroke
 					(width 0)
@@ -1645,7 +1704,7 @@
 				)
 			)
 			(pin input line
-				(at -7.62 -5.08 0)
+				(at -8.89 0 0)
 				(length 2.54)
 				(name "B"
 					(effects
@@ -1663,7 +1722,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 5.08 270)
+				(at 0 10.16 270)
 				(length 2.54)
 				(name "C1_1"
 					(effects
@@ -1681,7 +1740,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 5.08 270)
+				(at 0 10.16 270)
 				(length 2.54)
 				(name "C1_2"
 					(effects
@@ -1699,7 +1758,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -15.24 90)
+				(at 0 -10.16 90)
 				(length 2.54)
 				(name "C2_1"
 					(effects
@@ -1717,7 +1776,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -15.24 90)
+				(at 0 -10.16 90)
 				(length 2.54)
 				(name "C2_2"
 					(effects
@@ -1735,7 +1794,7 @@
 				)
 			)
 			(pin passive line
-				(at 2.54 -5.08 180)
+				(at 8.89 0 180)
 				(length 2.54)
 				(name "E"
 					(effects
