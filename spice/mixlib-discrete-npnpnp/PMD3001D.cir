@@ -1,0 +1,159 @@
+**********************************************************
+*
+* PMD3001D
+*
+* Nexperia
+*
+* Mosfet driver NPN/PNP transistor
+* IC   = 1  A
+* VCEO = 40 V 
+* hFE  = 300 - 830 @ 5V/200mA
+*
+*
+*
+*
+* Package pinning does not match Spice model pinning.
+* Package: SOT 457
+* 
+* Package Pin 1:       Base         TR1;TR2
+* Package Pin 2;3;5;6: Collector  TR2;TR2;TR1;TR1	
+* Package Pin 4:       Emitter      TR1;TR2
+*
+*
+* Extraction date (week/year): 18/2014 (NPN) / 18/2014 (PNP)
+* Spicemodel includes temperature dependency
+*
+**********************************************************
+*#
+* Please note: Diode D1, Transistor Q2 and Resistor RQ
+* are dedicated to improve modeling of quasi
+* saturation area and reverse mode operation
+* and do not reflect physical devices.
+*
+.SUBCKT PMD3001D B C2_1 C2_2 E C1_1 C1_2
+R1 C1_1 C1_2 1e-9
+R2 C2_1 C2_2 1e-9
+X1 C1_1 B E PMD3001D_NPN
+X2 C2_1 B E PMD3001D_PNP
+.ENDS PMD3001D
+
+.SUBCKT PMD3001D_NPN 1 2 3
+Q1 1 2 3 MAIN 0.605
+Q2 11 2 3 MAIN 0.395
+RQ 1 11 4.764
+D1 2 1 DIODE
+*
+.MODEL MAIN NPN
++ IS = 1.754E-013
++ NF = 1.007
++ ISE = 2.27E-014
++ NE = 1.598
++ BF = 530
++ IKF = 1.409
++ VAF = 50.82
++ NR = 1.007
++ ISC = 1.169E-014
++ NC = 1.254
++ BR = 115
++ IKR = 1.312
++ VAR = 60.12
++ RB = 21.5
++ IRB = 0.00075
++ RBM = 10
++ RE = 0.07608
++ RC = 0.03473
++ XTB = 1.631
++ EG = 1.11
++ XTI = 6.701
++ CJE = 1.107E-010
++ VJE = 0.7273
++ MJE = 0.3482
++ TF = 5.3E-010
++ XTF = 18
++ VTF = 1
++ ITF = 3
++ PTF = 0
++ CJC = 2.611E-011
++ VJC = 0.4078
++ MJC = 0.2731
++ XCJC = 1
++ TR = 6.5E-009
++ CJS = 0
++ VJS = 0.75
++ MJS = 0.333
++ FC = 0.98
+.MODEL DIODE D
++ IS = 2.183E-015
++ N = 0.9942
++ BV = 1000
++ IBV = 0.001
++ RS = 360.7
++ CJO = 0
++ VJ = 1
++ M = 0.9
++ FC = 0
++ TT = 0
++ EG = 1.1
++ XTI = 3
+.ENDS PMD3001D_NPN
+*
+.SUBCKT PMD3001D_PNP 1 2 3 
+Q1 1 2 3 MAIN 0.6189
+Q2 11 2 3 MAIN 0.3811
+RQ 1 11 5.37
+D1 1 2 DIODE
+*
+.MODEL MAIN PNP
++ IS = 1.885E-013
++ NF = 1.015
++ ISE = 4.485E-014
++ NE = 1.528
++ BF = 407
++ IKF = 0.5702
++ VAF = 42.58
++ NR = 1.014
++ ISC = 1.698E-014
++ NC = 1.274
++ BR = 44.4
++ IKR = 0.3873
++ VAR = 54.95
++ RB = 21.5
++ IRB = 0.00075
++ RBM = 10
++ RE = 0.08732
++ RC = 0.0182
++ XTB = 1.852
++ EG = 1.11
++ XTI = 7.413
++ CJE = 9.246E-011
++ VJE = 0.7862
++ MJE = 0.3883
++ TF = 8.4E-010
++ XTF = 10
++ VTF = 1
++ ITF = 3.5
++ PTF = 0
++ CJC = 3.585E-011
++ VJC = 0.5769
++ MJC = 0.3181
++ XCJC = 1
++ TR = 1E-009
++ CJS = 0
++ VJS = 0.75
++ MJS = 0.333
++ FC = 0.9
+.MODEL DIODE D
++ IS = 1.245E-014
++ N = 1.129
++ BV = 1000
++ IBV = 0.001
++ RS = 4777
++ CJO = 0
++ VJ = 1
++ M = 0.9
++ FC = 0
++ TT = 0
++ EG = 1.1
++ XTI = 3
+.ENDS PMD3001D_PNP
+*

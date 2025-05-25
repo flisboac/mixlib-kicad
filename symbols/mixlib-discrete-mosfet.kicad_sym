@@ -4441,7 +4441,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Library" "${MIXLIB_KICAD_SPICE_DIR}/mixlib-discrete-pmos/SUD50P06-15_HS.cir"
+		(property "Sim.Library" "${MIXLIB_KICAD_SPICE_DIR}/mixlib-discrete-pmos/SUD50P06-15_PS.cir"
 			(at 2.286 -12.7 0)
 			(effects
 				(font

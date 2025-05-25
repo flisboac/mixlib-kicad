@@ -17,8 +17,8 @@
 *****************************************************************************************************************************************
 *SRC=MMDT4413;DI_MMDT4413_NPN;BJTs NPN; Si;  40.0V  0.600A  275MHz   Diodes Inc. BJTs - Complementaryl
 .SUBCKT MMDT4413 E1 B1 C2 E2 B2 C1
-X1 C1 B1 E1 MMDT4413_NPN
-X2 C2 B2 E2 MMDT4413_PNP
+Q1 C1 B1 E1 MMDT4413_NPN
+Q2 C2 B2 E2 MMDT4413_PNP
 .ENDS MMDT4413
 
 .MODEL MMDT4413_NPN  NPN (IS=60.7f NF=1.00 BF=410 VAF=114

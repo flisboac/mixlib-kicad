@@ -1,0 +1,155 @@
+***********************************************************
+*
+* PBSS4160DPN
+*
+* Nexperia
+*
+* Low VCEsat double NPN/PNP (BISS) Transistor
+* Ic   = 1 A
+* Vceo = 60 V 
+* hFE  = min. 250 typ.500  @ 5V/1mA 
+* 
+*
+*
+*
+* Package pinning does not match Spice model pinning.
+* Package: SOT 457
+*  
+* Package Pin 1;4: Emitter TR1;TR2
+* Package Pin 2;5: Base TR1;TR2
+* Package Pin 3;6: Collector TR2;TR1
+*
+*
+* Extraction date (week/year): 31/2019 (TR1) / 27/2019 (TR2)
+* Spicemodel includes temperature dependency
+*
+**********************************************************
+*#
+* Please note: Diode D1, Transistor Q2 and Resistor RQ 
+* are dedicated to improve modeling of quasi
+* saturation area and reverse mode operation
+* and do not reflect physical devices.
+* 
+.SUBCKT PBSS4160DPN E1 B1 C2 E2 B2 C1
+X1 C1 B1 E1 PBSS4160DPN_NPN
+X2 C2 B2 E2 PBSS4160DPN_PNP
+.ENDS PBSS4160DPN
+
+.SUBCKT PBSS4160DPN_NPN 1 2 3
+Q1 1 2 3 MAIN 
+D1 2 1 DIODE 
+*
+.MODEL MAIN NPN 
++ IS = 1.903E-13
++ NF = 0.9792
++ ISE = 9.036E-16
++ NE = 1.126
++ BF = 503
++ IKF = 0.1644
++ VAF = 10
++ NR = 0.9805
++ ISC = 1E-18
++ NC = 1.821
++ BR = 50
++ IKR = 5.754
++ VAR = 18
++ RB = 19
++ IRB = 0.00043
++ RBM = 1.7
++ RE = 0.1259
++ RC = 0.1052
++ XTB = 0.9903
++ EG = 1.11
++ XTI = 0.7331
++ CJE = 1.115E-10
++ VJE = 0.587
++ MJE = 0.308
++ TF = 4.8E-10
++ XTF = 8
++ VTF = 1.5
++ ITF = 1.3
++ PTF = 0
++ CJC = 1.893E-11
++ VJC = 0.6185
++ MJC = 0.4452
++ XCJC = 1
++ TR = 4.3E-08
++ CJS = 0
++ VJS = 0.75
++ MJS = 0.333
++ FC = 0.9
+.MODEL DIODE D
++ IS = 8E-15
++ N = 0.98
++ BV = 1000
++ IBV = 0.001
++ RS = 850
++ CJO = 0
++ VJ = 1
++ M = 0.7
++ FC = 0
++ TT = 0
++ EG = 1.11
++ XTI = 3 
+.ENDS PBSS4160DPN_NPN
+*
+.SUBCKT PBSS4160DPN_PNP 1 2 3
+Q1 1 2 3 MAIN 0.881
+Q2 11 2 3 MAIN 0.119
+RQ 11 1 16.98
+D1 1 2 DIODE
+*
+.MODEL MAIN PNP
++ IS = 1.222E-13
++ NF = 0.9536
++ ISE = 8.69E-15
++ NE = 1.272
++ BF = 309.8
++ IKF = 0.6151
++ VAF = 9.213
++ NR = 0.9517
++ ISC = 1.406E-14
++ NC = 1.325
++ BR = 16.64
++ IKR = 7.256
++ VAR = 80
++ RB = 11.5
++ IRB = 0.0008
++ RBM = 2.3
++ RE = 0.07216
++ RC = 0.0612
++ XTB = 1.156
++ EG = 1.11
++ XTI = 2.904
++ CJE = 9.479E-11
++ VJE = 0.7328
++ MJE = 0.3663
++ TF = 1.111E-09
++ XTF = 1.587
++ VTF = 2.697
++ ITF = 0.5379
++ PTF = 0
++ CJC = 3.125E-11
++ VJC = 1
++ MJC = 0.5071
++ XCJC = 1
++ TR = 6.5E-08
++ CJS = 0
++ VJS = 0.75
++ MJS = 0.333
++ FC = 0.8944
+.MODEL DIODE D
++ IS = 8.286E-15
++ N = 0.9998
++ BV = 1000
++ IBV = 0.001
++ RS = 2768
++ CJO = 0
++ VJ = 1
++ M = 0.5
++ FC = 0
++ TT = 0
++ EG = 1.11
++ XTI = 3
+.ENDS PBSS4160DPN_PNP
+*
