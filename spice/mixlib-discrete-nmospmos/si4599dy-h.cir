@@ -1,0 +1,68 @@
+*Feb 16, 2009
+*Doc. ID: 64771, S09-0236, Rev. A
+*This document is intended as a SPICE modeling guideline and does not
+*constitute a commercial product data sheet.  Designers should refer to the
+*appropriate data sheet of the same number for guaranteed specification
+*limits.
+.SUBCKT Si4599DY S1 G1 S2 G2 D2 D2 D1 D1
+X1 D1 G1 S1 Si4599N
+X2 D2 G2 S2 Si4599P
+.ENDS Si4599DY
+*N-CH
+.SUBCKT Si4599N D G S
+M1  3  GX S S NMOS W=946643u L=0.25u 
+M2  S  GX S D PMOS W=946643u L=0.34u   
+RG  G  GX     2.2
+R1  D  3      RTEMP 12E-3
+CGS GX S      460E-12
+DBD S  D      DBD
+**************************************************************** 
+.MODEL  NMOS        NMOS ( LEVEL  = 3           TOX    = 5E-8
++ RS     = 14.8E-3         RD     = 0           NSUB   = 2.58E17   
++ kp     = 1.7E-5          UO     = 650             
++ VMAX   = 0               XJ     = 5E-7        KAPPA  = 5E-2
++ ETA    = 1E-4            TPG    = 1  
++ IS     = 0               LD     = 0                             
++ CGSO   = 0               CGDO   = 0           CGBO   = 0 
++ TLEV   = 1               BEX    = -1.5        TCV    = 4.3E-3
++ NFS    = 0.8E12          DELTA  = 0.1)
+**************************************************************** 
+.MODEL  PMOS        PMOS ( LEVEL  = 3           TOX    = 5E-8
++NSUB    = 2.7E16          IS     = 0           TPG    = -1)   
+**************************************************************** 
+.MODEL DBD D (CJO=160E-12 VJ=0.38 M=0.36
++FC=0.5 TT=1.69e-08 TREF=25 BV=41 
++RS=1.973e-03 N=1.034 IS=4.050e-12 IK=1000
++EG=1.192 XTI=1.74 TRS=3.232e-03 )
+**************************************************************** 
+.MODEL RTEMP R (TC1=6.5E-3 TC2=5.5E-6)
+**************************************************************** 
+.ENDS Si4599N
+*P-CH
+.SUBCKT Si4599P D G S
+M1 3 GX S S PMOS W= 2528000u L= 0.25u 
+M2 S GX S D NMOS W= 2528000u L= 3.753e-07 
+R1 D 3 3.281e-02 5.367e-03 7.752e-06 
+CGS GX S 4.407e-10 
+CGD GX D 6.321e-12 
+RG G GY 5.5 
+RTCV 100 S 1e6 1.350e-04 3.954e-07 
+ETCV GY GX 100 200 1 
+ITCV S 100 1u 
+VTCV 200 S 1 
+DBD D S DBD 
+**************************************************************** 
+.MODEL PMOS PMOS ( LEVEL = 3 TOX = 5e-8 
++ RS = 5.000e-04 KP = 2.457e-06 NSUB = 3.31e+16 
++ KAPPA = 1.000e-06 ETA = 4.189e-05 NFS = 1.414e+12 
++ LD = 0 IS = 0 TPG = -1) 
+*************************************************************** 
+.MODEL NMOS NMOS ( LEVEL = 3 TOX = 5e-8 
++NSUB = 1.940e+16 IS = 0 TPG = -1 ) 
+**************************************************************** 
+.MODEL DBD D ( 
++FC = 0.1 TT = 2.800e-08 TREF = 25 BV = 41 
++RS = 1.136e-02 N = 1.106e+00 IS = 6.687e-12 
++EG = 1.066e+00 XTI = 4.526e+00 TRS = 2.821e-03 
++CJO = 1.884e-10 VJ = 2.216e-01 M = 4.126e-01 ) 
+.ENDS Si4599P
