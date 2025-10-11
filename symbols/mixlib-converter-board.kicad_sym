@@ -542,7 +542,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "mixlib-misc-board:Specific_SparkFun_MAX17048"
 			(at 0 9.144 0)
 			(effects
 				(font
@@ -569,6 +569,15 @@
 				(hide yes)
 			)
 		)
+		(property "ProductPage" "https://www.sparkfun.com/sparkfun-lipo-fuel-gauge.html"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(symbol "Sparkfun_MAX17048_1_1"
 			(rectangle
 				(start -5.08 2.54)
@@ -581,7 +590,7 @@
 					(type background)
 				)
 			)
-			(pin power_in line
+			(pin passive line
 				(at -7.62 0 0)
 				(length 2.54)
 				(name "VCC"
@@ -627,7 +636,7 @@
 						)
 					)
 				)
-				(number "4"
+				(number "6"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -653,10 +662,10 @@
 					)
 				)
 			)
-			(pin output line
+			(pin open_collector line
 				(at 7.62 -5.08 180)
 				(length 2.54)
-				(name "ALT"
+				(name "~{ALT}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -681,7 +690,7 @@
 						)
 					)
 				)
-				(number "6"
+				(number "4"
 					(effects
 						(font
 							(size 1.27 1.27)
