@@ -28,4 +28,5 @@
   (lib (name "mixlib-sim-vsource")(type "KiCad")(uri "${KIPRJMOD}/symbols/mixlib-sim-vsource.kicad_sym")(options "")(descr ""))
   (lib (name "mixlib-discrete-nmospmos")(type "KiCad")(uri "${KIPRJMOD}/symbols/mixlib-discrete-nmospmos.kicad_sym")(options "")(descr ""))
   (lib (name "mixlib-misc-board")(type "KiCad")(uri "${KIPRJMOD}/symbols/mixlib-misc-board.kicad_sym")(options "")(descr ""))
+  (lib (name "mixlib-discrete-nmos")(type "KiCad")(uri "${KIPRJMOD}/symbols/mixlib-discrete-nmos.kicad_sym")(options "")(descr ""))
 )
