@@ -25,7 +25,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "mixlib-pmic-board:Specific_TP4056_DW01_Board"
 			(at 0 0 0)
 			(effects
 				(font
