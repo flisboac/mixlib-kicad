@@ -26,4 +26,5 @@
   (lib (name "mixlib-misc-board")(type "KiCad")(uri "${KIPRJMOD}/footprints/mixlib-misc-board.pretty")(options "")(descr ""))
   (lib (name "mixlib-pmic-board")(type "KiCad")(uri "${KIPRJMOD}/footprints/mixlib-pmic-board.pretty")(options "")(descr ""))
   (lib (name "mixlib-pmic-supervisor")(type "KiCad")(uri "${KIPRJMOD}/footprints/mixlib-pmic-supervisor.pretty")(options "")(descr ""))
+  (lib (name "mixlib-vendor-diodes")(type "KiCad")(uri "${KIPRJMOD}/footprints/mixlib-vendor-diodes.pretty")(options "")(descr ""))
 )
