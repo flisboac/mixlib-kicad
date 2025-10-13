@@ -10,7 +10,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at 3.048 9.652 0)
+			(at 2.032 10.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18,7 +18,7 @@
 			)
 		)
 		(property "Value" "SMFxxCT1G"
-			(at 0 0 0)
+			(at 6.604 8.128 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -350,6 +350,18 @@
 					(type outline)
 				)
 			)
+			(polyline
+				(pts
+					(xy 2.1297 3.6419) (xy 1.8657 4.41) (xy 2.1177 4.41) (xy 2.1417 3.6659) (xy 2.1297 3.6419)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type outline)
+				)
+			)
 			(arc
 				(start 1.21 0.748)
 				(mid 2.48 3.2036)
@@ -366,6 +378,18 @@
 				(pts
 					(xy 3.137 6.0197) (xy 2.6369 4.7706) (xy 3.4333 4.472) (xy 2.8857 3.4019) (xy 4.2296 4.5467) (xy 3.5577 5.0444)
 					(xy 4.3043 5.9403) (xy 3.137 6.0197)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.731 3.2958) (xy 4.338 3.6179) (xy 4.338 3.4019) (xy 3.7259 3.2938)
 				)
 				(stroke
 					(width 0)
