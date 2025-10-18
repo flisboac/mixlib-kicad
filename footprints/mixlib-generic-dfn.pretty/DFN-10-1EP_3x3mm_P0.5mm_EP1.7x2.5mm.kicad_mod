@@ -225,7 +225,7 @@
 		(uuid "b10a835b-0970-49a3-af6b-b9338e89158a")
 	)
 	(embedded_fonts no)
-	(model "${KICAD9_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/DFN-10-1EP_3x3mm_P0.5mm_EP1.7x2.5mm.wrl"
+	(model "${MIXLIB_KICAD_3DMODELS_DIR}/mixlib-generic-dfn.3dshapes/DFN-10-1EP_3x3mm_P0.5mm_EP1.65x2.38mm.step"
 		(offset
 			(xyz 0 0 0)
 		)

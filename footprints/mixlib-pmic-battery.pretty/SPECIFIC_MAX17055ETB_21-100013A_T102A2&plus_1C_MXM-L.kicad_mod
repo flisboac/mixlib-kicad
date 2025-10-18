@@ -345,4 +345,15 @@
 		(uuid "4e2cdf08-31d6-4f55-adc3-00b4e19e32d7")
 	)
 	(embedded_fonts no)
+	(model "${MIXLIB_KICAD_3DMODELS_DIR}/mixlib-generic-dfn.3dshapes/TDFN-10-1EP_2.5x2mm_P0.4mm_EP1.3x1.4mm_H0.75mm.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
 )

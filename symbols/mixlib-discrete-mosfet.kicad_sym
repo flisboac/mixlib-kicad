@@ -5194,7 +5194,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:Vishay_PowerPAK_1212-8_Dual"
+		(property "Footprint" "mixlib-vendor-vishay:Vishay_PowerPAK_1212-8_Dual"
 			(at -1.524 -17.272 0)
 			(effects
 				(font
@@ -5575,7 +5575,7 @@
 				)
 			)
 		)
-		(property "Footprint" "mixlib-generic-so:Vishay_PowerPAK_1212-8_Dual"
+		(property "Footprint" "mixlib-vendor-vishay:Vishay_PowerPAK_1212-8_Dual"
 			(at 1.524 -10.668 0)
 			(effects
 				(font
