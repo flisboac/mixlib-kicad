@@ -711,7 +711,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at 0 11.938 0)
+			(at 0 14.986 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -719,15 +719,15 @@
 			)
 		)
 		(property "Value" "XL63070"
-			(at 0.254 9.652 0)
+			(at 0.254 12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 0 0 0)
+		(property "Footprint" "mixlib-pmic-board:XL63070"
+			(at 1.27 -17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -736,7 +736,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps63070.pdf"
-			(at 0 0 0)
+			(at 1.27 -17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -744,8 +744,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic Buck-boost module based on the TPS63070"
-			(at 0 0 0)
+		(property "Description" "Generic Buck-boost module based on the TPS63070, with 3 pre-configured voltages (3.3V, 5V, 9V)"
+			(at 1.27 -17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -754,7 +754,7 @@
 			)
 		)
 		(property "Voltage" "5V"
-			(at 0 7.366 0)
+			(at 0 10.414 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -762,7 +762,7 @@
 			)
 		)
 		(property "Aliexpress Link" "https://pt.aliexpress.com/i/1005006357393275.html"
-			(at 0 0 0)
+			(at 1.27 -17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -772,7 +772,7 @@
 		)
 		(symbol "XL63070_1_1"
 			(rectangle
-				(start -6.35 6.35)
+				(start -6.35 8.89)
 				(end 6.35 -6.35)
 				(stroke
 					(width 0)
@@ -783,7 +783,7 @@
 				)
 			)
 			(pin power_in line
-				(at -8.89 3.81 0)
+				(at -8.89 6.35 0)
 				(length 2.54)
 				(name "VIN"
 					(effects
@@ -801,7 +801,7 @@
 				)
 			)
 			(pin power_in line
-				(at -8.89 3.81 0)
+				(at -8.89 6.35 0)
 				(length 2.54)
 				(name "VIN"
 					(effects
@@ -819,7 +819,7 @@
 				)
 			)
 			(pin input line
-				(at -8.89 0 0)
+				(at -8.89 -1.27 0)
 				(length 2.54)
 				(name "EN"
 					(effects
@@ -828,7 +828,7 @@
 						)
 					)
 				)
-				(number "9"
+				(number "5"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -873,7 +873,7 @@
 				)
 			)
 			(pin power_out line
-				(at 8.89 3.81 180)
+				(at 8.89 6.35 180)
 				(length 2.54)
 				(name "VOUT"
 					(effects
@@ -882,7 +882,43 @@
 						)
 					)
 				)
-				(number "5"
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 8.89 6.35 180)
+				(length 2.54)
+				(name "VOUT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 8.89 -3.81 180)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -901,24 +937,6 @@
 					)
 				)
 				(number "7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 8.89 -3.81 180)
-				(length 2.54)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "8"
 					(effects
 						(font
 							(size 1.27 1.27)
