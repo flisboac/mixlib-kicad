@@ -28,4 +28,7 @@
   (lib (name "mixlib-pmic-supervisor")(type "KiCad")(uri "${KIPRJMOD}/footprints/mixlib-pmic-supervisor.pretty")(options "")(descr ""))
   (lib (name "mixlib-vendor-diodes")(type "KiCad")(uri "${KIPRJMOD}/footprints/mixlib-vendor-diodes.pretty")(options "")(descr ""))
   (lib (name "mixlib-vendor-vishay")(type "KiCad")(uri "${KIPRJMOD}/footprints/mixlib-vendor-vishay.pretty")(options "")(descr ""))
+  (lib (name "mixlib-sensor-board")(type "KiCad")(uri "${KIPRJMOD}/footprints/mixlib-sensor-board.pretty")(options "")(descr ""))
+  (lib (name "mixlob-converter-board")(type "KiCad")(uri "${KIPRJMOD}/footprints/mixlob-converter-board.pretty")(options "")(descr ""))
+  (lib (name "mixlib-converter-board")(type "KiCad")(uri "${KIPRJMOD}/footprints/mixlib-converter-board.pretty")(options "")(descr ""))
 )

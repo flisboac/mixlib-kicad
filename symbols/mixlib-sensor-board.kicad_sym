@@ -2,7 +2,7 @@
 	(version 20241209)
 	(generator "kicad_symbol_editor")
 	(generator_version "9.0")
-	(symbol "CJMCU_MICS_6814"
+	(symbol "CJMCU-6814"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -14,7 +14,7 @@
 				)
 			)
 		)
-		(property "Value" "CJMCU_MICS_6814"
+		(property "Value" "CJMCU-6814"
 			(at 0 4.064 0)
 			(effects
 				(font
@@ -22,7 +22,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "mixlib-sensor-board:CMJCU-6814"
 			(at 6.35 -1.27 0)
 			(effects
 				(font
@@ -49,7 +49,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "CJMCU_MICS_6814_1_1"
+		(symbol "CJMCU-6814_1_1"
 			(rectangle
 				(start -5.08 2.54)
 				(end 5.08 -7.62)
@@ -97,7 +97,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin passive line
 				(at 7.62 0 180)
 				(length 2.54)
 				(name "CO"
@@ -115,7 +115,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin passive line
 				(at 7.62 -2.54 180)
 				(length 2.54)
 				(name "NH3"
@@ -133,7 +133,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin passive line
 				(at 7.62 -5.08 180)
 				(length 2.54)
 				(name "NO2"
@@ -154,7 +154,177 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "CJMCU_SCD40"
+	(symbol "DAOKI_INMP441_Breakout"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at 1.524 9.906 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DAOKI_INMP441_Breakout"
+			(at 12.7 7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "mixlib-sensor-board:DAOKI_INMP441_Breakout"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://invensense.tdk.com/wp-content/uploads/2015/02/INMP441.pdf"
+			(at -0.254 -22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Breakout oard for the INMP44, a MEMS microphone with I2S interface"
+			(at -2.794 -23.114 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "DAOKI_INMP441_Breakout_1_1"
+			(rectangle
+				(start -6.35 6.35)
+				(end 6.35 -6.35)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(pin passive line
+				(at -8.89 -2.54 0)
+				(length 2.54)
+				(name "L/R"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 8.89 270)
+				(length 2.54)
+				(name "VDD"
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -8.89 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 8.89 2.54 180)
+				(length 2.54)
+				(name "SCK"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 8.89 0 180)
+				(length 2.54)
+				(name "SD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 8.89 -2.54 180)
+				(length 2.54)
+				(name "WS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Generic_SCD4x_Board"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -166,7 +336,7 @@
 				)
 			)
 		)
-		(property "Value" "CJMCU_SCD40"
+		(property "Value" "Generic_SCD4x_Board"
 			(at 0 3.81 0)
 			(effects
 				(font
@@ -174,7 +344,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "mixlib-sensor-board:Generic_SCD4x_Board"
 			(at 0 0 0)
 			(effects
 				(font
@@ -192,7 +362,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "A breakout module for SCD40, a CO2 sensor"
+		(property "Description" "A breakout module for SCD40/SCD41, a CO2 sensor"
 			(at 0 0 0)
 			(effects
 				(font
@@ -210,7 +380,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "CJMCU_SCD40_1_1"
+		(symbol "Generic_SCD4x_Board_1_1"
 			(rectangle
 				(start -5.08 2.54)
 				(end 5.08 -5.08)
@@ -317,7 +487,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "mixlib-sensor-board:HiLetgo_BME680"
 			(at 0 0 0)
 			(effects
 				(font
@@ -428,7 +598,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin passive line
 				(at 7.62 -1.27 180)
 				(length 2.54)
 				(name "SDO"
@@ -449,7 +619,7 @@
 			(pin input line
 				(at 7.62 -3.81 180)
 				(length 2.54)
-				(name "CS"
+				(name "~{CS}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -487,7 +657,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "mixlib-sensor-board:Rtrobot_ENS160"
 			(at 0 0 0)
 			(effects
 				(font
@@ -664,6 +834,140 @@
 		)
 		(embedded_fonts no)
 	)
+	(symbol "Rtrobot_SGP41"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at -0.254 7.112 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Rtrobot_SGP41"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "mixlib-sensor-board:Rtrobot_SGP41"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://sensirion.com/media/documents/5FE8673C/61E96F50/Sensirion_Gas_Sensors_Datasheet_SGP41.pdf"
+			(at 3.048 -24.638 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Breakout board for the SGP41, a VOC and NOx sensor"
+			(at 3.048 -24.638 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "Rtrobot_SGP41_1_1"
+			(rectangle
+				(start -5.08 3.81)
+				(end 5.08 -3.81)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(pin power_in line
+				(at -7.62 1.27 0)
+				(length 2.54)
+				(name "VCC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -7.62 -1.27 0)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 7.62 1.27 180)
+				(length 2.54)
+				(name "SCL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 7.62 -1.27 180)
+				(length 2.54)
+				(name "SDA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
 	(symbol "Sparkfun_APDS9960"
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -684,7 +988,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "mixlib-sensor-board:Sparkfun_APDS9960"
 			(at 0 0 0)
 			(effects
 				(font
@@ -822,7 +1126,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin open_collector line
 				(at 7.62 -5.08 180)
 				(length 2.54)
 				(name "INT"
