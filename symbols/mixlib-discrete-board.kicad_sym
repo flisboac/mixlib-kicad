@@ -407,8 +407,8 @@
 		)
 		(symbol "Sparkfun_LogicLevelConverter_V2_1_1"
 			(rectangle
-				(start -10.16 11.43)
-				(end 10.16 -5.08)
+				(start -8.89 8.89)
+				(end 8.89 -2.54)
 				(stroke
 					(width 0)
 					(type solid)
@@ -419,7 +419,7 @@
 			)
 			(polyline
 				(pts
-					(xy -5.7302 7.8775) (xy -3.1902 7.8775)
+					(xy -5.7344 6.6169) (xy -3.1944 6.6169)
 				)
 				(stroke
 					(width 0)
@@ -430,8 +430,8 @@
 				)
 			)
 			(rectangle
-				(start -5.08 5.08)
-				(end -3.81 2.54)
+				(start -5.08 3.81)
+				(end -3.81 1.27)
 				(stroke
 					(width 0)
 					(type default)
@@ -441,7 +441,7 @@
 				)
 			)
 			(circle
-				(center -4.4626 6.3526)
+				(center -4.4668 5.092)
 				(radius 0.2743)
 				(stroke
 					(width 0)
@@ -464,7 +464,7 @@
 			)
 			(polyline
 				(pts
-					(xy -4.4566 5.08) (xy -4.4574 7.824)
+					(xy -4.4608 3.8194) (xy -4.4616 6.5634)
 				)
 				(stroke
 					(width 0)
@@ -476,7 +476,7 @@
 			)
 			(polyline
 				(pts
-					(xy -4.4566 2.54) (xy -4.4566 0)
+					(xy -4.4382 1.2462) (xy -4.4382 0.0176)
 				)
 				(stroke
 					(width 0)
@@ -488,7 +488,7 @@
 			)
 			(polyline
 				(pts
-					(xy -2.54 0) (xy -10.16 0)
+					(xy -2.54 0) (xy -8.89 0)
 				)
 				(stroke
 					(width 0)
@@ -535,7 +535,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0.0103 5.0912) (xy 0.0099 6.3616) (xy -4.4167 6.3624)
+					(xy 0.0103 3.8212) (xy 0.0099 5.0916) (xy -4.4167 5.0924)
 				)
 				(stroke
 					(width 0)
@@ -665,7 +665,7 @@
 			)
 			(polyline
 				(pts
-					(xy 2.54 0) (xy 10.16 0)
+					(xy 2.54 0) (xy 8.89 0)
 				)
 				(stroke
 					(width 0)
@@ -689,7 +689,7 @@
 			)
 			(polyline
 				(pts
-					(xy 3.1837 7.9532) (xy 5.7237 7.9532)
+					(xy 3.1946 6.6469) (xy 5.7346 6.6469)
 				)
 				(stroke
 					(width 0)
@@ -700,20 +700,8 @@
 				)
 			)
 			(rectangle
-				(start 3.81 5.08)
-				(end 5.08 2.54)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 4.4536 2.5399) (xy 4.4536 -0.0001)
-				)
+				(start 3.81 3.81)
+				(end 5.08 1.27)
 				(stroke
 					(width 0)
 					(type default)
@@ -735,7 +723,19 @@
 			)
 			(polyline
 				(pts
-					(xy 4.4573 5.1557) (xy 4.4565 7.8997)
+					(xy 4.456 1.2522) (xy 4.4536 -0.0001)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 4.4682 3.8494) (xy 4.4674 6.5934)
 				)
 				(stroke
 					(width 0)
@@ -746,23 +746,15 @@
 				)
 			)
 			(text "10k"
-				(at -7.112 3.81 0)
+				(at -6.858 2.54 0)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.016 1.016)
 					)
 				)
 			)
 			(text "LV"
-				(at -4.572 8.89 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(text "BSS138"
-				(at 0 -3.556 0)
+				(at -4.5762 7.6294 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -770,7 +762,7 @@
 				)
 			)
 			(text "HV"
-				(at 4.318 8.89 0)
+				(at 4.3289 7.5837 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -778,15 +770,15 @@
 				)
 			)
 			(text "10k"
-				(at 7.112 3.81 0)
+				(at 6.858 2.54 0)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.016 1.016)
 					)
 				)
 			)
 			(pin passive line
-				(at -12.7 0 0)
+				(at -11.43 0 0)
 				(length 2.54)
 				(name "LV1"
 					(effects
@@ -804,7 +796,7 @@
 				)
 			)
 			(pin passive line
-				(at 12.7 0 180)
+				(at 11.43 0 180)
 				(length 2.54)
 				(name "HV1"
 					(effects
@@ -824,8 +816,8 @@
 		)
 		(symbol "Sparkfun_LogicLevelConverter_V2_2_1"
 			(rectangle
-				(start -10.16 11.43)
-				(end 10.16 -5.08)
+				(start -8.89 8.89)
+				(end 8.89 -2.54)
 				(stroke
 					(width 0)
 					(type solid)
@@ -836,7 +828,7 @@
 			)
 			(polyline
 				(pts
-					(xy -5.7302 7.8775) (xy -3.1902 7.8775)
+					(xy -5.7344 6.6169) (xy -3.1944 6.6169)
 				)
 				(stroke
 					(width 0)
@@ -847,8 +839,8 @@
 				)
 			)
 			(rectangle
-				(start -5.08 5.08)
-				(end -3.81 2.54)
+				(start -5.08 3.81)
+				(end -3.81 1.27)
 				(stroke
 					(width 0)
 					(type default)
@@ -858,7 +850,7 @@
 				)
 			)
 			(circle
-				(center -4.4626 6.3526)
+				(center -4.4668 5.092)
 				(radius 0.2743)
 				(stroke
 					(width 0)
@@ -881,7 +873,7 @@
 			)
 			(polyline
 				(pts
-					(xy -4.4566 5.08) (xy -4.4574 7.824)
+					(xy -4.4608 3.8194) (xy -4.4616 6.5634)
 				)
 				(stroke
 					(width 0)
@@ -893,7 +885,7 @@
 			)
 			(polyline
 				(pts
-					(xy -4.4566 2.54) (xy -4.4566 0)
+					(xy -4.4382 1.2462) (xy -4.4382 0.0176)
 				)
 				(stroke
 					(width 0)
@@ -905,7 +897,7 @@
 			)
 			(polyline
 				(pts
-					(xy -2.54 0) (xy -10.16 0)
+					(xy -2.54 0) (xy -8.89 0)
 				)
 				(stroke
 					(width 0)
@@ -952,7 +944,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0.0103 5.0912) (xy 0.0103 6.3612) (xy -4.4591 6.3599)
+					(xy 0.0103 3.8212) (xy 0.0099 5.0916) (xy -4.4167 5.0924)
 				)
 				(stroke
 					(width 0)
@@ -1082,7 +1074,7 @@
 			)
 			(polyline
 				(pts
-					(xy 2.54 0) (xy 10.16 0)
+					(xy 2.54 0) (xy 8.89 0)
 				)
 				(stroke
 					(width 0)
@@ -1106,7 +1098,7 @@
 			)
 			(polyline
 				(pts
-					(xy 3.1837 7.9532) (xy 5.7237 7.9532)
+					(xy 3.1946 6.6469) (xy 5.7346 6.6469)
 				)
 				(stroke
 					(width 0)
@@ -1117,20 +1109,8 @@
 				)
 			)
 			(rectangle
-				(start 3.81 5.08)
-				(end 5.08 2.54)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 4.4536 2.5399) (xy 4.4536 -0.0001)
-				)
+				(start 3.81 3.81)
+				(end 5.08 1.27)
 				(stroke
 					(width 0)
 					(type default)
@@ -1152,7 +1132,19 @@
 			)
 			(polyline
 				(pts
-					(xy 4.4573 5.1557) (xy 4.4565 7.8997)
+					(xy 4.456 1.2522) (xy 4.4536 -0.0001)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 4.4682 3.8494) (xy 4.4674 6.5934)
 				)
 				(stroke
 					(width 0)
@@ -1163,23 +1155,15 @@
 				)
 			)
 			(text "10k"
-				(at -7.112 3.81 0)
+				(at -6.858 2.54 0)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.016 1.016)
 					)
 				)
 			)
 			(text "LV"
-				(at -4.572 8.89 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(text "BSS138"
-				(at 0 -3.556 0)
+				(at -4.5762 7.6294 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1187,7 +1171,7 @@
 				)
 			)
 			(text "HV"
-				(at 4.318 8.89 0)
+				(at 4.3289 7.5837 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1195,15 +1179,15 @@
 				)
 			)
 			(text "10k"
-				(at 7.112 3.81 0)
+				(at 6.858 2.54 0)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.016 1.016)
 					)
 				)
 			)
 			(pin passive line
-				(at -12.7 0 0)
+				(at -11.43 0 0)
 				(length 2.54)
 				(name "LV2"
 					(effects
@@ -1221,7 +1205,7 @@
 				)
 			)
 			(pin passive line
-				(at 12.7 0 180)
+				(at 11.43 0 180)
 				(length 2.54)
 				(name "HV2"
 					(effects
@@ -1241,8 +1225,8 @@
 		)
 		(symbol "Sparkfun_LogicLevelConverter_V2_3_1"
 			(rectangle
-				(start -10.16 11.43)
-				(end 10.16 -5.08)
+				(start -8.89 8.89)
+				(end 8.89 -2.54)
 				(stroke
 					(width 0)
 					(type solid)
@@ -1253,7 +1237,7 @@
 			)
 			(polyline
 				(pts
-					(xy -5.7302 7.8775) (xy -3.1902 7.8775)
+					(xy -5.7344 6.6169) (xy -3.1944 6.6169)
 				)
 				(stroke
 					(width 0)
@@ -1264,8 +1248,8 @@
 				)
 			)
 			(rectangle
-				(start -5.08 5.08)
-				(end -3.81 2.54)
+				(start -5.08 3.81)
+				(end -3.81 1.27)
 				(stroke
 					(width 0)
 					(type default)
@@ -1275,7 +1259,7 @@
 				)
 			)
 			(circle
-				(center -4.4626 6.3526)
+				(center -4.4668 5.092)
 				(radius 0.2743)
 				(stroke
 					(width 0)
@@ -1298,7 +1282,7 @@
 			)
 			(polyline
 				(pts
-					(xy -4.4566 5.08) (xy -4.4574 7.824)
+					(xy -4.4608 3.8194) (xy -4.4616 6.5634)
 				)
 				(stroke
 					(width 0)
@@ -1310,7 +1294,7 @@
 			)
 			(polyline
 				(pts
-					(xy -4.4566 2.54) (xy -4.4566 0)
+					(xy -4.4382 1.2462) (xy -4.4382 0.0176)
 				)
 				(stroke
 					(width 0)
@@ -1322,7 +1306,7 @@
 			)
 			(polyline
 				(pts
-					(xy -2.54 0) (xy -10.16 0)
+					(xy -2.54 0) (xy -8.89 0)
 				)
 				(stroke
 					(width 0)
@@ -1369,7 +1353,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0.0103 5.0912) (xy 0.0103 6.3612) (xy -4.4591 6.3599)
+					(xy 0.0103 3.8212) (xy 0.0099 5.0916) (xy -4.4167 5.0924)
 				)
 				(stroke
 					(width 0)
@@ -1499,7 +1483,7 @@
 			)
 			(polyline
 				(pts
-					(xy 2.54 0) (xy 10.16 0)
+					(xy 2.54 0) (xy 8.89 0)
 				)
 				(stroke
 					(width 0)
@@ -1523,7 +1507,7 @@
 			)
 			(polyline
 				(pts
-					(xy 3.1837 7.9532) (xy 5.7237 7.9532)
+					(xy 3.1946 6.6469) (xy 5.7346 6.6469)
 				)
 				(stroke
 					(width 0)
@@ -1534,20 +1518,8 @@
 				)
 			)
 			(rectangle
-				(start 3.81 5.08)
-				(end 5.08 2.54)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 4.4536 2.5399) (xy 4.4536 -0.0001)
-				)
+				(start 3.81 3.81)
+				(end 5.08 1.27)
 				(stroke
 					(width 0)
 					(type default)
@@ -1569,7 +1541,19 @@
 			)
 			(polyline
 				(pts
-					(xy 4.4573 5.1557) (xy 4.4565 7.8997)
+					(xy 4.456 1.2522) (xy 4.4536 -0.0001)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 4.4682 3.8494) (xy 4.4674 6.5934)
 				)
 				(stroke
 					(width 0)
@@ -1580,23 +1564,15 @@
 				)
 			)
 			(text "10k"
-				(at -7.112 3.81 0)
+				(at -6.858 2.54 0)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.016 1.016)
 					)
 				)
 			)
 			(text "LV"
-				(at -4.572 8.89 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(text "BSS138"
-				(at 0 -3.556 0)
+				(at -4.5762 7.6294 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1604,7 +1580,7 @@
 				)
 			)
 			(text "HV"
-				(at 4.318 8.89 0)
+				(at 4.3289 7.5837 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1612,15 +1588,15 @@
 				)
 			)
 			(text "10k"
-				(at 7.112 3.81 0)
+				(at 6.858 2.54 0)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.016 1.016)
 					)
 				)
 			)
 			(pin passive line
-				(at -12.7 0 0)
+				(at -11.43 0 0)
 				(length 2.54)
 				(name "LV3"
 					(effects
@@ -1638,7 +1614,7 @@
 				)
 			)
 			(pin passive line
-				(at 12.7 0 180)
+				(at 11.43 0 180)
 				(length 2.54)
 				(name "HV3"
 					(effects
@@ -1658,8 +1634,8 @@
 		)
 		(symbol "Sparkfun_LogicLevelConverter_V2_4_1"
 			(rectangle
-				(start -10.16 11.43)
-				(end 10.16 -5.08)
+				(start -8.89 8.89)
+				(end 8.89 -2.54)
 				(stroke
 					(width 0)
 					(type solid)
@@ -1670,7 +1646,7 @@
 			)
 			(polyline
 				(pts
-					(xy -5.7302 7.8775) (xy -3.1902 7.8775)
+					(xy -5.7344 6.6169) (xy -3.1944 6.6169)
 				)
 				(stroke
 					(width 0)
@@ -1681,8 +1657,8 @@
 				)
 			)
 			(rectangle
-				(start -5.08 5.08)
-				(end -3.81 2.54)
+				(start -5.08 3.81)
+				(end -3.81 1.27)
 				(stroke
 					(width 0)
 					(type default)
@@ -1692,7 +1668,7 @@
 				)
 			)
 			(circle
-				(center -4.4626 6.3526)
+				(center -4.4668 5.092)
 				(radius 0.2743)
 				(stroke
 					(width 0)
@@ -1715,7 +1691,7 @@
 			)
 			(polyline
 				(pts
-					(xy -4.4566 5.08) (xy -4.4574 7.824)
+					(xy -4.4608 3.8194) (xy -4.4616 6.5634)
 				)
 				(stroke
 					(width 0)
@@ -1727,7 +1703,7 @@
 			)
 			(polyline
 				(pts
-					(xy -4.4566 2.54) (xy -4.4566 0)
+					(xy -4.4382 1.2462) (xy -4.4382 0.0176)
 				)
 				(stroke
 					(width 0)
@@ -1739,7 +1715,7 @@
 			)
 			(polyline
 				(pts
-					(xy -2.54 0) (xy -10.16 0)
+					(xy -2.54 0) (xy -8.89 0)
 				)
 				(stroke
 					(width 0)
@@ -1786,7 +1762,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0.0103 5.0912) (xy 0.0103 6.3612) (xy -4.4591 6.3599)
+					(xy 0.0103 3.8212) (xy 0.0099 5.0916) (xy -4.4167 5.0924)
 				)
 				(stroke
 					(width 0)
@@ -1916,7 +1892,7 @@
 			)
 			(polyline
 				(pts
-					(xy 2.54 0) (xy 10.16 0)
+					(xy 2.54 0) (xy 8.89 0)
 				)
 				(stroke
 					(width 0)
@@ -1940,7 +1916,7 @@
 			)
 			(polyline
 				(pts
-					(xy 3.1837 7.9532) (xy 5.7237 7.9532)
+					(xy 3.1946 6.6469) (xy 5.7346 6.6469)
 				)
 				(stroke
 					(width 0)
@@ -1951,20 +1927,8 @@
 				)
 			)
 			(rectangle
-				(start 3.81 5.08)
-				(end 5.08 2.54)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 4.4536 2.5399) (xy 4.4536 -0.0001)
-				)
+				(start 3.81 3.81)
+				(end 5.08 1.27)
 				(stroke
 					(width 0)
 					(type default)
@@ -1986,7 +1950,19 @@
 			)
 			(polyline
 				(pts
-					(xy 4.4573 5.1557) (xy 4.4565 7.8997)
+					(xy 4.456 1.2522) (xy 4.4536 -0.0001)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 4.4682 3.8494) (xy 4.4674 6.5934)
 				)
 				(stroke
 					(width 0)
@@ -1997,23 +1973,15 @@
 				)
 			)
 			(text "10k"
-				(at -7.112 3.81 0)
+				(at -6.858 2.54 0)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.016 1.016)
 					)
 				)
 			)
 			(text "LV"
-				(at -4.572 8.89 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(text "BSS138"
-				(at 0 -3.556 0)
+				(at -4.5762 7.6294 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2021,7 +1989,7 @@
 				)
 			)
 			(text "HV"
-				(at 4.318 8.89 0)
+				(at 4.3289 7.5837 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2029,15 +1997,15 @@
 				)
 			)
 			(text "10k"
-				(at 7.112 3.81 0)
+				(at 6.858 2.54 0)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.016 1.016)
 					)
 				)
 			)
 			(pin passive line
-				(at -12.7 0 0)
+				(at -11.43 0 0)
 				(length 2.54)
 				(name "LV4"
 					(effects
@@ -2055,7 +2023,7 @@
 				)
 			)
 			(pin passive line
-				(at 12.7 0 180)
+				(at 11.43 0 180)
 				(length 2.54)
 				(name "HV4"
 					(effects
@@ -2075,8 +2043,8 @@
 		)
 		(symbol "Sparkfun_LogicLevelConverter_V2_5_1"
 			(rectangle
-				(start -5.08 3.81)
-				(end 5.08 -3.81)
+				(start -5.08 1.27)
+				(end 5.08 -2.54)
 				(stroke
 					(width 0)
 					(type solid)
@@ -2086,31 +2054,31 @@
 				)
 			)
 			(text "HV"
-				(at -3.048 1.524 0)
+				(at -3.556 0 0)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.016 1.016)
 					)
 				)
 			)
 			(text "GND"
-				(at 0 -2.032 0)
+				(at 0 -1.524 0)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.016 1.016)
 					)
 				)
 			)
 			(text "LV"
-				(at 3.302 1.524 0)
+				(at 3.556 0 0)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.016 1.016)
 					)
 				)
 			)
 			(pin power_in line
-				(at -7.62 1.27 0)
+				(at -3.81 3.81 270)
 				(length 2.54)
 				(name "HV"
 					(effects
@@ -2128,7 +2096,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -6.35 90)
+				(at 0 -5.08 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -2146,7 +2114,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -6.35 90)
+				(at 0 -5.08 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -2164,7 +2132,7 @@
 				)
 			)
 			(pin power_in line
-				(at 7.62 1.27 180)
+				(at 3.81 3.81 270)
 				(length 2.54)
 				(name "LV"
 					(effects
