@@ -1,0 +1,22 @@
+*
+* DSK36 - Rectifier Schottky Diode
+* Based on SS36's model, from this repo.
+* Not at all idea, but at least we can simulate it somehow!
+*
+
+.SUBCKT DSK36 K A
+D1 A K DSK36
+.MODEL DSK36 D
++ IS=57.136E-6
++ N=1.8535
++ RS=50.858E-3
++ IKF=.29449
++ CJO=300E-12
++ M=.51467
++ VJ=.7
++ ISR=10.010E-21
++ NR=4.9950
++ BV=60
++ IBV=1E-4
++ TT=15.291E-9
+.ENDS DSK36
