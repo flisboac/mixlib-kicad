@@ -6,8 +6,8 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "IC"
-			(at 5.842 -1.524 0)
+		(property "Reference" "D"
+			(at -1.016 7.112 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16,7 +16,7 @@
 			)
 		)
 		(property "Value" "SK6805-EC14"
-			(at 5.842 -4.064 0)
+			(at -7.112 4.826 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -55,7 +55,7 @@
 		)
 		(symbol "SK6805-EC14_0_0"
 			(text "RGB"
-				(at 2.3494 -4.1308 0)
+				(at -0.6986 -2.0988 0)
 				(effects
 					(font
 						(size 0.762 0.762)
@@ -66,7 +66,7 @@
 		(symbol "SK6805-EC14_0_1"
 			(polyline
 				(pts
-					(xy 1.3334 -2.4798) (xy 1.8414 -2.4798)
+					(xy -2.2954 0.0623) (xy 0.2446 0.0623) (xy 0.7526 0.0623)
 				)
 				(stroke
 					(width 0)
@@ -78,7 +78,7 @@
 			)
 			(polyline
 				(pts
-					(xy 1.3334 -3.4958) (xy 1.8414 -3.4958)
+					(xy -0.6777 0.9742) (xy 0.3383 1.9902) (xy -0.1697 1.9902)
 				)
 				(stroke
 					(width 0)
@@ -90,7 +90,7 @@
 			)
 			(polyline
 				(pts
-					(xy 2.3494 -1.4638) (xy 1.3334 -2.4798) (xy 1.3334 -1.9718)
+					(xy 0.3383 1.9902) (xy 0.3383 1.4822)
 				)
 				(stroke
 					(width 0)
@@ -102,7 +102,7 @@
 			)
 			(polyline
 				(pts
-					(xy 2.3494 -2.4798) (xy 1.3334 -3.4958) (xy 1.3334 -2.9878)
+					(xy 0.3383 0.9742) (xy 1.3543 1.9902) (xy 0.8463 1.9902)
 				)
 				(stroke
 					(width 0)
@@ -114,31 +114,7 @@
 			)
 			(polyline
 				(pts
-					(xy 3.7464 -0.9558) (xy 3.7464 -3.4958) (xy 3.7464 -4.0038)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 4.7624 -1.4638) (xy 2.7304 -1.4638) (xy 3.7464 -3.4958) (xy 4.7624 -1.4638)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 4.7624 -3.4958) (xy 2.7304 -3.4958)
+					(xy 1.3543 1.9902) (xy 1.3543 1.4822)
 				)
 				(stroke
 					(width 0)
@@ -152,7 +128,7 @@
 		(symbol "SK6805-EC14_1_1"
 			(rectangle
 				(start -5.08 2.54)
-				(end 5.08 -5.08)
+				(end 3.81 -5.08)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -161,13 +137,25 @@
 					(type background)
 				)
 			)
-			(pin passive line
+			(polyline
+				(pts
+					(xy -1.7874 -0.9537) (xy -1.7874 1.0783) (xy 0.2446 0.0623) (xy -1.7874 -0.9537)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(pin input line
 				(at -7.62 0 0)
 				(length 2.54)
 				(name "DI"
 					(effects
 						(font
-							(size 1.016 1.016)
+							(size 0.762 0.762)
 						)
 					)
 				)
@@ -179,8 +167,8 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 0 5.08 270)
+			(pin power_in line
+				(at -7.62 -3.81 0)
 				(length 2.54)
 				(name "VDD"
 					(effects
@@ -197,8 +185,26 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 0 -7.62 90)
+			(pin output line
+				(at 6.35 0 180)
+				(length 2.54)
+				(name "DO"
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 6.35 -3.81 180)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -215,24 +221,6 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 7.62 0 180)
-				(length 2.54)
-				(name "DO"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 		)
 		(embedded_fonts no)
 	)
@@ -241,7 +229,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "D"
-			(at 6.604 -3.048 0)
+			(at -1.27 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -249,7 +237,7 @@
 			)
 		)
 		(property "Value" "SK6812MINI-E"
-			(at 12.954 -5.334 0)
+			(at -0.508 4.318 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -294,7 +282,7 @@
 		)
 		(symbol "SK6812MINI-E_0_0"
 			(text "RGB"
-				(at 2.286 -4.191 0)
+				(at -0.6986 -2.0988 0)
 				(effects
 					(font
 						(size 0.762 0.762)
@@ -303,20 +291,9 @@
 			)
 		)
 		(symbol "SK6812MINI-E_0_1"
-			(rectangle
-				(start -5.08 2.54)
-				(end 5.08 -5.08)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
 			(polyline
 				(pts
-					(xy 1.27 -2.54) (xy 1.778 -2.54)
+					(xy -2.2954 0.0623) (xy 0.2446 0.0623) (xy 0.7526 0.0623)
 				)
 				(stroke
 					(width 0)
@@ -328,7 +305,7 @@
 			)
 			(polyline
 				(pts
-					(xy 1.27 -3.556) (xy 1.778 -3.556)
+					(xy -0.6777 0.9742) (xy 0.3383 1.9902) (xy -0.1697 1.9902)
 				)
 				(stroke
 					(width 0)
@@ -340,7 +317,7 @@
 			)
 			(polyline
 				(pts
-					(xy 2.286 -1.524) (xy 1.27 -2.54) (xy 1.27 -2.032)
+					(xy 0.3383 1.9902) (xy 0.3383 1.4822)
 				)
 				(stroke
 					(width 0)
@@ -352,7 +329,7 @@
 			)
 			(polyline
 				(pts
-					(xy 2.286 -2.54) (xy 1.27 -3.556) (xy 1.27 -3.048)
+					(xy 0.3383 0.9742) (xy 1.3543 1.9902) (xy 0.8463 1.9902)
 				)
 				(stroke
 					(width 0)
@@ -364,31 +341,7 @@
 			)
 			(polyline
 				(pts
-					(xy 3.683 -1.016) (xy 3.683 -3.556) (xy 3.683 -4.064)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 4.699 -1.524) (xy 2.667 -1.524) (xy 3.683 -3.556) (xy 4.699 -1.524)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 4.699 -3.556) (xy 2.667 -3.556)
+					(xy 1.3543 1.9902) (xy 1.3543 1.4822)
 				)
 				(stroke
 					(width 0)
@@ -400,13 +353,36 @@
 			)
 		)
 		(symbol "SK6812MINI-E_1_1"
+			(rectangle
+				(start -5.08 2.54)
+				(end 3.81 -5.08)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.7874 -0.9537) (xy -1.7874 1.0783) (xy 0.2446 0.0623) (xy -1.7874 -0.9537)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type outline)
+				)
+			)
 			(pin input line
 				(at -7.62 0 0)
 				(length 2.54)
 				(name "DI"
 					(effects
 						(font
-							(size 1.27 1.27)
+							(size 0.762 0.762)
 						)
 					)
 				)
@@ -419,12 +395,12 @@
 				)
 			)
 			(pin power_in line
-				(at 0 5.08 270)
+				(at -7.62 -3.81 0)
 				(length 2.54)
 				(name "VDD"
 					(effects
 						(font
-							(size 1 1)
+							(size 0.762 0.762)
 						)
 					)
 				)
@@ -436,17 +412,17 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 0 -7.62 90)
+			(pin output line
+				(at 6.35 0 180)
 				(length 2.54)
-				(name "VSS"
+				(name "DO"
 					(effects
 						(font
-							(size 1 1)
+							(size 0.762 0.762)
 						)
 					)
 				)
-				(number "3"
+				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -454,17 +430,17 @@
 					)
 				)
 			)
-			(pin output line
-				(at 7.62 0 180)
+			(pin power_in line
+				(at 6.35 -3.81 180)
 				(length 2.54)
-				(name "DO"
+				(name "VSS"
 					(effects
 						(font
-							(size 1.27 1.27)
+							(size 0.762 0.762)
 						)
 					)
 				)
-				(number "2"
+				(number "3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -480,7 +456,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "D"
-			(at 6.604 -3.048 0)
+			(at -0.762 6.604 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -488,7 +464,7 @@
 			)
 		)
 		(property "Value" "WS2812B"
-			(at 10.414 -5.08 0)
+			(at -0.508 4.318 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -533,7 +509,7 @@
 		)
 		(symbol "WS2812B_0_0"
 			(text "RGB"
-				(at 2.286 -4.191 0)
+				(at -0.6986 -2.0988 0)
 				(effects
 					(font
 						(size 0.762 0.762)
@@ -542,20 +518,9 @@
 			)
 		)
 		(symbol "WS2812B_0_1"
-			(rectangle
-				(start -5.08 2.54)
-				(end 5.08 -5.08)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
 			(polyline
 				(pts
-					(xy 1.27 -2.54) (xy 1.778 -2.54)
+					(xy -2.2954 0.0623) (xy 0.2446 0.0623) (xy 0.7526 0.0623)
 				)
 				(stroke
 					(width 0)
@@ -567,7 +532,7 @@
 			)
 			(polyline
 				(pts
-					(xy 1.27 -3.556) (xy 1.778 -3.556)
+					(xy -0.6777 0.9742) (xy 0.3383 1.9902) (xy -0.1697 1.9902)
 				)
 				(stroke
 					(width 0)
@@ -579,7 +544,7 @@
 			)
 			(polyline
 				(pts
-					(xy 2.286 -1.524) (xy 1.27 -2.54) (xy 1.27 -2.032)
+					(xy 0.3383 1.9902) (xy 0.3383 1.4822)
 				)
 				(stroke
 					(width 0)
@@ -591,7 +556,7 @@
 			)
 			(polyline
 				(pts
-					(xy 2.286 -2.54) (xy 1.27 -3.556) (xy 1.27 -3.048)
+					(xy 0.3383 0.9742) (xy 1.3543 1.9902) (xy 0.8463 1.9902)
 				)
 				(stroke
 					(width 0)
@@ -603,31 +568,7 @@
 			)
 			(polyline
 				(pts
-					(xy 3.683 -1.016) (xy 3.683 -3.556) (xy 3.683 -4.064)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 4.699 -1.524) (xy 2.667 -1.524) (xy 3.683 -3.556) (xy 4.699 -1.524)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 4.699 -3.556) (xy 2.667 -3.556)
+					(xy 1.3543 1.9902) (xy 1.3543 1.4822)
 				)
 				(stroke
 					(width 0)
@@ -639,13 +580,36 @@
 			)
 		)
 		(symbol "WS2812B_1_1"
+			(rectangle
+				(start -5.08 2.54)
+				(end 3.81 -5.08)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.7874 -0.9537) (xy -1.7874 1.0783) (xy 0.2446 0.0623) (xy -1.7874 -0.9537)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type outline)
+				)
+			)
 			(pin input line
 				(at -7.62 0 0)
 				(length 2.54)
 				(name "DI"
 					(effects
 						(font
-							(size 1.27 1.27)
+							(size 0.762 0.762)
 						)
 					)
 				)
@@ -658,12 +622,12 @@
 				)
 			)
 			(pin power_in line
-				(at 0 5.08 270)
+				(at -7.62 -3.81 0)
 				(length 2.54)
 				(name "VDD"
 					(effects
 						(font
-							(size 1 1)
+							(size 0.762 0.762)
 						)
 					)
 				)
@@ -675,17 +639,17 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 0 -7.62 90)
+			(pin output line
+				(at 6.35 0 180)
 				(length 2.54)
-				(name "VSS"
+				(name "DO"
 					(effects
 						(font
-							(size 1 1)
+							(size 0.762 0.762)
 						)
 					)
 				)
-				(number "3"
+				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -693,17 +657,17 @@
 					)
 				)
 			)
-			(pin output line
-				(at 7.62 0 180)
+			(pin power_in line
+				(at 6.35 -3.81 180)
 				(length 2.54)
-				(name "DO"
+				(name "VSS"
 					(effects
 						(font
-							(size 1.27 1.27)
+							(size 0.762 0.762)
 						)
 					)
 				)
-				(number "2"
+				(number "3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -719,7 +683,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "D"
-			(at 6.604 -3.048 0)
+			(at -1.016 6.604 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -727,7 +691,7 @@
 			)
 		)
 		(property "Value" "WS2812B-2020"
-			(at 13.462 -5.334 0)
+			(at -0.254 4.064 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -763,7 +727,7 @@
 		)
 		(symbol "WS2812B-2020_0_0"
 			(text "RGB"
-				(at 2.286 -4.191 0)
+				(at -0.6986 -2.0988 0)
 				(effects
 					(font
 						(size 0.762 0.762)
@@ -772,20 +736,9 @@
 			)
 		)
 		(symbol "WS2812B-2020_0_1"
-			(rectangle
-				(start -5.08 2.54)
-				(end 5.08 -5.08)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
 			(polyline
 				(pts
-					(xy 1.27 -2.54) (xy 1.778 -2.54)
+					(xy -2.2954 0.0623) (xy 0.2446 0.0623) (xy 0.7526 0.0623)
 				)
 				(stroke
 					(width 0)
@@ -797,7 +750,7 @@
 			)
 			(polyline
 				(pts
-					(xy 1.27 -3.556) (xy 1.778 -3.556)
+					(xy -0.6777 0.9742) (xy 0.3383 1.9902) (xy -0.1697 1.9902)
 				)
 				(stroke
 					(width 0)
@@ -809,7 +762,7 @@
 			)
 			(polyline
 				(pts
-					(xy 2.286 -1.524) (xy 1.27 -2.54) (xy 1.27 -2.032)
+					(xy 0.3383 1.9902) (xy 0.3383 1.4822)
 				)
 				(stroke
 					(width 0)
@@ -821,7 +774,7 @@
 			)
 			(polyline
 				(pts
-					(xy 2.286 -2.54) (xy 1.27 -3.556) (xy 1.27 -3.048)
+					(xy 0.3383 0.9742) (xy 1.3543 1.9902) (xy 0.8463 1.9902)
 				)
 				(stroke
 					(width 0)
@@ -833,31 +786,7 @@
 			)
 			(polyline
 				(pts
-					(xy 3.683 -1.016) (xy 3.683 -3.556) (xy 3.683 -4.064)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 4.699 -1.524) (xy 2.667 -1.524) (xy 3.683 -3.556) (xy 4.699 -1.524)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 4.699 -3.556) (xy 2.667 -3.556)
+					(xy 1.3543 1.9902) (xy 1.3543 1.4822)
 				)
 				(stroke
 					(width 0)
@@ -869,13 +798,36 @@
 			)
 		)
 		(symbol "WS2812B-2020_1_1"
+			(rectangle
+				(start -5.08 2.54)
+				(end 3.81 -5.08)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.7874 -0.9537) (xy -1.7874 1.0783) (xy 0.2446 0.0623) (xy -1.7874 -0.9537)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type outline)
+				)
+			)
 			(pin input line
 				(at -7.62 0 0)
 				(length 2.54)
 				(name "DI"
 					(effects
 						(font
-							(size 1.27 1.27)
+							(size 0.762 0.762)
 						)
 					)
 				)
@@ -888,12 +840,12 @@
 				)
 			)
 			(pin power_in line
-				(at 0 5.08 270)
+				(at -7.62 -3.81 0)
 				(length 2.54)
 				(name "VDD"
 					(effects
 						(font
-							(size 1 1)
+							(size 0.762 0.762)
 						)
 					)
 				)
@@ -905,17 +857,17 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 0 -7.62 90)
+			(pin output line
+				(at 6.35 0 180)
 				(length 2.54)
-				(name "VSS"
+				(name "DO"
 					(effects
 						(font
-							(size 1 1)
+							(size 0.762 0.762)
 						)
 					)
 				)
-				(number "3"
+				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -923,17 +875,17 @@
 					)
 				)
 			)
-			(pin output line
-				(at 7.62 0 180)
+			(pin power_in line
+				(at 6.35 -3.81 180)
 				(length 2.54)
-				(name "DO"
+				(name "VSS"
 					(effects
 						(font
-							(size 1.27 1.27)
+							(size 0.762 0.762)
 						)
 					)
 				)
-				(number "2"
+				(number "3"
 					(effects
 						(font
 							(size 1.27 1.27)
