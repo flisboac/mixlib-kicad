@@ -6,7 +6,7 @@
 	(descr "TDFN, 10-pin, 2x3x0.8mm size")
 	(tags "MCP6402T-E/MNY ")
 	(property "Reference" "REF**"
-		(at 0 0 0)
+		(at 0 -2 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "94b2cb4c-a468-43c6-a8ac-0a5c5bace701")

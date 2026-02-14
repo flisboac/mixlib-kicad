@@ -1,7 +1,7 @@
 (footprint "SOIC127P600X175-8N"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(descr "SOIC (NARROW): 8-LEAD")
 	(tags "Transistor")
@@ -25,18 +25,6 @@
 			(font
 				(size 1.27 1.27)
 				(thickness 0.254)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "34d42cd5-2de7-4aa4-9551-89fa1010e61d")
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.15)
 			)
 		)
 	)
@@ -114,6 +102,17 @@
 		)
 		(layer "F.SilkS")
 		(uuid "8ad7d781-7089-4aa4-b2b1-3d48cd0c2e43")
+	)
+	(fp_circle
+		(center -3.9 -1.95)
+		(end -3.9 -1.85)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "0a6b75d6-b090-4f0e-b4b6-b00ac0cdc5b4")
 	)
 	(fp_line
 		(start -3.725 -2.75)
@@ -219,51 +218,52 @@
 	(pad "1" smd rect
 		(at -2.712 -1.905 90)
 		(size 0.7 1.525)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "8bf669dc-d5e3-4f6e-a169-106e298bb6eb")
 	)
 	(pad "2" smd rect
 		(at -2.712 -0.635 90)
 		(size 0.7 1.525)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "050b3e0f-795f-4bd8-bbb0-f50099ca5da0")
 	)
 	(pad "3" smd rect
 		(at -2.712 0.635 90)
 		(size 0.7 1.525)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "bce27337-76c6-4965-8b84-a678fc5dbf34")
 	)
 	(pad "4" smd rect
 		(at -2.712 1.905 90)
 		(size 0.7 1.525)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "5bfa34c5-e1f6-4b11-ac16-5e549566de61")
 	)
 	(pad "5" smd rect
 		(at 2.712 1.905 90)
 		(size 0.7 1.525)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "6894ef28-15a7-45f9-967b-02837855f56d")
 	)
 	(pad "6" smd rect
 		(at 2.712 0.635 90)
 		(size 0.7 1.525)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "2529e0ed-00c2-43fb-88b4-7537ffc33c8e")
 	)
 	(pad "7" smd rect
 		(at 2.712 -0.635 90)
 		(size 0.7 1.525)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "98e8bc3c-6cb7-4a0f-abf0-92e6c47c992c")
 	)
 	(pad "8" smd rect
 		(at 2.712 -1.905 90)
 		(size 0.7 1.525)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "75de3c77-2b66-418b-80b0-8e3685241954")
 	)
+	(embedded_fonts no)
 	(model "SI4599DY-T1-GE3.stp"
 		(offset
 			(xyz 0 0 0)

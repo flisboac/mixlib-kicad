@@ -6,7 +6,7 @@
 	(descr "WSON - 0.8 mm max height")
 	(tags "WSON DRV0006A  TI Texas Instruments")
 	(property "Reference" "REF**"
-		(at 0 1.5 0)
+		(at 0.05 2 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "0754a842-c4a1-46db-bfae-91340d5e7589")
@@ -55,8 +55,18 @@
 	)
 	(attr smd)
 	(fp_line
-		(start -1.05 -1.2)
-		(end -0.2 -1.2)
+		(start -1.2 -1.2)
+		(end -1.2 -1)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "585b6d51-225a-47e3-bee0-5e5d3bc99321")
+	)
+	(fp_line
+		(start -1.2 -1.2)
+		(end -0.1 -1.2)
 		(stroke
 			(width 0.2)
 			(type solid)
@@ -65,7 +75,17 @@
 		(uuid "465838f3-ab24-4cf3-8b83-0f96c579e5de")
 	)
 	(fp_line
-		(start -1.05 1.2)
+		(start -1.2 1.2)
+		(end -1.2 1.05)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7b417406-a1f1-47e7-9db0-568b426fb66f")
+	)
+	(fp_line
+		(start -1.2 1.2)
 		(end -0.800001 1.2)
 		(stroke
 			(width 0.2)
@@ -75,8 +95,8 @@
 		(uuid "a7ac0dee-f0ec-48ca-8d5c-b81393636a25")
 	)
 	(fp_line
-		(start 0.800001 -1.2)
-		(end 1.05 -1.2)
+		(start 0.9 -1.2)
+		(end 1.2 -1.2)
 		(stroke
 			(width 0.2)
 			(type solid)
@@ -85,14 +105,45 @@
 		(uuid "3a4eaa75-ec79-490c-9efe-2a2587247edf")
 	)
 	(fp_line
-		(start 0.800001 1.2)
-		(end 1.05 1.2)
+		(start 0.9 1.2)
+		(end 1.2 1.2)
 		(stroke
 			(width 0.2)
 			(type solid)
 		)
 		(layer "F.SilkS")
 		(uuid "833e99f8-40a2-4b8c-9a01-020827273480")
+	)
+	(fp_line
+		(start 1.2 -1.2)
+		(end 1.2 -1)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f40a7e09-eb2b-484e-bfde-2699f73432b8")
+	)
+	(fp_line
+		(start 1.2 1.2)
+		(end 1.2 1.05)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a3d8ed51-3acd-41d4-9364-68d2a73fdcb5")
+	)
+	(fp_circle
+		(center -1.55 -0.65)
+		(end -1.55 -0.55)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "09304d83-cf29-45d1-8bb0-4a5997c7e9ed")
 	)
 	(fp_poly
 		(pts

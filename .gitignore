@@ -12,3 +12,4 @@ temp
 local
 ~*.lck
 *.kate-swp
+/.history

@@ -6,7 +6,7 @@
 	(descr "WSON - 0.8 mm max height")
 	(tags "WSON DRV0006A  TI Texas Instruments")
 	(property "Reference" "REF**"
-		(at 0 0 0)
+		(at 0 -2.05 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "0754a842-c4a1-46db-bfae-91340d5e7589")
@@ -93,6 +93,18 @@
 		)
 		(layer "F.SilkS")
 		(uuid "833e99f8-40a2-4b8c-9a01-020827273480")
+	)
+	(fp_poly
+		(pts
+			(xy -1.425 -0.662943) (xy -1.625 -0.492943) (xy -1.625 -0.842943) (xy -1.425 -0.662943)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "514affdc-88fa-4ba7-94b3-954b10ad069c")
 	)
 	(fp_poly
 		(pts
