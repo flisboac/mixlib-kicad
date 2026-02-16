@@ -539,7 +539,7 @@
 				)
 			)
 			(pin input line
-				(at 16.51 7.62 180)
+				(at 16.51 2.54 180)
 				(length 2.54)
 				(name "BATSENSP"
 					(effects
@@ -557,7 +557,7 @@
 				)
 			)
 			(pin input line
-				(at 16.51 5.08 180)
+				(at 16.51 0 180)
 				(length 2.54)
 				(name "BATSENSN"
 					(effects
@@ -575,7 +575,7 @@
 				)
 			)
 			(pin input line
-				(at 16.51 -2.54 180)
+				(at 16.51 -7.62 180)
 				(length 2.54)
 				(name "TS"
 					(effects
@@ -593,7 +593,7 @@
 				)
 			)
 			(pin input line
-				(at 16.51 -10.16 180)
+				(at 16.51 -15.24 180)
 				(length 2.54)
 				(name "GPADC"
 					(effects
@@ -611,7 +611,7 @@
 				)
 			)
 			(pin power_out line
-				(at 16.51 -17.78 180)
+				(at 16.51 -22.86 180)
 				(length 2.54)
 				(name "LDO"
 					(effects
@@ -629,7 +629,7 @@
 				)
 			)
 			(pin passive line
-				(at 16.51 -25.4 180)
+				(at 16.51 -30.48 180)
 				(length 2.54)
 				(name "TEST2"
 					(effects
@@ -647,7 +647,7 @@
 				)
 			)
 			(pin passive line
-				(at 16.51 -27.94 180)
+				(at 16.51 -33.02 180)
 				(length 2.54)
 				(name "TEST1"
 					(effects
