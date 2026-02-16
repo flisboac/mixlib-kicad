@@ -25,7 +25,7 @@
 				)
 			)
 		)
-		(property "Footprint" "mixlib-electromechanic-switch:MSK12C01"
+		(property "Footprint" "mixlib-electromechanic-switch:MSK-12C01"
 			(at 0 0 0)
 			(effects
 				(font
