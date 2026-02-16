@@ -553,7 +553,7 @@
 		(symbol "TPS2117_0_0"
 			(rectangle
 				(start -6.35 7.62)
-				(end 6.35 -15.24)
+				(end 6.35 -20.32)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -581,7 +581,7 @@
 				)
 			)
 			(pin input line
-				(at -11.43 -2.54 0)
+				(at -11.43 -5.08 0)
 				(length 5.08)
 				(name "PR1"
 					(effects
@@ -599,7 +599,7 @@
 				)
 			)
 			(pin input line
-				(at -11.43 -10.16 0)
+				(at -11.43 -15.24 0)
 				(length 5.08)
 				(name "MODE"
 					(effects
@@ -617,7 +617,7 @@
 				)
 			)
 			(pin input line
-				(at -11.43 -12.7 0)
+				(at -11.43 -17.78 0)
 				(length 5.08)
 				(name "VIN2"
 					(effects
@@ -671,7 +671,7 @@
 				)
 			)
 			(pin output line
-				(at 11.43 -2.54 180)
+				(at 11.43 -5.08 180)
 				(length 5.08)
 				(name "ST"
 					(effects
@@ -689,7 +689,7 @@
 				)
 			)
 			(pin power_in line
-				(at 11.43 -12.7 180)
+				(at 11.43 -17.78 180)
 				(length 5.08)
 				(name "GND"
 					(effects
