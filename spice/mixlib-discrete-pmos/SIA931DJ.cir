@@ -1,0 +1,44 @@
+********************************
+* Copyright:                   *
+* Vishay Intertechnology, Inc. *
+********************************
+*Mar 24, 2014
+*ECN S14-0616, Rev. A
+*File Name: SiA931DJ_PS.txt and SiA931DJ_PS.lib
+*This document is intended as a SPICE modeling guideline and does not
+*constitute a commercial product datasheet. Designers should refer to the
+*appropriate datasheet of the same number for guaranteed specification
+*limits.
+.SUBCKT SiA931DJ S1 G1 D2 S2 G2 D1 D1_EP D2_EP
+R1 1e-9 D1 D1_EP
+R2 1e-9 D2 D2_EP
+M1 D1 G1 S1 SiA931DJ_SINGLE
+M2 D2 G2 S2 SiA931DJ_SINGLE
+.ENDS SiA931DJ
+.SUBCKT SiA931DJ_SINGLE D G S 
+M1 3 GX S S PMOS W= 790000u L= 0.25u 
+M2 S GX S D NMOS W= 790000u L= 0.30u
+R1 D 3 4.0468e-02 TC=3.466e-03, 5.396e-06 
+CGS GX S 2.634e-10 
+CGD GX D 2.058e-11 
+RG G GY 5.5 
+RTCV 100 S 1e6 TC=-2.684e-04, 3.851e-09 
+ETCV GY GX 100 200 1 
+ITCV S 100 1u 
+VTCV 200 S 1 
+DBD D S DBD 790000u 
+**************************************************************** 
+.MODEL PMOS PMOS ( LEVEL = 3 TOX = 5e-8 
++ RS = 0 KP = 2.926e-06 NSUB = 1.891e+16 
++ KAPPA = 1.134e-03 NFS = 1.000e+12
++ LD = 0 IS = 0 TPG = -1 ) 
+*************************************************************** 
+.MODEL NMOS NMOS ( LEVEL = 3 TOX = 5e-8 
++NSUB = 1.967e+16 IS = 0 TPG = -1 ) 
+**************************************************************** 
+.MODEL DBD D ( 
++FC = 0.1 TT = 2.193e-08 T_MEASURED = 25 BV = 31 
++RS = 1.105e-02 N = 1.425e+00 IS = 8.766e-10 
++EG = 1.184e+00 XTI = 5.356e-01 TRS1 = 3.179e-03 
++CJO = 4.910e-11 VJ = 3.749e-01 M = 3.658e-01 ) 
+.ENDS 
