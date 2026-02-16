@@ -32,5 +32,5 @@
   (lib (name "mixlob-converter-board")(type "KiCad")(uri "${KIPRJMOD}/footprints/mixlob-converter-board.pretty")(options "")(descr ""))
   (lib (name "mixlib-converter-board")(type "KiCad")(uri "${KIPRJMOD}/footprints/mixlib-converter-board.pretty")(options "")(descr ""))
   (lib (name "mixlib-discrete-board")(type "KiCad")(uri "${KIPRJMOD}/footprints/mixlib-discrete-board.pretty")(options "")(descr ""))
-  (lib (name "mixlib-electromechanic-switch")(type "KiCad")(uri "${KIPRJMOD}/todo/MCP640X/ul_MCP6402-E-SN(1)/KiCADv6/footprints.pretty/mixlib-electromechanic-switch.pretty")(options "")(descr ""))
+  (lib (name "mixlib-electromechanic-switch")(type "KiCad")(uri "${KIPRJMOD}/footprints/mixlib-electromechanic-switch.pretty")(options "")(descr ""))
 )
