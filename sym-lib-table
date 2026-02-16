@@ -31,4 +31,5 @@
   (lib (name "mixlib-discrete-nmos")(type "KiCad")(uri "${KIPRJMOD}/symbols/mixlib-discrete-nmos.kicad_sym")(options "")(descr ""))
   (lib (name "mixlib-pmic-supervisor")(type "KiCad")(uri "${KIPRJMOD}/symbols/mixlib-pmic-supervisor.kicad_sym")(options "")(descr ""))
   (lib (name "mixlib-ic-mcu")(type "KiCad")(uri "${KIPRJMOD}/symbols/mixlib-ic-mcu.kicad_sym")(options "")(descr ""))
+  (lib (name "mixlib-electromechanic-switch")(type "KiCad")(uri "${KIPRJMOD}/symbols/mixlib-electromechanic-switch.kicad_sym")(options "")(descr ""))
 )
