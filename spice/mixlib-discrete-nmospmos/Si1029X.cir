@@ -1,0 +1,62 @@
+*Feb. 7, 2005
+*Doc. ID: 77569, S-50151, Rev. B
+*File Name: Si1029X_PS.txt and Si1029X_PS.lib
+*Dn Gn Sn Dp Gp Sp
+
+.SUBCKT Si1029X S1 G1 D2 S2 G2 D1
+X1 D1 G1 S1 Si1029N
+X2 D2 G2 S2 Si1029P
+.ENDS Si1029X
+
+*N-CH
+.SUBCKT Si1029N 4 1 2
+M1   3 1 2 2 NMOS W=26124u L=0.50u 
+M2   2 1 2 4 PMOS W=26124u L=0.95u 
+R1   4 3     RTEMP 4.5E-1
+CGS  1 2     24E-12
+DBD  2 4     DBD
+************************************************************  
+.MODEL  NMOS       NMOS (LEVEL  = 3          TOX    = 7E-8
++ RS     = 4E-1          RD     = 0          NSUB   = 6.2E16   
++ KP     = 1E-5          UO     = 650             
++ VMAX   = 0             XJ     = 5E-7       KAPPA  = 8E-2
++ ETA    = 1E-4          TPG    = 1  
++ IS     = 0             LD     = 0                             
++ CGSO   = 0             CGDO   = 0          CGBO   = 0 
++ NFS    = 0.8E12        DELTA  = 0.1)
+************************************************************  
+.MODEL  PMOS       PMOS (LEVEL  = 3          TOX    = 7E-8
++NSUB    = 2.6E16        TPG    = -1)   
+************************************************************  
+.MODEL DBD D (CJO=13E-12 VJ=0.38 M=0.30
++RS=1 FC=0.1 IS=1E-12 TT=4E-8 N=1 BV=60.5)
+************************************************************ 
+.MODEL RTEMP RES (TC1=8E-3 TC2=5.5E-6)
+************************************************************  
+.ENDS Si1029N
+*P-CH
+.SUBCKT Si1029P 4 1 2
+M1  3 1 2 2 PMOS W=26124u L=0.50u   
+M2  2 1 2 4 NMOS W=26124u L=1.20u    
+R1  4 3     RTEMP 160E-2
+CGS 1 2     12E-12
+DBD 4 2     DBD
+**************************************************************** 
+.MODEL  PMOS        PMOS ( LEVEL  = 3            TOX    = 7E-8
++ RS     = 100E-2          RD     = 0            NSUB   = 8.2E16   
++ KP     = 9E-6            UO     = 400             
++ VMAX   = 0               XJ     = 5E-7         KAPPA  = 1E-1
++ ETA    = 1E-4            TPG    = -1  
++ IS     = 0               LD     = 0                
++ CGSO   = 0               CGDO   = 0            CGBO   = 0 
++ NFS    = 0.8E12          DELTA  = 0.1)
+**************************************************************** 
+.MODEL  NMOS        NMOS ( LEVEL  = 3            TOX    = 7E-8
++NSUB    = 4E16            NFS    = 1E12 )   
+**************************************************************** 
+.MODEL DBD D (CJO=11E-12 VJ=0.38 M=0.20
++RS=1 FC=0.5 IS=1E-12 TT=5E-8 N=1 BV=60.5)
+**************************************************************** 
+.MODEL RTEMP RES (TC1=7E-3 TC2=5.5E-6)
+****************************************************************  
+.ENDS Si1029P  
