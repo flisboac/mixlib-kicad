@@ -314,4 +314,15 @@
 		(uuid "7cce7b15-f6f7-4f72-bf1f-1f01335c3a38")
 	)
 	(embedded_fonts no)
+	(model "${MIXLIB_KICAD_3DMODELS_DIR}/mixlib-electromechanic-switch.3dshapes/TS-A002.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
 )
