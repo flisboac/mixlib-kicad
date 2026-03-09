@@ -11415,6 +11415,9 @@
 		(embedded_fonts no)
 	)
 	(symbol "Si3993CDV"
+		(pin_names
+			(hide yes)
+		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -11641,7 +11644,7 @@
 			(pin input line
 				(at -7.62 0 0)
 				(length 2.54)
-				(name "G"
+				(name "G1"
 					(effects
 						(font
 							(size 0.0254 0.0254)
@@ -11659,14 +11662,14 @@
 			(pin passive line
 				(at 0 5.08 270)
 				(length 2.54)
-				(name "D"
+				(name "D1"
 					(effects
 						(font
 							(size 0.0254 0.0254)
 						)
 					)
 				)
-				(number "2"
+				(number "6"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -11677,7 +11680,27 @@
 			(pin passive line
 				(at 0 -5.08 90)
 				(length 2.54)
-				(name "S"
+				(name "S1"
+					(effects
+						(font
+							(size 0.0254 0.0254)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Si3993CDV_2_1"
+			(pin input line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "G2"
 					(effects
 						(font
 							(size 0.0254 0.0254)
@@ -11685,6 +11708,42 @@
 					)
 				)
 				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 5.08 270)
+				(length 2.54)
+				(name "D2"
+					(effects
+						(font
+							(size 0.0254 0.0254)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -5.08 90)
+				(length 2.54)
+				(name "S2"
+					(effects
+						(font
+							(size 0.0254 0.0254)
+						)
+					)
+				)
+				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)
