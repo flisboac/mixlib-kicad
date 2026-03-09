@@ -1081,7 +1081,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "60 V, 320 mA dual N-channel Trench MOSFET"
+		(property "Description" "60 V, 320 mA dual N-channel Trench MOSFET, SOT-363 / SC-70"
 			(at -0.762 -24.13 0)
 			(effects
 				(font
@@ -1457,7 +1457,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "50 V, 160 mA dual P-channel Trench MOSFET"
+		(property "Description" "50 V, 160 mA dual P-channel Trench MOSFET, SOT-363 / SC-70"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1845,7 +1845,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "20V 2A P-CHANNEL MOSFET"
+		(property "Description" "20V 2A P-CHANNEL MOSFET, SOT-723"
 			(at 0 0 0)
 			(effects
 				(font
@@ -2120,7 +2120,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "20V 0.45A (N) 0.3A (P) N-CHANNEL AND P-CHANNEL COMPLEMENTARY PAIR ENHANCEMENT MODE MOSFET"
+		(property "Description" "20V 0.45A (N) 0.3A (P) N-CHANNEL AND P-CHANNEL COMPLEMENTARY PAIR ENHANCEMENT MODE MOSFET, SOT-963"
 			(at 0.508 -8.128 0)
 			(effects
 				(font
@@ -2531,7 +2531,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Complementary Pair Enhancement Mode N-Channel and P-Channel MOSFET in PowerDI3333-8 UXC Package"
+		(property "Description" "Complementary Pair Enhancement Mode N-Channel and P-Channel MOSFET, PowerDI3333-8 UXC"
 			(at 4.064 -24.892 0)
 			(effects
 				(font
@@ -2898,7 +2898,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "60V 0.48A (N) 0.32A (P) N-CHANNEL AND P-CHANNEL COMPLEMENTARY PAIR ENHANCEMENT MODE MOSFET"
+		(property "Description" "60V 0.48A (N) 0.32A (P) N-CHANNEL AND P-CHANNEL COMPLEMENTARY PAIR ENHANCEMENT MODE MOSFET, SOT-563"
 			(at 0.508 -8.128 0)
 			(effects
 				(font
@@ -3309,7 +3309,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "60V 0.5A (N) 0.36A (P) N-CHANNEL AND P-CHANNEL COMPLEMENTARY PAIR ENHANCEMENT MODE MOSFET"
+		(property "Description" "60V 0.5A (N) 0.36A (P) N-CHANNEL AND P-CHANNEL COMPLEMENTARY PAIR ENHANCEMENT MODE MOSFET, SOT-563"
 			(at 0.508 -8.128 0)
 			(effects
 				(font
@@ -3679,6 +3679,375 @@
 		)
 		(embedded_fonts no)
 	)
+	(symbol "DMN3032LFDBQ"
+		(pin_names
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "Q"
+			(at 3.048 1.524 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "DMN3032LFDBQ"
+			(at 3.048 -1.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mixlib-generic-dfn:Diodes-Incorporated_U-DFN2020-6_Type-B"
+			(at 4.572 -11.176 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/datasheet/download/DMN3032LFDBQ.pdf"
+			(at 3.556 -11.684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "30V, 5A, DUAL N-CHANNEL ENHANCEMENT MODE MOSFET, U-DFN2020-6"
+			(at 10.922 -12.192 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "DMN3032LFDBQ_0_1"
+			(polyline
+				(pts
+					(xy -2.286 1.905) (xy -2.286 -1.905)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.286 0) (xy -5.08 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.778 2.286) (xy -1.778 1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.778 0.508) (xy -1.778 -0.508)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.778 -1.27) (xy -1.778 -2.286)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.778 -1.778) (xy 0.762 -1.778) (xy 0.762 1.778) (xy -1.778 1.778)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.524 0) (xy -0.508 0.381) (xy -0.508 -0.381) (xy -1.524 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(circle
+				(center -0.889 0)
+				(radius 2.794)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 2.54) (xy 0 1.778)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 0 1.778)
+				(radius 0.254)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(circle
+				(center 0 -1.778)
+				(radius 0.254)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -2.54) (xy 0 0) (xy -1.778 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.254 0.508) (xy 0.381 0.381) (xy 1.143 0.381) (xy 1.27 0.254)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.762 0.381) (xy 0.381 -0.254) (xy 1.143 -0.254) (xy 0.762 0.381)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "DMN3032LFDBQ_1_1"
+			(pin input line
+				(at -6.35 0 0)
+				(length 2.54)
+				(name "G1"
+					(effects
+						(font
+							(size 0.0254 0.0254)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 5.08 270)
+				(length 2.54)
+				(name "D1"
+					(effects
+						(font
+							(size 0.0254 0.0254)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 5.08 270)
+				(length 2.54)
+				(name "D1"
+					(effects
+						(font
+							(size 0.0254 0.0254)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -5.08 90)
+				(length 2.54)
+				(name "S1"
+					(effects
+						(font
+							(size 0.0254 0.0254)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "DMN3032LFDBQ_2_1"
+			(pin input line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "G2"
+					(effects
+						(font
+							(size 0.0254 0.0254)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 5.08 270)
+				(length 2.54)
+				(name "D2"
+					(effects
+						(font
+							(size 0.0254 0.0254)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 5.08 270)
+				(length 2.54)
+				(name "D2"
+					(effects
+						(font
+							(size 0.0254 0.0254)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -5.08 90)
+				(length 2.54)
+				(name "S2"
+					(effects
+						(font
+							(size 0.0254 0.0254)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
 	(symbol "DMP2160UFDB"
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3708,7 +4077,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds31643.pdf"
+		(property "Datasheet" "https://www.diodes.com/datasheet/download/DMP2160UFDB.pdf"
 			(at 2.032 -14.224 0)
 			(effects
 				(font
@@ -3717,7 +4086,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Dual P-Channel Enhancement MOSFET"
+		(property "Description" "20V, 3.8A, Dual P-Channel Enhancement MOSFET, U-DFN2020-6 TYPE-B"
 			(at 0 0 0)
 			(effects
 				(font
@@ -4101,7 +4470,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "60V 707A 25mOhm P-CHANNEL ENHANCEMENT MODE MOSFET POWERDI"
+		(property "Description" "60V 7.7A 25mOhm P-CHANNEL ENHANCEMENT MODE MOSFET, POWERDI3333-8"
 			(at 0 0 0)
 			(effects
 				(font
@@ -4794,7 +5163,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "SuperMOS – SOT-723 60V BVDSS 1.5Ω RDS(on) 0.25A ID, N-channel MOSFET"
+		(property "Description" "60V BVDSS 1.5Ω RDS(on) 0.25A ID, N-channel MOSFET, SOT-723"
 			(at 0.508 -6.096 0)
 			(effects
 				(font
@@ -5847,7 +6216,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "60V 0.23A (N) 0.18A (P) N-CHANNEL AND P-CHANNEL MOSFET"
+		(property "Description" "60V 0.23A (N) 0.18A (P) N-CHANNEL AND P-CHANNEL MOSFET, SOT-563"
 			(at 0.508 -8.128 0)
 			(effects
 				(font
@@ -6246,7 +6615,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/datasheet/lcsc_datasheet_2205161616_Wuxi-NCE-Power-Semiconductor-NCE60H10K_C2992581.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C2992581.pdf"
 			(at 3.302 -11.176 0)
 			(effects
 				(font
@@ -6255,7 +6624,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "60V, 100A, 5.5mOhm N-Channel Enhancement Mode Power MOSFET, TO-252-2L"
 			(at 0 0 0)
 			(effects
 				(font
@@ -6527,7 +6896,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "60V 82A 13mOhm NCE P-Channel Enhancement Mode Power MOSFET"
+		(property "Description" "60V 82A 13mOhm NCE P-Channel Enhancement Mode Power MOSFET, TO-252-2L"
 			(at 0 0 0)
 			(effects
 				(font
@@ -6802,7 +7171,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "30V 18.8A Single N-Channel MOSFET"
+		(property "Description" "30V 18.8A Single N-Channel MOSFET, WDFN6 / DFN-2020-6"
 			(at 0 0 0)
 			(effects
 				(font
@@ -7167,7 +7536,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "20V 13.1A Single P-Channel MOSFET"
+		(property "Description" "20V 13.1A Single P-Channel MOSFET, WDFN6 / DFN-2020-6"
 			(at 0 0 0)
 			(effects
 				(font
@@ -7532,7 +7901,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "20V 2A P-CHANNEL MOSFET"
+		(property "Description" "20V 2A P-CHANNEL MOSFET, SOT-323 / SC-70"
 			(at 0 0 0)
 			(effects
 				(font
@@ -7807,7 +8176,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "20V 3A N-CHANNEL MOSFET"
+		(property "Description" "20V 3A N-CHANNEL MOSFET, SOT-323 / SC-70"
 			(at 0.508 -6.096 0)
 			(effects
 				(font
@@ -8082,7 +8451,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Dual P-Channel 30 V (D-S) 4A MOSFET"
+		(property "Description" "Dual P-Channel 30 V (D-S) 4A MOSFET, U-DFN2020-6 TYPE-B"
 			(at 0 0 0)
 			(effects
 				(font
@@ -8495,7 +8864,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "20V 0.8A (N) 0.4A (P) N-CHANNEL AND P-CHANNEL COMPLEMENTARY MOSFET"
+		(property "Description" "20V 0.8A (N) 0.4A (P) N-CHANNEL AND P-CHANNEL COMPLEMENTARY MOSFET, SOT-963"
 			(at 0.508 -8.128 0)
 			(effects
 				(font
@@ -9960,7 +10329,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "60V 0.5A (N) 0.5A (P) N-CHANNEL AND P-CHANNEL COMPLEMENTARY PAIR ENHANCEMENT MODE MOSFET"
+		(property "Description" "60V 0.5A (N) 0.5A (P) N-CHANNEL AND P-CHANNEL COMPLEMENTARY PAIR ENHANCEMENT MODE MOSFET, SOT-563"
 			(at 0.508 -8.128 0)
 			(effects
 				(font
@@ -10371,7 +10740,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "N- and P-Channel 30 V (D-S) 0.5A MOSFET"
+		(property "Description" "30V, 0.5A (N), 0.4A (N), Dual N-channel and P-Channel MOSFET, SOT-363"
 			(at 2.54 -8.382 0)
 			(effects
 				(font
@@ -10746,7 +11115,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Dual N-Channel 30-V (D-S) 2.5A 1.15W MOSFET"
+		(property "Description" "Dual N-Channel 30-V (D-S) 2.5A 1.15W MOSFET, SOT-23-6"
 			(at 0 0 0)
 			(effects
 				(font
@@ -11083,7 +11452,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Dual P-Channel 30 V (D-S) 3A 1.4W MOSFET"
+		(property "Description" "Dual P-Channel 30 V (D-S) 3A 1.4W MOSFET, SOT-23-6"
 			(at 0 0 0)
 			(effects
 				(font
@@ -11364,7 +11733,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Dual N-Channel 30-V (D-S) MOSFET"
+		(property "Description" "Dual N-Channel 30-V (D-S) 6A MOSFET, PowerPAK-1212-8-DUAL"
 			(at -1.27 -17.018 0)
 			(effects
 				(font
@@ -11745,7 +12114,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Dual P-Channel 30 V (D-S) MOSFET"
+		(property "Description" "Dual P-Channel 30 V (D-S) 6A MOSFET, PowerPAK-1212-8 DUAL"
 			(at 1.524 -10.668 0)
 			(effects
 				(font
