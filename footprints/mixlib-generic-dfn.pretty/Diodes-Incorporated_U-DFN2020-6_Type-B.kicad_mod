@@ -210,7 +210,7 @@
 		(uuid "5d03c311-bf01-4a8a-9d84-fb4615190ba0")
 	)
 	(embedded_fonts no)
-	(model "${KIPRJMOD}/3dmodels/mixlib-generic-dfn.3dshapes/Diodes-Incorporated_U-DFN2020-6_Type-B.step"
+	(model "${MIXLIB_KICAD_3DMODELS_DIR}/mixlib-generic-dfn.3dshapes/Diodes-Incorporated_U-DFN2020-6_Type-B.step"
 		(offset
 			(xyz 0 0 0)
 		)

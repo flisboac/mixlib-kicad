@@ -244,7 +244,7 @@
 		(uuid "2100d1a9-55f8-4797-9245-829696a69238")
 	)
 	(embedded_fonts no)
-	(model ":mixlib:mixlib-ic-esd.3dshapes/TPD4S012.step"
+	(model "${MIXLIB_KICAD_3DMODELS_DIR}/mixlib-ic-esd.3dshapes/TPD4S012.step"
 		(offset
 			(xyz 0 0 0)
 		)

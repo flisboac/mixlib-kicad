@@ -827,4 +827,15 @@
 		(uuid "33048f69-dcfb-4076-ac70-1fc32b534d73")
 	)
 	(embedded_fonts no)
+	(model "${MIXLIB_KICAD_3DMODELS_DIR}/mixlib-pmic-battery.3dshapes/SPECIFIC_BQ25672RQMR.STEP"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
 )

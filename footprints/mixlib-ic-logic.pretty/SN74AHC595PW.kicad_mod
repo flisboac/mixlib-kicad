@@ -312,7 +312,7 @@
 		(uuid "8674d0b1-1dee-4699-ab4c-9337c19f9010")
 	)
 	(embedded_fonts no)
-	(model ":mixlib:mixlib-ic-logic.3dshapes/SN74AHC595PW.step"
+	(model "${MIXLIB_KICAD_3DMODELS_DIR}/mixlib-ic-logic.3dshapes/SN74AHC595PW.step"
 		(offset
 			(xyz 0 0 0)
 		)

@@ -357,4 +357,15 @@
 		(uuid "4da35e28-1f2f-4b0c-86a9-9aaa5f015f5e")
 	)
 	(embedded_fonts no)
+	(model "${MIXLIB_KICAD_3DMODELS_DIR}/mixlib-vendor-adi.3dshapes/vendor_adi_T1433_2C_MXM.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )

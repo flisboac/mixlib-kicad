@@ -275,7 +275,7 @@
 		(uuid "fa864aac-715d-40ea-94dc-301e12087bdf")
 	)
 	(embedded_fonts no)
-	(model "${KICAD9_3DMODEL_DIR}/Package_SO.3dshapes/Vishay_PowerPAK_1212-8_Single.wrl"
+	(model "${MIXLIB_KICAD_3DMODELS_DIR}/mixlib-vendor-vishay.3dshapes/vendor-vishay-PowerPak-1212-8.STEP"
 		(offset
 			(xyz 0 0 0)
 		)
@@ -283,7 +283,7 @@
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz 0 0 0)
+			(xyz -90 -0 -0)
 		)
 	)
 )

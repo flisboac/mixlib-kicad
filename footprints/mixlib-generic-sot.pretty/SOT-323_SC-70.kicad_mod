@@ -319,15 +319,15 @@
 		(uuid "f3d01063-6788-4bb0-8a37-37e0607cee8f")
 	)
 	(embedded_fonts no)
-	(model "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-323_SC-70.step"
+	(model "${MIXLIB_KICAD_3DMODELS_DIR}/mixlib-generic-sot.3dshapes/SOT-323_SC-70.step"
 		(offset
-			(xyz 0 0 0)
+			(xyz -1.5 -0.85 -0.5)
 		)
 		(scale
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz 0 0 0)
+			(xyz -90 -0 -90)
 		)
 	)
 )

@@ -223,7 +223,7 @@
 		(uuid "19c8df82-58bd-451a-b074-6a58ff7edb5e")
 	)
 	(embedded_fonts no)
-	(model "${KIPRJMOD}/3dmodels/mixlib-generic-sot.3dshapes/SOT-353_SC-70-5.step"
+	(model "${MIXLIB_KICAD_3DMODELS_DIR}/mixlib-generic-sot.3dshapes/SOT-353_SC-70-5.step"
 		(offset
 			(xyz 0 0 0)
 		)
