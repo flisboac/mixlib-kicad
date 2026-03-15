@@ -32,4 +32,5 @@
   (lib (name "mixlib-pmic-supervisor")(type "KiCad")(uri "${KIPRJMOD}/symbols/mixlib-pmic-supervisor.kicad_sym")(options "")(descr ""))
   (lib (name "mixlib-ic-mcu")(type "KiCad")(uri "${KIPRJMOD}/symbols/mixlib-ic-mcu.kicad_sym")(options "")(descr ""))
   (lib (name "mixlib-electromechanic-switch")(type "KiCad")(uri "${KIPRJMOD}/symbols/mixlib-electromechanic-switch.kicad_sym")(options "")(descr ""))
+  (lib (name "mixlib-soc-stm32g0")(type "KiCad")(uri "${KIPRJMOD}/symbols/mixlib-soc-stm32g0.kicad_sym")(options "")(descr ""))
 )

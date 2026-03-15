@@ -34,4 +34,6 @@
   (lib (name "mixlib-discrete-board")(type "KiCad")(uri "${KIPRJMOD}/footprints/mixlib-discrete-board.pretty")(options "")(descr ""))
   (lib (name "mixlib-electromechanic-switch")(type "KiCad")(uri "${KIPRJMOD}/footprints/mixlib-electromechanic-switch.pretty")(options "")(descr ""))
   (lib (name "mixlib-vendor-onsemi")(type "KiCad")(uri "${KIPRJMOD}/footprints/mixlib-vendor-onsemi.pretty")(options "")(descr ""))
+  (lib (name "mixlib-generic-qfn")(type "KiCad")(uri "${KIPRJMOD}/todo/ul_TXS0104ERGYR/KiCADv6/footprints.pretty/mixlib-generic-qfn.pretty")(options "")(descr ""))
+  (lib (name "mixlib-vendor-st")(type "KiCad")(uri "${KIPRJMOD}/todo/ul_TXS0104ERGYR/KiCADv6/footprints.pretty/mixlib-vendor-st.pretty")(options "")(descr ""))
 )
