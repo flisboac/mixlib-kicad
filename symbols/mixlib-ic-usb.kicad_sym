@@ -575,6 +575,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Value" "TPD6S300A"
@@ -583,6 +584,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "mixlib-vendor-ti:vendor-ti-RUK0020B"
@@ -632,8 +634,8 @@
 		)
 		(symbol "TPD6S300A_0_1"
 			(rectangle
-				(start -10.16 12.7)
-				(end 10.16 -12.7)
+				(start -10.16 13.97)
+				(end 10.16 -13.97)
 				(stroke
 					(width 0.254)
 					(type solid)
@@ -645,7 +647,7 @@
 		)
 		(symbol "TPD6S300A_1_1"
 			(pin bidirectional line
-				(at -12.7 10.16 0)
+				(at -12.7 11.43 0)
 				(length 2.54)
 				(name "C_CC1"
 					(effects
@@ -663,7 +665,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -12.7 7.62 0)
+				(at -12.7 8.89 0)
 				(length 2.54)
 				(name "C_CC2"
 					(effects
@@ -681,7 +683,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -12.7 5.08 0)
+				(at -12.7 6.35 0)
 				(length 2.54)
 				(name "RPD_G1"
 					(effects
@@ -699,7 +701,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -12.7 2.54 0)
+				(at -12.7 3.81 0)
 				(length 2.54)
 				(name "RPD_G2"
 					(effects
@@ -717,7 +719,7 @@
 				)
 			)
 			(pin passive line
-				(at -12.7 -2.54 0)
+				(at -12.7 1.27 0)
 				(length 2.54)
 				(name "D1"
 					(effects
@@ -735,7 +737,7 @@
 				)
 			)
 			(pin passive line
-				(at -12.7 -5.08 0)
+				(at -12.7 -1.27 0)
 				(length 2.54)
 				(name "D2"
 					(effects
@@ -753,7 +755,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -12.7 -7.62 0)
+				(at -12.7 -8.89 0)
 				(length 2.54)
 				(name "C_SBU1"
 					(effects
@@ -771,7 +773,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -12.7 -10.16 0)
+				(at -12.7 -11.43 0)
 				(length 2.54)
 				(name "C_SBU2"
 					(effects
@@ -789,7 +791,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 15.24 270)
+				(at 0 16.51 270)
 				(length 2.54)
 				(name "VPWR"
 					(effects
@@ -806,10 +808,9 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 0 -15.24 90)
+			(pin power_in line
+				(at 0 -16.51 90)
 				(length 2.54)
-				(hide yes)
 				(name "GND"
 					(effects
 						(font
@@ -825,10 +826,9 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 0 -15.24 90)
+			(pin power_in line
+				(at 0 -16.51 90)
 				(length 2.54)
-				(hide yes)
 				(name "GND"
 					(effects
 						(font
@@ -845,9 +845,8 @@
 				)
 			)
 			(pin passive line
-				(at 0 -15.24 90)
+				(at 0 -16.51 90)
 				(length 2.54)
-				(hide yes)
 				(name "GND"
 					(effects
 						(font
@@ -863,10 +862,9 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 0 -15.24 90)
+			(pin power_in line
+				(at 0 -16.51 90)
 				(length 2.54)
-				(hide yes)
 				(name "GND"
 					(effects
 						(font
@@ -882,10 +880,9 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 0 -15.24 90)
+			(pin power_in line
+				(at 0 -16.51 90)
 				(length 2.54)
-				(hide yes)
 				(name "GND"
 					(effects
 						(font
@@ -902,7 +899,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -15.24 90)
+				(at 0 -16.51 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -920,7 +917,7 @@
 				)
 			)
 			(pin open_collector line
-				(at 12.7 10.16 180)
+				(at 12.7 11.43 180)
 				(length 2.54)
 				(name "~{FLT}"
 					(effects
@@ -1010,7 +1007,7 @@
 				)
 			)
 			(pin passive line
-				(at 12.7 -10.16 180)
+				(at 12.7 -11.43 180)
 				(length 2.54)
 				(name "VBIAS"
 					(effects
@@ -1227,7 +1224,7 @@
 						)
 					)
 				)
-				(number "15"
+				(number "17"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1307,10 +1304,9 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin power_in line
 				(at 0 -16.51 90)
 				(length 2.54)
-				(hide yes)
 				(name "GND"
 					(effects
 						(font
@@ -1326,48 +1322,9 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin power_in line
 				(at 0 -16.51 90)
 				(length 2.54)
-				(hide yes)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "16"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 0 -16.51 90)
-				(length 2.54)
-				(hide yes)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "17"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 0 -16.51 90)
-				(length 2.54)
-				(hide yes)
 				(name "GND"
 					(effects
 						(font
@@ -1383,10 +1340,9 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin power_in line
 				(at 0 -16.51 90)
 				(length 2.54)
-				(hide yes)
 				(name "GND"
 					(effects
 						(font
