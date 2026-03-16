@@ -1210,7 +1210,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "mixlib-pmic-battery:SPECIFIC_BQ25672RQMR"
+		(property "Footprint" "mixlib-vendor-ti:vendor-ti-RQM0029A-MFG"
 			(at -3.81 -46.99 0)
 			(effects
 				(font
