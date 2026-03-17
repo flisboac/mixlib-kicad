@@ -13,3 +13,4 @@ local
 ~*.lck
 *.kate-swp
 /.history
+_autosave*

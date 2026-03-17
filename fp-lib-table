@@ -36,4 +36,5 @@
   (lib (name "mixlib-vendor-onsemi")(type "KiCad")(uri "${KIPRJMOD}/footprints/mixlib-vendor-onsemi.pretty")(options "")(descr ""))
   (lib (name "mixlib-generic-qfn")(type "KiCad")(uri "${KIPRJMOD}/footprints/mixlib-generic-qfn.pretty")(options "")(descr ""))
   (lib (name "mixlib-vendor-st")(type "KiCad")(uri "${KIPRJMOD}/footprints/mixlib-vendor-st.pretty")(options "")(descr ""))
+  (lib (name "mixlib-vendor-aos")(type "KiCad")(uri "${KIPRJMOD}/footprints/mixlib-vendor-aos.pretty")(options "")(descr ""))
 )

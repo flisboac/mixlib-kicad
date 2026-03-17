@@ -1,0 +1,336 @@
+(footprint "vendor-vishay-SC-89-6_SOT-563F"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "SC-89 6-Leads (SOT-563F)")
+	(tags "SI1078X-T1-GE3 ")
+	(property "Reference" "REF**"
+		(at 0 -2.15 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "fddff1fe-1007-4566-9867-484a6559d5ab")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "vendor-vishay-SC-89-6_SOT-563F"
+		(at 0 2.05 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "b2496fd8-ab68-4c7a-8f32-297db466169e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.diodes.com/assets/Package-Files/SOT563.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "dc292890-1ec8-4375-94e2-3fe30ece6897")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "SC-89 6-Leads (SOT-563F)"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "01a247ec-9a22-44e1-9e85-6e7be80c719c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -0.7493 0.9779)
+		(end 0.7493 0.9779)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e4dfce70-c828-4037-acc6-19d07b538b01")
+	)
+	(fp_line
+		(start 0.7493 -0.9779)
+		(end -0.7493 -0.9779)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9fed3da5-ad98-476b-8a1e-9eb9fb6a33ab")
+	)
+	(fp_circle
+		(center -1.7065 -0.5)
+		(end -1.6049 -0.5)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "9ab52771-e445-4b3b-ae63-afcbb23ee2a8")
+	)
+	(fp_line
+		(start -1.4097 -0.881)
+		(end -0.8763 -0.881)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "2d41ecfe-a612-4273-9232-e74e04e2e9a2")
+	)
+	(fp_line
+		(start -1.4097 0.881)
+		(end -1.4097 -0.881)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "0046d411-c1e9-4189-ba16-966310726fae")
+	)
+	(fp_line
+		(start -1.4097 0.881)
+		(end -0.8763 0.881)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "a6c97757-5054-46aa-ac7d-78360c35b726")
+	)
+	(fp_line
+		(start -0.8763 -1.1049)
+		(end 0.8763 -1.1049)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "6b865557-d694-4105-8033-43fa4905875a")
+	)
+	(fp_line
+		(start -0.8763 -0.881)
+		(end -0.8763 -1.1049)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "2af111cb-eeb9-4880-9fb2-6f8c1e5f40e8")
+	)
+	(fp_line
+		(start -0.8763 1.1049)
+		(end -0.8763 0.881)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "6db853ef-8488-49e4-a9f7-b5ca1f7f602d")
+	)
+	(fp_line
+		(start 0.8763 -1.1049)
+		(end 0.8763 -0.881)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "ff57bc93-76d8-4c59-9d79-402f6994091d")
+	)
+	(fp_line
+		(start 0.8763 0.881)
+		(end 0.8763 1.1049)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "44d90a3f-6e8a-4c55-a4b8-a1cf516beb36")
+	)
+	(fp_line
+		(start 0.8763 1.1049)
+		(end -0.8763 1.1049)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "9ea0f033-a021-4ce8-aa72-8f8828b9cdea")
+	)
+	(fp_line
+		(start 1.4097 -0.881)
+		(end 0.8763 -0.881)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "049f9fdb-7a08-4e87-aadd-268045297154")
+	)
+	(fp_line
+		(start 1.4097 -0.881)
+		(end 1.4097 0.881)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "1e8f21bc-f33d-46eb-a068-d3114cb2df72")
+	)
+	(fp_line
+		(start 1.4097 0.881)
+		(end 0.8763 0.881)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "73e2d25b-3aa9-4ec8-ac77-e6297eebc40d")
+	)
+	(fp_line
+		(start -0.6223 -0.8509)
+		(end -0.6223 0.8509)
+		(stroke
+			(width 0.0254)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "6003a1b1-7d8b-49d6-a65d-3ebd5854828d")
+	)
+	(fp_line
+		(start -0.6223 0.8509)
+		(end 0.6223 0.8509)
+		(stroke
+			(width 0.0254)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "881c0ad4-1393-4a25-bc69-d85494a9c020")
+	)
+	(fp_line
+		(start 0.6223 -0.8509)
+		(end -0.6223 -0.8509)
+		(stroke
+			(width 0.0254)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "31f48a2e-3572-4aee-b498-79d6764d9179")
+	)
+	(fp_line
+		(start 0.6223 0.8509)
+		(end 0.6223 -0.8509)
+		(stroke
+			(width 0.0254)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "358872ca-cdd4-4469-821c-e5f1cb2fadcd")
+	)
+	(fp_arc
+		(start 0.3048 -0.8509)
+		(mid 0 -0.5461)
+		(end -0.3048 -0.8509)
+		(stroke
+			(width 0.0254)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a48fc45b-6615-46e8-98fb-9844dddabc48")
+	)
+	(fp_circle
+		(center -0.3429 -0.5)
+		(end -0.2667 -0.5)
+		(stroke
+			(width 0.0254)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "7202cb9a-7a5c-4739-ae8c-493a7dcd17ef")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.05 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "a6d69631-efb6-4c18-b7ad-0d7aed033176")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -0.7498 -0.5)
+		(size 0.7 0.28)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.1785714286)
+		(uuid "b8ff14a9-b36e-4110-8957-9e8c0872db83")
+	)
+	(pad "2" smd roundrect
+		(at -0.7498 0)
+		(size 0.7 0.28)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.1785714286)
+		(uuid "097e4b0f-3aff-4920-ad20-c836c7353bb9")
+	)
+	(pad "3" smd roundrect
+		(at -0.7498 0.5)
+		(size 0.7 0.28)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.1785714286)
+		(uuid "f20c12ec-eb9b-4354-84dd-915128d33f2b")
+	)
+	(pad "4" smd roundrect
+		(at 0.7498 0.5)
+		(size 0.7 0.28)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.1785714286)
+		(uuid "26606e59-a9f8-4541-990f-3a29bd6367e7")
+	)
+	(pad "5" smd roundrect
+		(at 0.7498 0)
+		(size 0.7 0.28)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.1785714286)
+		(uuid "74140556-e24d-4b93-8afe-f9726151eb84")
+	)
+	(pad "6" smd roundrect
+		(at 0.7498 -0.5)
+		(size 0.7 0.28)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.1785714286)
+		(uuid "ab4be420-6546-433d-bbc3-55c9c5ead28a")
+	)
+	(embedded_fonts no)
+	(model "${MIXLIB_KICAD_3DMODELS_DIR}/mixlib-vendor-vishay.3dshapes/vendor-vishay-SC-89-6_SOT-563F.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
