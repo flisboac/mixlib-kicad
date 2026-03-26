@@ -747,7 +747,7 @@
 		(uuid "5c8efd74-9890-48f2-85e1-7fef9ac26404")
 	)
 	(embedded_fonts no)
-	(model "${KIPRJMOD}/3dmodels/mixlib-vendor-ti.3dshapes/vendor-ti-RYK0018A.stp"
+	(model "${MIXLIB_KICAD_3DMODELS_DIR}/mixlib-vendor-ti.3dshapes/vendor-ti-RYK0018A.stp"
 		(offset
 			(xyz 0 0 0)
 		)
