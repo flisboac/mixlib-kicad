@@ -459,7 +459,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at 0 10.414 0)
+			(at 0 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -467,7 +467,7 @@
 			)
 		)
 		(property "Value" "TJ-S1615CY6TGLCCYRGY-A5"
-			(at 0 8.128 0)
+			(at 0 19.304 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -475,7 +475,7 @@
 			)
 		)
 		(property "Footprint" "mixlib-discrete-led:LED-3_RGB-0603_1615Metric"
-			(at 0 0 0)
+			(at 2.54 -6.858 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -484,7 +484,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/C42389950.pdf"
-			(at 0 0 0)
+			(at 3.556 -7.874 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -493,7 +493,7 @@
 			)
 		)
 		(property "Description" "Common-Anode Discrete RGB LED, 0605 / 1615"
-			(at 0 0 0)
+			(at 4.064 -6.858 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -504,7 +504,7 @@
 		(symbol "TJ-S1615CY6TGLCCYRGY-A5_0_1"
 			(polyline
 				(pts
-					(xy -0.762 2.794) (xy -0.762 4.826)
+					(xy -0.762 6.604) (xy -0.762 8.636)
 				)
 				(stroke
 					(width 0.254)
@@ -528,7 +528,7 @@
 			)
 			(polyline
 				(pts
-					(xy -0.762 -4.826) (xy -0.762 -2.794)
+					(xy -0.762 -8.636) (xy -0.762 -6.604)
 				)
 				(stroke
 					(width 0.254)
@@ -540,7 +540,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 4.572) (xy -0.508 5.08) (xy -0.254 5.08) (xy -0.508 5.08) (xy -0.508 4.826)
+					(xy 0 8.382) (xy -0.508 8.89) (xy -0.254 8.89) (xy -0.508 8.89) (xy -0.508 8.636)
 				)
 				(stroke
 					(width 0)
@@ -576,7 +576,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 -3.048) (xy -0.508 -2.54) (xy -0.254 -2.54) (xy -0.508 -2.54) (xy -0.508 -2.794)
+					(xy 0 -6.858) (xy -0.508 -6.35) (xy -0.254 -6.35) (xy -0.508 -6.35) (xy -0.508 -6.604)
 				)
 				(stroke
 					(width 0)
@@ -588,7 +588,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 -3.81) (xy 1.27 -3.81)
+					(xy 0 -7.62) (xy 1.27 -7.62)
 				)
 				(stroke
 					(width 0)
@@ -600,7 +600,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0.508 5.08) (xy 0 5.588) (xy 0.254 5.588) (xy 0 5.588) (xy 0 5.334)
+					(xy 0.508 8.89) (xy 0 9.398) (xy 0.254 9.398) (xy 0 9.398) (xy 0 9.144)
 				)
 				(stroke
 					(width 0)
@@ -624,7 +624,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0.508 -2.54) (xy 0 -2.032) (xy 0.254 -2.032) (xy 0 -2.032) (xy 0 -2.286)
+					(xy 0.508 -6.35) (xy 0 -5.842) (xy 0.254 -5.842) (xy 0 -5.842) (xy 0 -6.096)
 				)
 				(stroke
 					(width 0)
@@ -636,7 +636,19 @@
 			)
 			(polyline
 				(pts
-					(xy 0.762 2.794) (xy -0.762 3.81) (xy 0.762 4.826) (xy 0.762 2.794)
+					(xy 0.635 -7.62) (xy 1.905 -7.62) (xy 1.905 7.62) (xy 0.635 7.62)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.762 6.604) (xy -0.762 7.62) (xy 0.762 8.636) (xy 0.762 6.604)
 				)
 				(stroke
 					(width 0.254)
@@ -660,7 +672,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0.762 -4.826) (xy -0.762 -3.81) (xy 0.762 -2.794) (xy 0.762 -4.826)
+					(xy 0.762 -8.636) (xy -0.762 -7.62) (xy 0.762 -6.604) (xy 0.762 -8.636)
 				)
 				(stroke
 					(width 0.254)
@@ -672,7 +684,7 @@
 			)
 			(polyline
 				(pts
-					(xy 1.016 3.81) (xy -0.762 3.81)
+					(xy 1.016 7.62) (xy -0.762 7.62)
 				)
 				(stroke
 					(width 0)
@@ -696,19 +708,7 @@
 			)
 			(polyline
 				(pts
-					(xy 1.016 -3.81) (xy -0.762 -3.81)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 1.27 -3.81) (xy 2.54 -3.81) (xy 2.54 3.81) (xy 0 3.81)
+					(xy 1.016 -7.62) (xy -0.762 -7.62)
 				)
 				(stroke
 					(width 0)
@@ -720,8 +720,19 @@
 			)
 		)
 		(symbol "TJ-S1615CY6TGLCCYRGY-A5_1_1"
+			(circle
+				(center 1.9067 0.0099)
+				(radius 0.1954)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type outline)
+				)
+			)
 			(pin passive line
-				(at -2.54 3.81 0)
+				(at -2.54 7.62 0)
 				(length 1.778)
 				(name "Y"
 					(effects
@@ -757,7 +768,7 @@
 				)
 			)
 			(pin passive line
-				(at -2.54 -3.81 0)
+				(at -2.54 -7.62 0)
 				(length 1.778)
 				(name "R"
 					(effects
