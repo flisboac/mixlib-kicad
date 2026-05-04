@@ -485,7 +485,9 @@
   },
   "libraries": {
     "pinned_footprint_libs": [],
-    "pinned_symbol_libs": []
+    "pinned_symbol_libs": [
+      "mixlib-pmic-battery"
+    ]
   },
   "meta": {
     "filename": "mixlib-kicad.kicad_pro",
