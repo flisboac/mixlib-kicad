@@ -504,7 +504,8 @@
     "pinned_symbol_libs": [
       "mixlib-pmic-battery",
       "mixlib-ic-mcu",
-      "mixlib-pmic-switch"
+      "mixlib-ic-logic",
+      "mixlib-interface-uart"
     ]
   },
   "meta": {
