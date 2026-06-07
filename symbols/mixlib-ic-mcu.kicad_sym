@@ -1,67 +1,83 @@
 (kicad_symbol_lib
-	(version 20241209)
+	(version 20251024)
 	(generator "kicad_symbol_editor")
-	(generator_version "9.0")
-	(symbol "CH32V006K8U6"
+	(generator_version "10.0")
+	(symbol "CH32L103F8U6"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "U"
-			(at 0 36.322 0)
+			(at 1.778 21.59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "CH32L103F8U6"
+			(at 1.778 19.558 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_DFN_QFN:QFN-20-1EP_3x3mm_P0.4mm_EP1.65x1.65mm"
+			(at 0 -1.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "CH32V006K8U6"
-			(at 0 34.544 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_DFN_QFN:QFN-32-1EP_4x4mm_P0.4mm_EP2.9x2.9mm"
-			(at -0.762 -50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://ch32-riscv-ug.github.io/CH32V006/datasheet_en/CH32V006DS0.PDF"
-			(at -0.762 -50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "48MHz RISC-V MCU, 8KB RAM, 62KB Flash, QFN-32"
-			(at -0.762 -50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "QFN-32*4x4mm*P0.4mm*"
+		(property "Datasheet" "https://ch32-riscv-ug.github.io/CH32L103/datasheet_en/CH32L103DS0.PDF"
 			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(symbol "CH32V006K8U6_1_1"
+		(property "Description" "96MHz RISC-V MCU with USB PD PHY (Sink, Source, DRP), USB 2.0 Full speed PHY (Host, Device), 20KB RAM, 64KB Flash, QFN-20 0.4mm Pitch Package"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "QFN-20-1EP_3x3mm_P0.4mm_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "CH32L103F8U6_1_1"
 			(rectangle
-				(start -34.29 24.13)
-				(end 34.29 -24.13)
+				(start -21.59 17.78)
+				(end 21.59 -17.78)
 				(stroke
 					(width 0)
 					(type solid)
@@ -70,10 +86,18 @@
 					(type background)
 				)
 			)
-			(pin input line
-				(at -36.83 20.32 0)
-				(length 2.54)
-				(name "PB3/SWCK/T2/U2RX"
+			(text "BOOT0=GND\nBOOT1=FLOAT"
+				(at 0.254 -7.366 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(pin passive line
+				(at -26.67 -3.81 0)
+				(length 5.08)
+				(name "PA0/WKUP/ADC0"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -88,10 +112,10 @@
 					)
 				)
 			)
-			(pin input line
-				(at -36.83 17.78 0)
-				(length 2.54)
-				(name "PA5/U2RX_/OPO1"
+			(pin passive line
+				(at -26.67 -6.35 0)
+				(length 5.08)
+				(name "PA1/ADC1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -106,10 +130,10 @@
 					)
 				)
 			)
-			(pin input line
-				(at -36.83 15.24 0)
-				(length 2.54)
-				(name "PA6/U2TX_"
+			(pin passive line
+				(at -26.67 -8.89 0)
+				(length 5.08)
+				(name "PA2/ADC2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -124,10 +148,10 @@
 					)
 				)
 			)
-			(pin input line
-				(at -36.83 12.7 0)
-				(length 2.54)
-				(name "PA7/U2TX/RST"
+			(pin passive line
+				(at -26.67 -11.43 0)
+				(length 5.08)
+				(name "PA3/ADC3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -142,10 +166,10 @@
 					)
 				)
 			)
-			(pin input line
-				(at -36.83 10.16 0)
-				(length 2.54)
-				(name "PA0/T1/T2"
+			(pin passive line
+				(at -26.67 -13.97 0)
+				(length 5.08)
+				(name "PA4/ADC4"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -160,10 +184,10 @@
 					)
 				)
 			)
-			(pin input line
-				(at -36.83 7.62 0)
-				(length 2.54)
-				(name "PA1/T1/T2/OPN0/XI/A1"
+			(pin passive line
+				(at 26.67 -3.81 180)
+				(length 5.08)
+				(name "PA5/ADC5"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -178,10 +202,10 @@
 					)
 				)
 			)
-			(pin input line
-				(at -36.83 5.08 0)
-				(length 2.54)
-				(name "PA2/T1/T2/U2TX_/OPP0/XO/A0"
+			(pin passive line
+				(at 26.67 -6.35 180)
+				(length 5.08)
+				(name "PA7/ADC7"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -196,10 +220,10 @@
 					)
 				)
 			)
-			(pin input line
-				(at -36.83 2.54 0)
-				(length 2.54)
-				(name "PD0/T1/TX_/SDA_/OPN1"
+			(pin passive line
+				(at 26.67 -8.89 180)
+				(length 5.08)
+				(name "PB0/ADC8"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -214,10 +238,10 @@
 					)
 				)
 			)
-			(pin input line
-				(at -36.83 -2.54 0)
-				(length 2.54)
-				(name "PA3/T1/T_2/U2RX__"
+			(pin passive line
+				(at 26.67 -11.43 180)
+				(length 5.08)
+				(name "PB1/PB10/ADC9"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -232,10 +256,10 @@
 					)
 				)
 			)
-			(pin input line
-				(at -36.83 -5.08 0)
-				(length 2.54)
-				(name "PB0/T1/N_SS_"
+			(pin passive line
+				(at 26.67 -13.97 180)
+				(length 5.08)
+				(name "PB11"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -250,10 +274,10 @@
 					)
 				)
 			)
-			(pin input line
-				(at -36.83 -7.62 0)
-				(length 2.54)
-				(name "PB1/T1/T_2/SCK_"
+			(pin passive input_low
+				(at -26.67 3.81 0)
+				(length 5.08)
+				(name "PB6/PB13/CC1/T1CH1N"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -268,10 +292,10 @@
 					)
 				)
 			)
-			(pin input line
-				(at -36.83 -10.16 0)
-				(length 2.54)
-				(name "PB2/T1BK__/T1/M_ISO_"
+			(pin passive line
+				(at 26.67 1.27 180)
+				(length 5.08)
+				(name "PB14/T1CH2N"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -286,10 +310,10 @@
 					)
 				)
 			)
-			(pin input line
-				(at -36.83 -12.7 0)
-				(length 2.54)
-				(name "PC0/T1C1_N_/T1/_T2/TX__/MOSI_"
+			(pin passive line
+				(at 26.67 3.81 180)
+				(length 5.08)
+				(name "PB15/T1CH3N"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -304,10 +328,10 @@
 					)
 				)
 			)
-			(pin input line
-				(at -36.83 -15.24 0)
-				(length 2.54)
-				(name "PC1/T1C2_N_/T2/_RX_/SD_A/NSS"
+			(pin passive line
+				(at -26.67 13.97 0)
+				(length 5.08)
+				(name "PA8/MCO/T1CH1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -322,10 +346,10 @@
 					)
 				)
 			)
-			(pin input line
-				(at -36.83 -17.78 0)
-				(length 2.54)
-				(name "PC2/T1C3_N_/T2/_SCL"
+			(pin passive line
+				(at 26.67 6.35 180)
+				(length 5.08)
+				(name "PA9/T1CH2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -340,10 +364,10 @@
 					)
 				)
 			)
-			(pin input line
-				(at -36.83 -20.32 0)
-				(length 2.54)
-				(name "PC3/T1/T_2"
+			(pin passive input_low
+				(at -26.67 8.89 0)
+				(length 5.08)
+				(name "PA14/PA12/SWCLK/UDP"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -358,10 +382,10 @@
 					)
 				)
 			)
-			(pin input line
-				(at 0 26.67 270)
-				(length 2.54)
-				(name "VDD"
+			(pin passive input_low
+				(at -26.67 11.43 0)
+				(length 5.08)
+				(name "PA13/PA11/SWDIO/UDM"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -376,8 +400,743 @@
 					)
 				)
 			)
-			(pin input line
-				(at 0 -26.67 90)
+			(pin passive input_low
+				(at -26.67 1.27 0)
+				(length 5.08)
+				(name "PA10/PB7/CC2/T1CH3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 20.32 270)
+				(length 2.54)
+				(name "VDD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 26.67 8.89 180)
+				(length 5.08)
+				(name "PA6/ADC6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -20.32 90)
+				(length 2.54)
+				(name "VSS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "CH32L103K8U"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "U"
+			(at 1.27 34.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "CH32L103K8U6"
+			(at 1.27 32.258 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_DFN_QFN:QFN-32-1EP_4x4mm_P0.4mm_EP2.65x2.65mm"
+			(at 54.356 -76.962 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://ch32-riscv-ug.github.io/CH32L103/datasheet_en/CH32L103DS0.PDF"
+			(at 53.594 -76.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "96MHz RISC-V MCU with USB PD PHY (Sink, Source, DRP), USB 2.0 Full speed PHY (Host, Device), 20KB RAM, 64KB Flash, QFN-32 0.4mm Pitch Package"
+			(at 25.908 -72.39 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "QFN-32-1EP_4x4mm_P0.4mm_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "CH32L103K8U_1_1"
+			(rectangle
+				(start -16.51 30.48)
+				(end 16.51 -30.48)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(pin power_in line
+				(at 0 33.02 270)
+				(length 2.54)
+				(name "VDD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -21.59 1.27 0)
+				(length 5.08)
+				(name "PC14/OSC32IN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -21.59 -1.27 0)
+				(length 5.08)
+				(name "PC15/OSC32OUT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -21.59 8.89 0)
+				(length 5.08)
+				(name "PD0/OSC_IN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -21.59 6.35 0)
+				(length 5.08)
+				(name "PD1/OSC_OUT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -21.59 -21.59 0)
+				(length 5.08)
+				(name "PA0/WKUP/ADC0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -21.59 -24.13 0)
+				(length 5.08)
+				(name "PA1/ADC1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -21.59 -26.67 0)
+				(length 5.08)
+				(name "PA2/ADC2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 21.59 1.27 180)
+				(length 5.08)
+				(name "PA3/ADC3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 21.59 -1.27 180)
+				(length 5.08)
+				(name "PA4/ADC4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 21.59 -3.81 180)
+				(length 5.08)
+				(name "PA5/ADC5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 21.59 -6.35 180)
+				(length 5.08)
+				(name "PA6/ADC6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 21.59 -8.89 180)
+				(length 5.08)
+				(name "PA7/ADC7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 21.59 -11.43 180)
+				(length 5.08)
+				(name "PB0/ADC8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 21.59 -13.97 180)
+				(length 5.08)
+				(name "PB1/ADC9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive input_low
+				(at -21.59 24.13 0)
+				(length 5.08)
+				(name "PB2/BOOT1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 21.59 6.35 180)
+				(length 5.08)
+				(name "PB15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -21.59 21.59 0)
+				(length 5.08)
+				(name "PA8/MCO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 21.59 8.89 180)
+				(length 5.08)
+				(name "PA9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 21.59 11.43 180)
+				(length 5.08)
+				(name "PA10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -21.59 -16.51 0)
+				(length 5.08)
+				(name "PA11/UDM"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -21.59 -13.97 0)
+				(length 5.08)
+				(name "PA12/UDP"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "22"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -21.59 13.97 0)
+				(length 5.08)
+				(name "PA13/SWDIO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "23"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -21.59 16.51 0)
+				(length 5.08)
+				(name "PA14/SWCLK"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "24"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 21.59 16.51 180)
+				(length 5.08)
+				(name "PA15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "25"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 21.59 19.05 180)
+				(length 5.08)
+				(name "PB3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "26"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 21.59 21.59 180)
+				(length 5.08)
+				(name "PB4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "27"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 21.59 24.13 180)
+				(length 5.08)
+				(name "PB5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "28"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -21.59 -8.89 0)
+				(length 5.08)
+				(name "PB6/CC1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "29"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -21.59 -6.35 0)
+				(length 5.08)
+				(name "PB7/CC2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "30"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive input_low
+				(at -21.59 26.67 0)
+				(length 5.08)
+				(name "PB9/BOOT0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "31"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 21.59 26.67 180)
+				(length 5.08)
+				(name "PB8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "32"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -33.02 90)
 				(length 2.54)
 				(name "VSS"
 					(effects
@@ -394,17 +1153,104 @@
 					)
 				)
 			)
-			(pin input line
-				(at 36.83 20.32 180)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "CH32V003F4U6"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "U"
+			(at 2.032 23.368 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "CH32V003F4U6"
+			(at 2.032 21.082 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_DFN_QFN:QFN-20-1EP_3x3mm_P0.4mm_EP1.65x1.65mm"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://ch32-riscv-ug.github.io/CH32V003/datasheet_en/CH32V003DS0.PDF"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "48MHz RISC-V MCU, 2KB RAM, 16KB Flash, 18 GPIO, QFN-20"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "QFN-20-1EP_3x3mm_P0.4mm_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "CH32V003F4U6_1_1"
+			(rectangle
+				(start -15.24 19.05)
+				(end 15.24 -19.05)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(pin passive line
+				(at -17.78 12.7 0)
 				(length 2.54)
-				(name "PA4/U2TX_/OPN2"
+				(name "PD7/NRST"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "32"
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -412,17 +1258,17 @@
 					)
 				)
 			)
-			(pin input line
-				(at 36.83 17.78 180)
+			(pin passive line
+				(at -17.78 2.54 0)
 				(length 2.54)
-				(name "PD7/T2/OPP1"
+				(name "PA1/OSCI"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "31"
+				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -430,17 +1276,17 @@
 					)
 				)
 			)
-			(pin input line
-				(at 36.83 15.24 180)
+			(pin passive line
+				(at -17.78 0 0)
 				(length 2.54)
-				(name "PB6/T2/RX_/SDA_"
+				(name "PA2/OSCO"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "30"
+				(number "3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -448,17 +1294,17 @@
 					)
 				)
 			)
-			(pin input line
-				(at 36.83 12.7 180)
+			(pin power_in line
+				(at 0 -21.59 90)
 				(length 2.54)
-				(name "PB5/TX_/SCL_"
+				(name "VSS"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "29"
+				(number "4"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -466,17 +1312,17 @@
 					)
 				)
 			)
-			(pin input line
-				(at 36.83 10.16 180)
+			(pin passive line
+				(at -17.78 -11.43 0)
 				(length 2.54)
-				(name "PD6/T2/RX/TX_/MOSI_/A6"
+				(name "PD0"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "28"
+				(number "5"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -484,17 +1330,17 @@
 					)
 				)
 			)
-			(pin input line
-				(at 36.83 7.62 180)
+			(pin power_in line
+				(at 0 21.59 270)
 				(length 2.54)
-				(name "PD5/T2/_TX/RX_/MISO_/A5"
+				(name "VDD"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "27"
+				(number "6"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -502,17 +1348,17 @@
 					)
 				)
 			)
-			(pin input line
-				(at 36.83 5.08 180)
+			(pin passive line
+				(at -17.78 -13.97 0)
 				(length 2.54)
-				(name "PD4/T1/T_2/SCK_/OPO0/A7"
+				(name "PC0"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "26"
+				(number "7"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -520,17 +1366,17 @@
 					)
 				)
 			)
-			(pin input line
-				(at 36.83 2.54 180)
+			(pin passive line
+				(at 17.78 -3.81 180)
 				(length 2.54)
-				(name "PD3/T1/T2_/U2RX_/NSS_/OPP2/A4"
+				(name "PC1/SDA"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "25"
+				(number "8"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -538,17 +1384,17 @@
 					)
 				)
 			)
-			(pin input line
-				(at 36.83 -5.08 180)
+			(pin passive line
+				(at 17.78 -6.35 180)
 				(length 2.54)
-				(name "PD2/T1/T2/U2TX_/A3"
+				(name "PC2/SCL"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "24"
+				(number "9"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -556,17 +1402,17 @@
 					)
 				)
 			)
-			(pin input line
-				(at 36.83 -7.62 180)
+			(pin passive line
+				(at -17.78 -16.51 0)
 				(length 2.54)
-				(name "PD1/SWIO/T1/SCL_/RX_/OPP3"
+				(name "PC3"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "23"
+				(number "10"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -574,17 +1420,17 @@
 					)
 				)
 			)
-			(pin input line
-				(at 36.83 -10.16 180)
+			(pin passive line
+				(at -17.78 7.62 0)
 				(length 2.54)
-				(name "PB4/T1ETR_"
+				(name "PC4/A2/MCO"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "22"
+				(number "11"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -592,17 +1438,17 @@
 					)
 				)
 			)
-			(pin input line
-				(at 36.83 -12.7 180)
+			(pin passive line
+				(at 17.78 -16.51 180)
 				(length 2.54)
-				(name "PC7/T1C4_/T1/T2/MISO"
+				(name "PC5/SCK"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "21"
+				(number "12"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -610,10 +1456,136 @@
 					)
 				)
 			)
-			(pin input line
-				(at 36.83 -15.24 180)
+			(pin passive line
+				(at 17.78 -13.97 180)
 				(length 2.54)
-				(name "PC6/T1C3_/T1/RX_/MOSI"
+				(name "PC6/MOSI"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 17.78 -11.43 180)
+				(length 2.54)
+				(name "PC7/MISO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -17.78 15.24 0)
+				(length 2.54)
+				(name "PD1/SWIO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 17.78 2.54 180)
+				(length 2.54)
+				(name "PD2/A3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 17.78 5.08 180)
+				(length 2.54)
+				(name "PD3/A4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 17.78 7.62 180)
+				(length 2.54)
+				(name "PD4/A7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 17.78 12.7 180)
+				(length 2.54)
+				(name "PD5/A5/UTX"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 17.78 15.24 180)
+				(length 2.54)
+				(name "PD6/A6/URX"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -628,10 +1600,439 @@
 					)
 				)
 			)
-			(pin input line
-				(at 36.83 -17.78 180)
+			(pin power_in line
+				(at 0 -21.59 90)
 				(length 2.54)
-				(name "PC5/T1C2_/T1/T2/TX_/SCK"
+				(name "VSS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "CH32V006K8U6"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "U"
+			(at 1.778 29.972 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "CH32V006K8U6"
+			(at 1.778 27.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_DFN_QFN:QFN-32-1EP_4x4mm_P0.4mm_EP2.9x2.9mm"
+			(at -0.762 -50.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://ch32-riscv-ug.github.io/CH32V006/datasheet_en/CH32V006DS0.PDF"
+			(at -0.762 -50.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "48MHz RISC-V MCU, 8KB RAM, 62KB Flash, QFN-32"
+			(at -0.762 -50.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "QFN-32*4x4mm*P0.4mm*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "CH32V006K8U6_1_1"
+			(rectangle
+				(start -13.97 26.67)
+				(end 13.97 -26.67)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(pin input line
+				(at -16.51 15.24 0)
+				(length 2.54)
+				(name "PB3/SWCLK"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 16.51 -15.24 180)
+				(length 2.54)
+				(name "PA5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 16.51 -17.78 180)
+				(length 2.54)
+				(name "PA6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -16.51 22.86 0)
+				(length 2.54)
+				(name "PA7/RST"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 16.51 -20.32 180)
+				(length 2.54)
+				(name "PA0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -16.51 5.08 0)
+				(length 2.54)
+				(name "PA1/XI/A1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -16.51 2.54 0)
+				(length 2.54)
+				(name "PA2/XO/A0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 16.51 -22.86 180)
+				(length 2.54)
+				(name "PD0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -16.51 -2.54 0)
+				(length 2.54)
+				(name "PA3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -16.51 -5.08 0)
+				(length 2.54)
+				(name "PB0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -16.51 -7.62 0)
+				(length 2.54)
+				(name "PB1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -16.51 -10.16 0)
+				(length 2.54)
+				(name "PB2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -16.51 -12.7 0)
+				(length 2.54)
+				(name "PC0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -16.51 -15.24 0)
+				(length 2.54)
+				(name "PC1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -16.51 -17.78 0)
+				(length 2.54)
+				(name "PC2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -16.51 -20.32 0)
+				(length 2.54)
+				(name "PC3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 29.21 270)
+				(length 2.54)
+				(name "VDD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -16.51 10.16 0)
+				(length 2.54)
+				(name "PC4/MCO/A2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 16.51 -10.16 180)
+				(length 2.54)
+				(name "PC5/SCK"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -647,16 +2048,250 @@
 				)
 			)
 			(pin input line
-				(at 36.83 -20.32 180)
+				(at 16.51 -7.62 180)
 				(length 2.54)
-				(name "PC4/T1C1_/T1/MCO/A2"
+				(name "PC6/MOSI"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "18"
+				(number "20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 16.51 -5.08 180)
+				(length 2.54)
+				(name "PC7/MISO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 16.51 -2.54 180)
+				(length 2.54)
+				(name "PB4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "22"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -16.51 17.78 0)
+				(length 2.54)
+				(name "PD1/SWIO/SWDIO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "23"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 16.51 0 180)
+				(length 2.54)
+				(name "PD2/A3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "24"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 16.51 5.08 180)
+				(length 2.54)
+				(name "PD3/A4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "25"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 16.51 7.62 180)
+				(length 2.54)
+				(name "PD4/A7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "26"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 16.51 10.16 180)
+				(length 2.54)
+				(name "PD5/A5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "27"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 16.51 12.7 180)
+				(length 2.54)
+				(name "PD6/A6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "28"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 16.51 15.24 180)
+				(length 2.54)
+				(name "PB5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "29"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 16.51 17.78 180)
+				(length 2.54)
+				(name "PB6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "30"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 16.51 20.32 180)
+				(length 2.54)
+				(name "PD7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "31"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 16.51 22.86 180)
+				(length 2.54)
+				(name "PA4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "32"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -29.21 90)
+				(length 2.54)
+				(name "VSS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "33"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -671,63 +2306,79 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "U"
-			(at 3.048 18.288 0)
+			(at 1.778 23.114 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "CH32X035F7P6"
-			(at 9.652 17.018 0)
+			(at 1.778 20.828 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
-			(at 0 -12.7 0)
+			(at 0 -13.97 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.wch-ic.com/products/CH32X035.html"
-			(at 0 0 0)
+			(at 0 1.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "48MHz RISC-V MCU with USB PD phy (Sink, Source, DRP), USB 2.0 Full speed phy (Host, Device), 20KB RAM, 62KB Flash, TSSOP 0.65mm Pitch Package"
 			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "ki_fp_filters" "TSSOP-20_*_P0.65mm*"
 			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(symbol "CH32X035F7P6_1_0"
 			(pin passive line
-				(at -33.02 11.43 0)
+				(at 16.51 -2.54 180)
 				(length 2.54)
-				(name "PB12/T1C4_/T2C2N_"
+				(name "PB12"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -743,9 +2394,9 @@
 				)
 			)
 			(pin passive line
-				(at -33.02 8.89 0)
+				(at -16.51 2.54 0)
 				(length 2.54)
-				(name "PC14/CC1/T1C3_/T2C2_"
+				(name "PC14/CC1"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -761,9 +2412,9 @@
 				)
 			)
 			(pin passive line
-				(at -33.02 6.35 0)
+				(at -16.51 0 0)
 				(length 2.54)
-				(name "PC15/CC2/T2C3_/T1ET_"
+				(name "PC15/CC2"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -779,9 +2430,9 @@
 				)
 			)
 			(pin passive line
-				(at -33.02 3.81 0)
+				(at -16.51 7.62 0)
 				(length 2.54)
-				(name "PC3/RST/T1C4_/T2C3N_/C1N0/A13"
+				(name "PC3/A13/RST"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -797,9 +2448,9 @@
 				)
 			)
 			(pin passive line
-				(at -33.02 1.27 0)
+				(at 16.51 0 180)
 				(length 2.54)
-				(name "PC1/T1C2_/T2C1N_/RX2_/A11"
+				(name "PC1/A11"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -815,9 +2466,9 @@
 				)
 			)
 			(pin passive line
-				(at -33.02 -1.27 0)
+				(at 16.51 -7.62 180)
 				(length 2.54)
-				(name "PA0/T2C1/CTS2/C1P1/A0"
+				(name "PA0/CTS2/A0"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -833,9 +2484,9 @@
 				)
 			)
 			(pin passive line
-				(at -33.02 -3.81 0)
+				(at 16.51 -10.16 180)
 				(length 2.54)
-				(name "PA1/RTS2/T2C2/C1O/O2N2/A1"
+				(name "PA1/RTS2/A1"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -851,9 +2502,9 @@
 				)
 			)
 			(pin passive line
-				(at -33.02 -6.35 0)
+				(at 16.51 -12.7 180)
 				(length 2.54)
-				(name "PA2/TX2/T2C3/O2O1/T2ET_/A2"
+				(name "PA2/TX2/A2"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -869,9 +2520,9 @@
 				)
 			)
 			(pin passive line
-				(at -33.02 -8.89 0)
+				(at 16.51 -15.24 180)
 				(length 2.54)
-				(name "PA3/T2C4/T3C1_/RX2/A3"
+				(name "PA3/RX2/A3"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -887,9 +2538,9 @@
 				)
 			)
 			(pin passive line
-				(at -33.02 -11.43 0)
+				(at 16.51 15.24 180)
 				(length 2.54)
-				(name "PA4/CS/O2O0/T3C2_/A4"
+				(name "PA4/CS/A4"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -905,7 +2556,97 @@
 				)
 			)
 			(pin passive line
-				(at 0 19.05 270)
+				(at 16.51 12.7 180)
+				(length 2.54)
+				(name "PA5/SCK/A5"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 16.51 10.16 180)
+				(length 2.54)
+				(name "PA6/MISO/A6"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 16.51 7.62 180)
+				(length 2.54)
+				(name "PA7/MOSI/A7"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 16.51 2.54 180)
+				(length 2.54)
+				(name "PB1/A9"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -20.32 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 20.32 270)
 				(length 2.54)
 				(name "VDD"
 					(effects
@@ -923,99 +2664,9 @@
 				)
 			)
 			(pin passive line
-				(at 0 -19.05 90)
+				(at -16.51 -5.08 0)
 				(length 2.54)
-				(name "GND"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "15"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 33.02 11.43 180)
-				(length 2.54)
-				(name "PA5/SCK/TX4_/O2N0/A5"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "11"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 33.02 8.89 180)
-				(length 2.54)
-				(name "PA6/MISO/T3C1/T1BK_/A6"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "12"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 33.02 6.35 180)
-				(length 2.54)
-				(name "PA7/MOSI/T3C2/T1C1N_/TX1_/O2P0/A7"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "13"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 33.02 3.81 180)
-				(length 2.54)
-				(name "PB1/T1C3N_/RX4/O2N1/A9_"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "14"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 33.02 -3.81 180)
-				(length 2.54)
-				(name "PC16/UDM/T1C4/TX4_/I2C_/RX4_/PC11"
+				(name "PC16/PC11/UDM"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -1031,9 +2682,9 @@
 				)
 			)
 			(pin passive line
-				(at 33.02 -6.35 180)
+				(at -16.51 -7.62 0)
 				(length 2.54)
-				(name "PC17/UDP/TX4_/I2C_/RX4_/T1ET/PC10"
+				(name "PC17/PC10/UDP"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -1049,9 +2700,9 @@
 				)
 			)
 			(pin passive line
-				(at 33.02 -8.89 180)
+				(at -16.51 15.24 0)
 				(length 2.54)
-				(name "PC18/DIO/TX3_/T2C1N_/T3C2_/I2C_/T1ET_"
+				(name "PC18/SWDIO"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -1067,9 +2718,9 @@
 				)
 			)
 			(pin passive line
-				(at 33.02 -11.43 180)
+				(at -16.51 12.7 0)
 				(length 2.54)
-				(name "PC19/DCK/T2C1_/T3C1_/I2C_/RX3_/C1P0"
+				(name "PC19/SWCLK"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -1087,14 +2738,623 @@
 		)
 		(symbol "CH32X035F7P6_1_1"
 			(rectangle
-				(start -30.48 16.51)
-				(end 30.48 -16.51)
+				(start -13.97 17.78)
+				(end 13.97 -17.78)
 				(stroke
 					(width 0)
 					(type solid)
 				)
 				(fill
 					(type background)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "CH32X035G8U6"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "U"
+			(at 1.524 32.004 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "CH32X035G8U6"
+			(at 1.524 29.718 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_DFN_QFN:QFN-28-1EP_4x4mm_P0.4mm_EP2.4x2.4mm"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://ch32-riscv-ug.github.io/CH32X035/datasheet_en/CH32X035DS0.PDF"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "48MHz RISC-V MCU with USB PD PHY (Sink, Source, DRP), USB 2.0 Full speed phy (Host, Device), 20KB RAM, 62KB Flash, QFN-28 0.4mm Pitch Package"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "QFN-28-1EP_4x4mm_P0.4mm_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "CH32X035G8U6_1_1"
+			(rectangle
+				(start -20.32 27.94)
+				(end 20.32 -21.59)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(pin passive line
+				(at -25.4 1.27 0)
+				(length 5.08)
+				(name "PC15/CC2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 30.48 270)
+				(length 2.54)
+				(name "VDD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -25.4 -3.81 0)
+				(length 5.08)
+				(name "PC0/A10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -25.4 -6.35 0)
+				(length 5.08)
+				(name "PC3/A13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -25.4 -8.89 0)
+				(length 5.08)
+				(name "PA0/CTS2/A0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -25.4 -11.43 0)
+				(length 5.08)
+				(name "PA1/RTS2/A1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 25.4 19.05 180)
+				(length 5.08)
+				(name "PA2/TX2/A2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 25.4 16.51 180)
+				(length 5.08)
+				(name "PA3/RX2/A3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 25.4 -19.05 180)
+				(length 5.08)
+				(name "PA4/CS/A4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 25.4 -16.51 180)
+				(length 5.08)
+				(name "PA5/SCK/A5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 25.4 -13.97 180)
+				(length 5.08)
+				(name "PA6/MISO/A6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 25.4 -11.43 180)
+				(length 5.08)
+				(name "PA7/MOSI/A7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 25.4 8.89 180)
+				(length 5.08)
+				(name "PB0/TX4/A8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 25.4 13.97 180)
+				(length 5.08)
+				(name "PB3/TX3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 25.4 11.43 180)
+				(length 5.08)
+				(name "PB4/RX3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive input_low
+				(at 25.4 6.35 180)
+				(length 5.08)
+				(name "PB1/PB5/RX4/A9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 25.4 -3.81 180)
+				(length 5.08)
+				(name "PB6/CTS3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 25.4 -1.27 180)
+				(length 5.08)
+				(name "PB7/RTS3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 25.4 1.27 180)
+				(length 5.08)
+				(name "PB8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -25.4 16.51 0)
+				(length 5.08)
+				(name "PB9/MCO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 25.4 24.13 180)
+				(length 5.08)
+				(name "PB10/TX1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 25.4 21.59 180)
+				(length 5.08)
+				(name "PB11/RX1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "22"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 25.4 -6.35 180)
+				(length 5.08)
+				(name "PB12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "23"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -25.4 24.13 0)
+				(length 5.08)
+				(name "PC19/SWCLK"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "24"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -25.4 21.59 0)
+				(length 5.08)
+				(name "PC18/SWDIO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "25"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive input_low
+				(at -25.4 11.43 0)
+				(length 5.08)
+				(name "PC16/PC11/UDM"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "26"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive input_low
+				(at -25.4 8.89 0)
+				(length 5.08)
+				(name "PC17/PC10/UDP/BOOT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "27"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -25.4 3.81 0)
+				(length 5.08)
+				(name "PC14/CC1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "28"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -24.13 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "29"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
 				)
 			)
 		)

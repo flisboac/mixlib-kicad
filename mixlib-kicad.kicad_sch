@@ -4479,6 +4479,685 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "mixlib-ic-mcu:CH32V006K8U6"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 0 36.322 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "CH32V006K8U6"
+				(at 0 34.544 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_DFN_QFN:QFN-32-1EP_4x4mm_P0.4mm_EP2.9x2.9mm"
+				(at -0.762 -50.8 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://ch32-riscv-ug.github.io/CH32V006/datasheet_en/CH32V006DS0.PDF"
+				(at -0.762 -50.8 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "48MHz RISC-V MCU, 8KB RAM, 62KB Flash, QFN-32"
+				(at -0.762 -50.8 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "QFN-32*4x4mm*P0.4mm*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "CH32V006K8U6_1_1"
+				(rectangle
+					(start -34.29 24.13)
+					(end 34.29 -24.13)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -36.83 20.32 0)
+					(length 2.54)
+					(name "PB3/SWCK/T2/U2RX"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -36.83 17.78 0)
+					(length 2.54)
+					(name "PA5/U2RX_/OPO1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -36.83 15.24 0)
+					(length 2.54)
+					(name "PA6/U2TX_"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -36.83 12.7 0)
+					(length 2.54)
+					(name "PA7/U2TX/RST"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -36.83 10.16 0)
+					(length 2.54)
+					(name "PA0/T1/T2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -36.83 7.62 0)
+					(length 2.54)
+					(name "PA1/T1/T2/OPN0/XI/A1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -36.83 5.08 0)
+					(length 2.54)
+					(name "PA2/T1/T2/U2TX_/OPP0/XO/A0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -36.83 2.54 0)
+					(length 2.54)
+					(name "PD0/T1/TX_/SDA_/OPN1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -36.83 -2.54 0)
+					(length 2.54)
+					(name "PA3/T1/T_2/U2RX__"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -36.83 -5.08 0)
+					(length 2.54)
+					(name "PB0/T1/N_SS_"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -36.83 -7.62 0)
+					(length 2.54)
+					(name "PB1/T1/T_2/SCK_"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -36.83 -10.16 0)
+					(length 2.54)
+					(name "PB2/T1BK__/T1/M_ISO_"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -36.83 -12.7 0)
+					(length 2.54)
+					(name "PC0/T1C1_N_/T1/_T2/TX__/MOSI_"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -36.83 -15.24 0)
+					(length 2.54)
+					(name "PC1/T1C2_N_/T2/_RX_/SD_A/NSS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -36.83 -17.78 0)
+					(length 2.54)
+					(name "PC2/T1C3_N_/T2/_SCL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -36.83 -20.32 0)
+					(length 2.54)
+					(name "PC3/T1/T_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 26.67 270)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 36.83 -20.32 180)
+					(length 2.54)
+					(name "PC4/T1C1_/T1/MCO/A2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 36.83 -17.78 180)
+					(length 2.54)
+					(name "PC5/T1C2_/T1/T2/TX_/SCK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 36.83 -15.24 180)
+					(length 2.54)
+					(name "PC6/T1C3_/T1/RX_/MOSI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 36.83 -12.7 180)
+					(length 2.54)
+					(name "PC7/T1C4_/T1/T2/MISO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 36.83 -10.16 180)
+					(length 2.54)
+					(name "PB4/T1ETR_"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 36.83 -7.62 180)
+					(length 2.54)
+					(name "PD1/SWIO/T1/SCL_/RX_/OPP3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 36.83 -5.08 180)
+					(length 2.54)
+					(name "PD2/T1/T2/U2TX_/A3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "24"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 36.83 2.54 180)
+					(length 2.54)
+					(name "PD3/T1/T2_/U2RX_/NSS_/OPP2/A4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "25"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 36.83 5.08 180)
+					(length 2.54)
+					(name "PD4/T1/T_2/SCK_/OPO0/A7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "26"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 36.83 7.62 180)
+					(length 2.54)
+					(name "PD5/T2/_TX/RX_/MISO_/A5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "27"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 36.83 10.16 180)
+					(length 2.54)
+					(name "PD6/T2/RX/TX_/MOSI_/A6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "28"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 36.83 12.7 180)
+					(length 2.54)
+					(name "PB5/TX_/SCL_"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "29"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 36.83 15.24 180)
+					(length 2.54)
+					(name "PB6/T2/RX_/SDA_"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "30"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 36.83 17.78 180)
+					(length 2.54)
+					(name "PD7/T2/OPP1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "31"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 36.83 20.32 180)
+					(length 2.54)
+					(name "PA4/U2TX_/OPN2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "32"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 -26.67 90)
+					(length 2.54)
+					(name "VSS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "33"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "mixlib-pmic-vreg:TPS5430DDA"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -7290,6 +7969,181 @@
 			(justify right bottom)
 		)
 		(uuid "fc8fe42f-a5a0-4606-b02d-c849ec471801")
+	)
+	(symbol
+		(lib_id "mixlib-ic-mcu:CH32V006K8U6")
+		(at 369.57 -21.59 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "09271db6-964d-4657-a447-c0363c3fe528")
+		(property "Reference" "U7"
+			(at 371.7133 -49.53 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "CH32V006K8U6"
+			(at 371.7133 -46.99 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_DFN_QFN:QFN-32-1EP_4x4mm_P0.4mm_EP2.9x2.9mm"
+			(at 368.808 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://ch32-riscv-ug.github.io/CH32V006/datasheet_en/CH32V006DS0.PDF"
+			(at 368.808 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "48MHz RISC-V MCU, 8KB RAM, 62KB Flash, QFN-32"
+			(at 368.808 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "5"
+			(uuid "fcb87d8c-d19d-4b26-8900-28277d402714")
+		)
+		(pin "4"
+			(uuid "aad7d2c5-7929-4231-8f26-22db5993079e")
+		)
+		(pin "6"
+			(uuid "73217e86-0fff-4f7d-8683-ba45f5644955")
+		)
+		(pin "32"
+			(uuid "ab42a4ab-c237-401b-9aac-2f288c8462c8")
+		)
+		(pin "8"
+			(uuid "2f1ab1ba-c59f-4a80-8e41-63adc90d4a89")
+		)
+		(pin "9"
+			(uuid "ad67b3d2-6ca6-46a4-9e12-1cdf38bd0b83")
+		)
+		(pin "33"
+			(uuid "6287994e-f7db-45c6-9a7c-117d32e2c45a")
+		)
+		(pin "24"
+			(uuid "187c162d-5aa6-4040-bb9e-2484f83ffc13")
+		)
+		(pin "15"
+			(uuid "a720bd96-b8ed-460a-b624-96547ebc3ecf")
+		)
+		(pin "10"
+			(uuid "22bd4bf0-6cfa-4e9a-98a0-f59073f54d0d")
+		)
+		(pin "23"
+			(uuid "ff7a2e57-9b29-4e00-bc4b-269d421cc162")
+		)
+		(pin "17"
+			(uuid "942cbcd3-f3ca-4575-b09f-836b33f7a9aa")
+		)
+		(pin "21"
+			(uuid "a3918e21-3062-4767-ad96-949ec95f377a")
+		)
+		(pin "11"
+			(uuid "4eed7699-5be8-42c4-83fe-66cf53875923")
+		)
+		(pin "25"
+			(uuid "d4f28be0-9345-41ff-a3d0-2d29f0155de6")
+		)
+		(pin "14"
+			(uuid "db7254ee-e0f6-419e-8293-d76ca16a6cb2")
+		)
+		(pin "13"
+			(uuid "43d65448-3b18-48c0-9d6f-4d6fc76a60ae")
+		)
+		(pin "16"
+			(uuid "e135badd-28a8-4319-916c-9c65970106b8")
+		)
+		(pin "18"
+			(uuid "dd808017-7117-4967-9619-fe3409c7e16c")
+		)
+		(pin "19"
+			(uuid "5947cc81-3eaa-483d-a948-6ffdb4bf8d86")
+		)
+		(pin "20"
+			(uuid "9c02a981-8c0d-4806-a0d2-ec253a5f7338")
+		)
+		(pin "26"
+			(uuid "6257a2c2-f4b2-4869-b92d-15603624a0e8")
+		)
+		(pin "12"
+			(uuid "911ca1f1-8913-4541-adb1-d832e02bc935")
+		)
+		(pin "22"
+			(uuid "ed9ad7d6-a7bd-47c4-a968-22cba23767c4")
+		)
+		(pin "31"
+			(uuid "8cabb574-5fc1-42b2-a118-0a2146f1abab")
+		)
+		(pin "1"
+			(uuid "786c6ec9-8cff-4aaf-9cce-95d47bc65c43")
+		)
+		(pin "29"
+			(uuid "675838d1-3355-4002-8b89-46e30ee2e849")
+		)
+		(pin "7"
+			(uuid "1972d236-7836-401b-9755-8ea941032b4a")
+		)
+		(pin "2"
+			(uuid "27ab465a-742c-4e6e-9b15-13d08a9dde1f")
+		)
+		(pin "27"
+			(uuid "0d5dedef-1fde-4a32-8217-23f8b5bcc320")
+		)
+		(pin "30"
+			(uuid "365bd444-a520-44f9-aecf-a480045a64bd")
+		)
+		(pin "3"
+			(uuid "251d0d75-b502-4012-bcb2-ffd4cae5c360")
+		)
+		(pin "28"
+			(uuid "e911d2cb-ff10-4aaa-8d99-56565e33dc27")
+		)
+		(instances
+			(project "mixlib-kicad"
+				(path "/addedff5-7d4f-4971-a0ac-6e5a34b85b52"
+					(reference "U7")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Simulation_SPICE:VDC")
