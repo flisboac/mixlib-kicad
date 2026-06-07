@@ -503,7 +503,8 @@
     "pinned_footprint_libs": [],
     "pinned_symbol_libs": [
       "mixlib-pmic-battery",
-      "mixlib-ic-mcu"
+      "mixlib-ic-mcu",
+      "mixlib-pmic-switch"
     ]
   },
   "meta": {
