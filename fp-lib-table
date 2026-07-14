@@ -37,5 +37,5 @@
 	(lib (name "mixlib-generic-qfn") (type "KiCad") (uri "${KIPRJMOD}/footprints/mixlib-generic-qfn.pretty") (options "") (descr ""))
 	(lib (name "mixlib-vendor-st") (type "KiCad") (uri "${KIPRJMOD}/footprints/mixlib-vendor-st.pretty") (options "") (descr ""))
 	(lib (name "mixlib-vendor-aos") (type "KiCad") (uri "${KIPRJMOD}/footprints/mixlib-vendor-aos.pretty") (options "") (descr ""))
-	(lib (name "parts-porter-common") (type "KiCad") (uri "/home/flisboac/workspaces/owned/parts-porter/parts-porter-hardware/kicad/projects/parts-porter-id-board-r1/footprints/parts-porter-common.pretty") (options "") (descr ""))
+	(lib (name "mixlib-connector-general") (type "KiCad") (uri "${KIPRJMOD}/footprints/mixlib-connector-general.pretty") (options "") (descr ""))
 )
