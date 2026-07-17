@@ -35,4 +35,5 @@
 	(lib (name "mixlib-soc-stm32g0") (type "KiCad") (uri "${KIPRJMOD}/symbols/mixlib-soc-stm32g0.kicad_sym") (options "") (descr ""))
 	(lib (name "mixlib-connector-general") (type "KiCad") (uri "${KIPRJMOD}/symbols/mixlib-connector-general.kicad_sym") (options "") (descr ""))
 	(lib (name "mixlib-interface-uart") (type "KiCad") (uri "${KIPRJMOD}/symbols/mixlib-interface-uart.kicad_sym") (options "") (descr ""))
+	(lib (name "mixlib-discrete-resistor") (type "KiCad") (uri "${KIPRJMOD}/symbols/mixlib-discrete-resistor.kicad_sym") (options "") (descr ""))
 )
